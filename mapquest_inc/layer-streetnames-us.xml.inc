@@ -114,7 +114,7 @@
   <StyleName>shield-text</StyleName>
   <Datasource>
     <Parameter name="table">
-      (select way,highway,name,
+      (select way,highway,
       case when name ilike ref then null else name end as name,
       ref,char_length(regexp_replace(ref,E'^(US|I)\\s*([0-9]{1,3})',E'\\2')) as length,
       regexp_replace(ref,E'^(US|I)\\s*([0-9]{1,3})',E'\\2') as shield_name,

@@ -211,19 +211,19 @@
 	<Rule>
 		<Filter>[natural] = 'water' or [landuse] = 'reservoir' or [landuse] = 'basin' or [waterway] = 'mill_pond' or [waterway]='canal'</Filter>
 		&maxscale_zoom6;
-		&maxscale_zoom8;
+		&minscale_zoom8;
 		<TextSymbolizer name="[name]" fontset_name="oblique-fonts" size="10" fill="#384e6c" halo_radius="2" halo_fill="rgba(255,255,255,0.25)" wrap_width="20" min_distance="200"/>
 	</Rule>
 	<Rule>
 		<Filter>[natural] = 'water' or [landuse] = 'reservoir' or [landuse] = 'basin' or [waterway] = 'mill_pond' or [waterway]='canal'</Filter>
 		&maxscale_zoom9;
-		&maxscale_zoom11;
+		&minscale_zoom11;
 		<TextSymbolizer name="[name]" fontset_name="oblique-fonts" size="10" fill="#37617e" halo_radius="2" halo_fill="rgba(255,255,255,0.25)" wrap_width="20" min_distance="200"/>
 	</Rule>
 	<Rule>
 		<Filter>[natural] = 'water' or [landuse] = 'reservoir' or [landuse] = 'basin' or [waterway] = 'mill_pond' or [waterway]='canal'</Filter>
 		&maxscale_zoom12;
-		&maxscale_zoom13;
+		&minscale_zoom13;
 		<TextSymbolizer name="[name]" fontset_name="oblique-fonts" size="11" fill="#304f6f" halo_radius="2" halo_fill="rgba(255,255,255,0.25)" wrap_width="20" min_distance="200"/>
 	</Rule>
 	<Rule>

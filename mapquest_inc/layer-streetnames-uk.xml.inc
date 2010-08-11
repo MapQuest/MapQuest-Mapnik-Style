@@ -1,4 +1,4 @@
-<Style name="street-shields">
+<Style name="shield-text">
 	<!--motorway shields-->
 	<Rule>
 		<Filter>[highway] = 'motorway' and [length] &lt; 3</Filter>
@@ -177,8 +177,8 @@
 		<TextSymbolizer name="[name]" fontset_name="book-fonts" size="12" fill="#2b2b2b" halo_fill="rgba(255,255,255,0.25)" halo_radius="2" placement="line" max_char_angle_delta="40"/>
 	</Rule>
 </Style>
-<Layer name="street-shields" status="on" srs="&osm2pgsql_projection;">
-	<StyleName>street-shields</StyleName>
+<Layer name="shield-text" status="on" srs="&osm2pgsql_projection;">
+	<StyleName>shield-text</StyleName>
 	<Datasource>
 		<Parameter name="table">
       (select way,highway,

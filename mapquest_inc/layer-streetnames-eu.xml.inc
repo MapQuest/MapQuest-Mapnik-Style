@@ -1,4 +1,4 @@
-<Style name="street-text">
+<Style name="street-shields">
 <!--motorway shields-->
 	<Rule>
 		<Filter>[highway] = 'motorway' and [length] &lt; 3</Filter>
@@ -110,6 +110,8 @@
 		&maxscale_zoom12;
 		<ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="#404040" placement="line" file="&symbols;/shield_white_eu8.png" type="png" width="63" height="19" min_distance="30" spacing="750"/>
 	</Rule>
+</Style>
+<Style name="street-text">
 
 <!--motorway text-->
 	<Rule>
@@ -155,7 +157,23 @@
 	</Rule>
 -->
 </Style>
-
+<Layer name="street-shields" status="on" srs="&osm2pgsql_projection;">
+	<StyleName>street-shields</StyleName>
+	<Datasource>
+		<Parameter name="table">
+      (select way,highway,
+      case when name ilike ref then null else name end as name,
+      ref,char_length(ref) as length
+       from &prefix;_roads
+       where waterway IS NULL
+         and leisure IS NULL
+         and landuse IS NULL
+         and (name is not null or ref is not null)
+      ) as roads
+	</Parameter>
+	&datasource-settings;
+	</Datasource>
+</Layer>
 <Layer name="street-text" status="on" srs="&osm2pgsql_projection;">
 	<StyleName>street-text</StyleName>
 	<Datasource>

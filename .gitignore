@@ -1,0 +1,7 @@
+# ignore the machine-specific settings files, only track the .templates
+mapquest_inc/datasource-settings.xml.inc
+mapquest_inc/fontset-settings.xml.inc
+mapquest_inc/settings.xml.inc
+
+# technically this can be anywhere, but it's common to have it (or a symlink) here
+world_boundaries

@@ -1,4 +1,4 @@
-<Style name="street-shields">
+<Style name="shield-text">
 <!--motorway shields-->
 	<Rule>
 		<Filter>[highway] = 'motorway' and [length] &lt; 3</Filter>
@@ -157,8 +157,8 @@
 	</Rule>
 -->
 </Style>
-<Layer name="street-shields" status="on" srs="&osm2pgsql_projection;">
-	<StyleName>street-shields</StyleName>
+<Layer name="shield-text" status="on" srs="&osm2pgsql_projection;">
+	<StyleName>shield-text</StyleName>
 	<Datasource>
 		<Parameter name="table">
       (select way,highway,

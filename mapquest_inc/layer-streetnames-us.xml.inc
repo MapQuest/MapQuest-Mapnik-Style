@@ -130,7 +130,7 @@
       ref,char_length(regexp_replace(ref,E'^(US|I)\\s*([0-9]{1,3})',E'\\2')) as length,
       regexp_replace(ref,E'^(US|I)\\s*([0-9]{1,3})',E'\\2') as shield_name,
       case when bridge in ('yes','true','1') then 'yes'::text else bridge end as bridge
-      from &prefix;_line
+      from &prefix;_roads
       where waterway IS NULL
       and leisure IS NULL
       and landuse IS NULL

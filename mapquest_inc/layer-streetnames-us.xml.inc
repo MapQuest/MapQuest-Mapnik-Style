@@ -3,64 +3,88 @@
 	<Rule>
 		<Filter>[ref].match('^I .*') and [length] &lt; 3</Filter>
 		&maxscale_zoom7;
-		<ShieldSymbolizer name="shield_name" fontset_name="bold-fonts" size="10" fill="#fff" placement="line" file="&symbols;/shield_fwy_us2.png" type="png" width="30" height="30" min_distance="60" spacing="100" dx="-10"/>
+		&minscale_zoom9;
+		<ShieldSymbolizer name="shield_name" fontset_name="bold-fonts" size="10" fill="#fff" placement="line" file="&symbols;/shield_fwy_us2.png" type="png" width="30" height="30" min_distance="20" spacing="600"/>
 	</Rule>
 	<Rule>
 		<Filter>[ref].match('^I .*') and [length] &gt; 2 and [length] &lt; 6</Filter>
 		&maxscale_zoom7;
-		<ShieldSymbolizer name="shield_name" fontset_name="bold-fonts" size="10" fill="#fff" placement="line" file="&symbols;/shield_fwy_us3.png" type="png" width="30" height="30" min_distance="60" spacing="100" dx="-.5"/>
+		&minscale_zoom9;
+		<ShieldSymbolizer name="shield_name" fontset_name="bold-fonts" size="10" fill="#fff" placement="line" file="&symbols;/shield_fwy_us3.png" type="png" width="30" height="30" min_distance="20" spacing="600"/>
+	</Rule>
+	<Rule>
+		<Filter>[ref].match('^I .*') and [length] &lt; 3</Filter>
+		&maxscale_zoom10;
+		&minscale_zoom12;
+		<ShieldSymbolizer name="shield_name" fontset_name="bold-fonts" size="10" fill="#fff" placement="line" file="&symbols;/shield_fwy_us2.png" type="png" width="30" height="30" min_distance="20" spacing="600"/>
+	</Rule>
+	<Rule>
+		<Filter>[ref].match('^I .*') and [length] &gt; 2 and [length] &lt; 6</Filter>
+		&maxscale_zoom10;
+		&minscale_zoom12;
+		<ShieldSymbolizer name="shield_name" fontset_name="bold-fonts" size="10" fill="#fff" placement="line" file="&symbols;/shield_fwy_us3.png" type="png" width="30" height="30" min_distance="20" spacing="600"/>
+	</Rule>
+	<Rule>
+		<Filter>[ref].match('^I .*') and [length] &lt; 3</Filter>
+		&maxscale_zoom13;
+		<ShieldSymbolizer name="shield_name" fontset_name="bold-fonts" size="10" fill="#fff" placement="line" file="&symbols;/shield_fwy_us2.png" type="png" width="30" height="30" min_distance="20" spacing="600"/>
+	</Rule>
+	<Rule>
+		<Filter>[ref].match('^I .*') and [length] &gt; 2 and [length] &lt; 6</Filter>
+		&maxscale_zoom13;
+		<ShieldSymbolizer name="shield_name" fontset_name="bold-fonts" size="10" fill="#fff" placement="line" file="&symbols;/shield_fwy_us3.png" type="png" width="30" height="30" min_distance="20" spacing="600"/>
 	</Rule>
 <!--US Highway shield-->
 	<Rule>
 		<Filter>[ref].match('^US.*') and [length] &lt; 3</Filter>
 		&maxscale_zoom8;
-		<ShieldSymbolizer name="shield_name" fontset_name="bold-fonts" size="10" fill="#000" placement="line" file="&symbols;/shield_hwy_us3.png" type="png" width="24" height="23" min_distance="60" dx="-1"/>
+		<ShieldSymbolizer name= "shield_name" fontset_name="bold-fonts" size="10" fill="#000" placement="line" file="&symbols;/shield_hwy_us3.png" type="png" width="24" height="23" min_distance="30" spacing="600"/>
 	</Rule>
 	<Rule>
 		<Filter>[ref].match('^US.*') and [length] = 4</Filter>
 		&maxscale_zoom8;
-		<ShieldSymbolizer name="shield_name" fontset_name="bold-fonts" size="10" fill="#000" placement="line" file="&symbols;/shield_hwy_us4.png" type="png" width="30" height="22" min_distance="60"/>
+		<ShieldSymbolizer name= "shield_name" fontset_name="bold-fonts" size="10" fill="#000" placement="line" file="&symbols;/shield_hwy_us4.png" type="png" width="30" height="22" min_distance="30" spacing="600"/>
 	</Rule>
 	<Rule>
 		<Filter>[ref].match('^US.*') and [length] = 5</Filter>
 		&maxscale_zoom8;
-		<ShieldSymbolizer name="shield_name" fontset_name="bold-fonts" size="10" fill="#000" placement="line" file="&symbols;/shield_sr_us5.png" type="png" width="40" height="18" min_distance="60"/>
+		<ShieldSymbolizer name= "shield_name" fontset_name="bold-fonts" size="10" fill="#000" placement="line" file="&symbols;/shield_sr_us5.png" type="png" width="40" height="18" min_distance="30" spacing="600"/>
 	</Rule>
 	<Rule>
 		<Filter>[ref].match('^US.*') and [length] = 6</Filter>
 		&maxscale_zoom8;
-		<ShieldSymbolizer name="shield_name" fontset_name="bold-fonts" size="10" fill="#000" placement="line" file="&symbols;/shield_sr_us6.png" type="png" width="48" height="18" min_distance="60"/>
+		<ShieldSymbolizer name= "shield_name" fontset_name="bold-fonts" size="10" fill="#000" placement="line" file="&symbols;/shield_sr_us6.png" type="png" width="48" height="18" min_distance="60"/>
 	</Rule>
 	<Rule>
 		<Filter>[ref].match('^US.*') and [length] = 7</Filter>
 		&maxscale_zoom8;
-		<ShieldSymbolizer name="shield_name" fontset_name="bold-fonts" size="10" fill="#000" placement="line" file="&symbols;/shield_sr_us7.png" type="png" width="56" height="18" min_distance="60"/>
+		<ShieldSymbolizer name= "shield_name" fontset_name="bold-fonts" size="10" fill="#000" placement="line" file="&symbols;/shield_sr_us7.png" type="png" width="56" height="18" min_distance="30" spacing="600"/>
 	</Rule>
 <!--State Highway shield-->
 	<Rule>
 		<Filter>not [ref].match('^US .*') and not [ref].match('^I .*') and [length] &lt; 3</Filter>
 		&maxscale_zoom10;
-		<ShieldSymbolizer name="shield_name" fontset_name="bold-fonts" size="10" fill="#000" placement="line" file="&symbols;/shield_sr_us3.png" type="png" width="24" height="18" min_distance="60" dx="-1" dy="-1"/>
+		<ShieldSymbolizer name="shield_name" fontset_name="bold-fonts" size="10" fill="#000" placement="line" file="&symbols;/shield_sr_us3.png" type="png" width="24" height="18" min_distance="40" spacing="750"/>
 	</Rule>
 	<Rule>
 		<Filter>not [ref].match('^US .*') and not [ref].match('^I .*') and [length] = 4</Filter>
 		&maxscale_zoom10;
-		<ShieldSymbolizer name="shield_name" fontset_name="bold-fonts" size="10" fill="#000" placement="line" file="&symbols;/shield_sr_us4.png" type="png" width="34" height="18" min_distance="60" dx="-1" dy="-1"/>
+		<ShieldSymbolizer name="shield_name" fontset_name="bold-fonts" size="10" fill="#000" placement="line" file="&symbols;/shield_sr_us4.png" type="png" width="34" height="18" min_distance="40" spacing="750"/>
 	</Rule>
 	<Rule>
 		<Filter>not [ref].match('^US .*') and not [ref].match('^I .*') and [length] = 5</Filter>
 		&maxscale_zoom10;
-		<ShieldSymbolizer name="shield_name" fontset_name="bold-fonts" size="10" fill="#000" placement="line" file="&symbols;/shield_sr_us5.png" type="png" width="40" height="18" min_distance="60" dx="-1" dy="-1"/>
+		<ShieldSymbolizer name="shield_name" fontset_name="bold-fonts" size="10" fill="#000" placement="line" file="&symbols;/shield_sr_us5.png" type="png" width="40" height="18" min_distance="40" spacing="750"/>
 	</Rule>
 	<Rule>
 		<Filter>not [ref].match('^US .*') and not [ref].match('^I .*') and [length] = 6</Filter>
 		&maxscale_zoom10;
-		<ShieldSymbolizer name="shield_name" fontset_name="bold-fonts" size="10" fill="#000" placement="line" file="&symbols;/shield_sr_us6.png" type="png" width="48" height="18" min_distance="60" dx="-1" dy="-1"/>
+		<ShieldSymbolizer name="shield_name" fontset_name="bold-fonts" size="10" fill="#000" placement="line" file="&symbols;/shield_sr_us6.png" type="png" width="48" height="18" min_distance="40" spacing="750"/>
 	</Rule>
 	<Rule>
 		<Filter>not [ref].match('^US .*') and not [ref].match('^I .*') and [length] = 7</Filter>
 		&maxscale_zoom10;
-		<ShieldSymbolizer name="shield_name" fontset_name="bold-fonts" size="10" fill="#000" placement="line" file="&symbols;/shield_sr_us7.png" type="png" width="56" height="18" min_distance="60" dx="-1" dy="-1"/>
+		<ShieldSymbolizer name="shield_name" fontset_name="bold-fonts" size="10" fill="#000" placement="line" file="&symbols;/shield_sr_us7.png" type="png" width="56" height="18" min_distance="40" spacing="750"/>
 	</Rule>
 </Style>
 <Style name="street-text">

@@ -275,6 +275,18 @@
 <Style name="neighborhood">
 	<Rule>
 		<Filter>[place] = 'village' or [place] = 'hamlet'</Filter>
+		&maxscale_zoom12;
+		&minscale_zoom12;
+		<TextSymbolizer name="name" fontset_name="bold-fonts" size="10" fill="#787878" halo_radius="2" halo_fill="rgba(255,255,255,0.25)" wrap_width="20" min_distance="50" line_spacing="2"/>
+	</Rule>
+	<Rule>
+		<Filter>[place] = 'village' or [place] = 'hamlet'</Filter>
+		&maxscale_zoom13;
+		&minscale_zoom14;
+		<TextSymbolizer name="name" fontset_name="bold-fonts" size="10" fill="#787878" halo_radius="2" halo_fill="rgba(255,255,255,0.25)" wrap_width="20" min_distance="50" line_spacing="2"/>
+	</Rule>
+	<Rule>
+		<Filter>[place] = 'village' or [place] = 'hamlet'</Filter>
 		&maxscale_zoom15;
 		&minscale_zoom16;
 		<TextSymbolizer name="name" fontset_name="bold-fonts" size="10" fill="#787878" halo_radius="2" halo_fill="rgba(255,255,255,0.25)" wrap_width="20" min_distance="100" line_spacing="2"/>
@@ -324,13 +336,13 @@
 		<Filter>[place] = 'town' or [place]='large_town'</Filter>
 		&maxscale_zoom8;
 		&minscale_zoom8;
-		<ShieldSymbolizer name="name" fontset_name="bold-fonts" size="8" fill="#2b2b2b" dy="-17" halo_radius="2" halo_fill="rgba(255,255,255,0.25)" wrap_width="0" line_spacing="2" file="&symbols;/small-city.png" type="png" width="8" height="8" min_distance="10"/>
+		<ShieldSymbolizer name="name" fontset_name="bold-fonts" size="8" fill="#2b2b2b" dy="-11" halo_radius="2" halo_fill="rgba(255,255,255,0.25)" wrap_width="0" line_spacing="2" file="&symbols;/small-city.png" type="png" width="8" height="8" min_distance="10"/>
 	</Rule>
 	<Rule>
 		<Filter>[place] = 'town' or [place]='large_town'</Filter>
 		&maxscale_zoom9;
 		&minscale_zoom10;
-		<ShieldSymbolizer name="name" fontset_name="bold-fonts" size="9" fill="#2b2b2b" dy="-17" halo_radius="2" halo_fill="rgba(255,255,255,0.25)" wrap_width="0" line_spacing="2" file="&symbols;/small-city.png" type="png" width="8" height="8" min_distance="10"/>
+		<ShieldSymbolizer name="name" fontset_name="bold-fonts" size="9" fill="#2b2b2b" dy="-11" halo_radius="2" halo_fill="rgba(255,255,255,0.25)" wrap_width="0" line_spacing="2" file="&symbols;/small-city.png" type="png" width="8" height="8" min_distance="10"/>
 	</Rule>
 	<Rule>
 		<Filter>[place] = 'town' or [place]='large_town'</Filter>

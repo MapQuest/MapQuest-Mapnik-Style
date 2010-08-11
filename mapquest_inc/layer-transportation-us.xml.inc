@@ -184,20 +184,6 @@
 	</Rule>
 </Style>
 
-<!--cul-de-sac casing
-<Style name="turning-circle-casing">
-	<Rule>
-		&maxscale_zoom15;
-		&minscale_zoom16;
-		<PointSymbolizer file="&symbols;/turning_circle_casing.15.png" type="png" width="15" height="15" />
-	</Rule>
-	<Rule>
-		&maxscale_zoom17;
-		<PointSymbolizer file="&symbols;/turning_circle_casing.19.png" type="png" width="19" height="19" />
-	</Rule>
-</Style>
--->
-
 <!--street 4 casing-->
 <Style name="street 4 casing">
 	<Rule>
@@ -404,6 +390,28 @@
 </Style>
 
 <!--cul-de-sac-->
+<Style name="cul-de-sac">
+	<Rule>
+		&maxscale_zoom15;
+		&minscale_zoom15;
+		<PointSymbolizer file="&symbols;/cul_de_sac.15.png" type="png" width="12" height="12" />
+	</Rule>
+	<Rule>
+		&maxscale_zoom16;
+		&minscale_zoom16;
+		<PointSymbolizer file="&symbols;/cul_de_sac.16.png" type="png" width="14" height="14" />
+	</Rule>
+	<Rule>
+		&maxscale_zoom17;
+		&minscale_zoom17;
+		<PointSymbolizer file="&symbols;/cul_de_sac.17.png" type="png" width="16" height="16" />
+	</Rule>
+	<Rule>
+		&maxscale_zoom18;
+		&minscale_zoom18;
+		<PointSymbolizer file="&symbols;/cul_de_sac.18.png" type="png" width="18" height="18" />
+	</Rule>
+</Style>
 
 <!--street 4-->
 <Style name="street 4">
@@ -1069,13 +1077,6 @@
       &datasource-settings;
     </Datasource>
 </Layer>
-<Layer name="turning-circle-casing" status="on" srs="&osm2pgsql_projection;">
-	<StyleName>turning-circle-casing</StyleName>    
-	<Datasource>
-		<Parameter name="table">(select way from &prefix;_point where highway='turning_circle') as turning_circle</Parameter>
-		&datasource-settings;
-	</Datasource>
-</Layer>
 <Layer name="ramp casing" status="on" srs="&osm2pgsql_projection;">
 	<StyleName>ramp casing</StyleName>
 	<Datasource>
@@ -1134,6 +1135,13 @@
       ) as roads
 		</Parameter>
 	&datasource-settings;
+	</Datasource>
+</Layer>
+<Layer name="cul-de-sac" status="on" srs="&osm2pgsql_projection;">
+	<StyleName>cul-de-sac</StyleName>    
+	<Datasource>
+		<Parameter name="table">(select way from &prefix;_point where highway='turning_circle') as turning_circle</Parameter>
+		&datasource-settings;
 	</Datasource>
 </Layer>
 <Layer name="ramp" status="on" srs="&osm2pgsql_projection;">

@@ -139,7 +139,7 @@
 		<ShieldSymbolizer name="[ref]" fontset_name="bold-fonts" size="10" fill="#000" placement="line" file="&symbols;/shield_sec_uk7.png" type="png" width="55" height="19" min_distance="30" spacing="750"/>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'secondary' and [length] = 7</Filter>
+		<Filter>[highway] = 'secondary' and [length] = 8</Filter>
 		&maxscale_zoom10;
 		<ShieldSymbolizer name="[ref]" fontset_name="bold-fonts" size="10" fill="#000" placement="line" file="&symbols;/shield_sec_uk8.png" type="png" width="63" height="19" min_distance="30" spacing="750"/>
 	</Rule>

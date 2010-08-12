@@ -201,9 +201,7 @@
       case when name ilike ref then null else name end as name,
       ref,char_length(ref) as length
        from &prefix;_roads
-       where waterway IS NULL
-         and leisure IS NULL
-         and landuse IS NULL
+       where highway in ('motorway', 'trunk', 'primary', 'secondary')
          and (name is not null or ref is not null)
       ) as roads
 	</Parameter>

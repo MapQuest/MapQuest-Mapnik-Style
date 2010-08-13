@@ -761,6 +761,17 @@
 <Style name="interchange casing">
 	<Rule>
 		<Filter>[highway] = 'motorway_link'</Filter>
+		&maxscale_zoom8;
+		&minscale_zoom10;
+		<LineSymbolizer>
+			<CssParameter name="stroke">#ab5468</CssParameter>
+			<CssParameter name="stroke-width">3</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-linecap">round</CssParameter>
+		</LineSymbolizer>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'motorway_link'</Filter>
 		&maxscale_zoom11;
 		&minscale_zoom13;
 		<LineSymbolizer>
@@ -847,6 +858,17 @@
 </Style>
 <!--interchange-->
 <Style name="interchange">
+	<Rule>
+		<Filter>[highway] = 'motorway_link'</Filter>
+		&maxscale_zoom8;
+		&minscale_zoom10;
+		<LineSymbolizer>
+			<CssParameter name="stroke">#e55050</CssParameter>
+			<CssParameter name="stroke-width">1</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-linecap">round</CssParameter>
+		</LineSymbolizer>
+	</Rule>
 	<Rule>
 		<Filter>[highway] = 'motorway_link'</Filter>
 		&maxscale_zoom11;

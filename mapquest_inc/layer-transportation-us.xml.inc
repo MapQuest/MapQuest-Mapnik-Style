@@ -81,7 +81,7 @@
 	<Rule>
 		<Filter>[aeroway] = 'runway'</Filter>
 		&maxscale_zoom10;
-		&maxscale_zoom12;
+		&minscale_zoom12;
 		<LineSymbolizer>
 			<CssParameter name="stroke">#b4b4b4</CssParameter>
 			<CssParameter name="stroke-width">3</CssParameter>
@@ -90,7 +90,7 @@
 	<Rule>
 		<Filter>[aeroway] = 'runway'</Filter>
 		&maxscale_zoom13;
-		&maxscale_zoom14;
+		&minscale_zoom14;
 		<LineSymbolizer>
 			<CssParameter name="stroke">#b4b4b4</CssParameter>
 			<CssParameter name="stroke-width">5</CssParameter>
@@ -99,7 +99,7 @@
 	<Rule>
 		<Filter>[aeroway] = 'runway'</Filter>
 		&maxscale_zoom15;
-		&maxscale_zoom16;
+		&minscale_zoom16;
 		<LineSymbolizer>
 			<CssParameter name="stroke">#b4b4b4</CssParameter>
 			<CssParameter name="stroke-width">15</CssParameter>
@@ -116,7 +116,7 @@
 	<Rule>
 		<Filter>[aeroway] = 'taxiway'</Filter>
 		&maxscale_zoom12;
-		&maxscale_zoom12;
+		&minscale_zoom12;
 		<LineSymbolizer>
 			<CssParameter name="stroke">#b4b4b4</CssParameter>
 			<CssParameter name="stroke-width">1</CssParameter>
@@ -125,7 +125,7 @@
 	<Rule>
 		<Filter>[aeroway] = 'taxiway'</Filter>
 		&maxscale_zoom13;
-		&maxscale_zoom14;
+		&minscale_zoom14;
 		<LineSymbolizer>
 			<CssParameter name="stroke">#b4b4b4</CssParameter>
 			<CssParameter name="stroke-width">2</CssParameter>
@@ -134,7 +134,7 @@
 	<Rule>
 		<Filter>[aeroway] = 'taxiway'</Filter>
 		&maxscale_zoom15;
-		&maxscale_zoom16;
+		&minscale_zoom16;
 		<LineSymbolizer>
 			<CssParameter name="stroke">#b4b4b4</CssParameter>
 			<CssParameter name="stroke-width">5</CssParameter>

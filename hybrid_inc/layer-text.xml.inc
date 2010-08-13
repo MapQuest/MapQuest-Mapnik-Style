@@ -154,7 +154,7 @@
 <!--island-->
 	<Rule>
 		<Filter>[place] = 'island'</Filter>
-		&maxscale_zoom13;
+		&maxscale_zoom14;
 		<TextSymbolizer name="name" fontset_name="oblique-fonts" size="9" fill="#000" dy="0" halo_radius="2" halo_fill="rgba(255,255,255,0.25)" wrap_width="20" line_spacing="4"/>
 	</Rule>
 <!--attraction/POI-->

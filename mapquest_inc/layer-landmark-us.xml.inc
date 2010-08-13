@@ -64,7 +64,7 @@
 	</Rule>
 <!--park fill-->
 	<Rule>
-		<Filter>[leisure] = 'park' or [leisure] = 'playground' or [landuse] = 'recreation_ground' or [leisure] = 'nature_reserve' or [leisure] = 'common'</Filter>
+		<Filter>[leisure] = 'park' or [leisure] = 'playground' or [landuse] = 'recreation_ground' or [leisure] = 'nature_reserve' or [leisure] = 'common' or [leisure] = 'pitch'</Filter>
 		&maxscale_zoom9;
 		&minscale_zoom9;
 		<PolygonSymbolizer>
@@ -73,7 +73,7 @@
 		</PolygonSymbolizer>
 	</Rule>
 	<Rule>
-		<Filter>[leisure] = 'park' or [leisure] = 'playground' or [landuse] = 'recreation_ground' or [leisure] = 'nature_reserve' or [leisure] = 'common'</Filter>
+		<Filter>[leisure] = 'park' or [leisure] = 'playground' or [landuse] = 'recreation_ground' or [leisure] = 'nature_reserve' or [leisure] = 'common' or [leisure] = 'pitch'</Filter>
 		&maxscale_zoom10;
 		&minscale_zoom11;
 		<PolygonSymbolizer>
@@ -82,7 +82,7 @@
 		</PolygonSymbolizer>
 	</Rule>
 	<Rule>
-		<Filter>[leisure] = 'park' or [leisure] = 'playground' or [landuse] = 'recreation_ground' or [leisure] = 'nature_reserve' or [leisure] = 'common'</Filter>
+		<Filter>[leisure] = 'park' or [leisure] = 'playground' or [landuse] = 'recreation_ground' or [leisure] = 'nature_reserve' or [leisure] = 'common' or [leisure] = 'pitch'</Filter>
 		&maxscale_zoom12;
 		&minscale_zoom14;
 		<PolygonSymbolizer>
@@ -91,7 +91,7 @@
 		</PolygonSymbolizer>
 	</Rule>
 	<Rule>
-		<Filter>[leisure] = 'park' or [leisure] = 'playground' or [landuse] = 'recreation_ground' or [leisure] = 'nature_reserve' or [leisure] = 'common'</Filter>
+		<Filter>[leisure] = 'park' or [leisure] = 'playground' or [landuse] = 'recreation_ground' or [leisure] = 'nature_reserve' or [leisure] = 'common' or [leisure] = 'pitch'</Filter>
 		&maxscale_zoom15;
 		&minscale_zoom16;
 		<PolygonSymbolizer>
@@ -100,7 +100,7 @@
 		</PolygonSymbolizer>
 	</Rule>
 	<Rule>
-		<Filter>[leisure] = 'park' or [leisure] = 'playground' or [landuse] = 'recreation_ground' or [leisure] = 'nature_reserve' or [leisure] = 'common'</Filter>
+		<Filter>[leisure] = 'park' or [leisure] = 'playground' or [landuse] = 'recreation_ground' or [leisure] = 'nature_reserve' or [leisure] = 'common' or [leisure] = 'pitch'</Filter>
 		&maxscale_zoom17;
 		<PolygonSymbolizer>
 			<CssParameter name="fill">#00a635</CssParameter>

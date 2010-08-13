@@ -203,7 +203,7 @@
 		&minscale_zoom15;
 		<LineSymbolizer>
 			<CssParameter name="stroke">#999999</CssParameter>
-			<CssParameter name="stroke-width">5</CssParameter>
+			<CssParameter name="stroke-width">6</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 			<CssParameter name="stroke-linecap">round</CssParameter>
 		</LineSymbolizer>
@@ -214,7 +214,7 @@
 		&minscale_zoom17;
 		<LineSymbolizer>
 			<CssParameter name="stroke">#999999</CssParameter>
-			<CssParameter name="stroke-width">7</CssParameter>
+			<CssParameter name="stroke-width">8</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 			<CssParameter name="stroke-linecap">round</CssParameter>
 		</LineSymbolizer>
@@ -224,7 +224,7 @@
 		&maxscale_zoom18;
 		<LineSymbolizer>
 			<CssParameter name="stroke">#999999</CssParameter>
-			<CssParameter name="stroke-width">8</CssParameter>
+			<CssParameter name="stroke-width">10</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 			<CssParameter name="stroke-linecap">round</CssParameter>
 		</LineSymbolizer>
@@ -415,6 +415,30 @@
 			<CssParameter name="stroke-width">12</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 		</LineSymbolizer>
+	</Rule>
+</Style>
+
+<!--cul-de-sac-->
+<Style name="cul-de-sac">
+	<Rule>
+		&maxscale_zoom15;
+		&minscale_zoom15;
+		<PointSymbolizer file="&symbols;/cul_de_sac.15.png" type="png" width="12" height="12" />
+	</Rule>
+	<Rule>
+		&maxscale_zoom16;
+		&minscale_zoom16;
+		<PointSymbolizer file="&symbols;/cul_de_sac.16.png" type="png" width="14" height="14" />
+	</Rule>
+	<Rule>
+		&maxscale_zoom17;
+		&minscale_zoom17;
+		<PointSymbolizer file="&symbols;/cul_de_sac.17.png" type="png" width="16" height="16" />
+	</Rule>
+	<Rule>
+		&maxscale_zoom18;
+		&minscale_zoom18;
+		<PointSymbolizer file="&symbols;/cul_de_sac.18.png" type="png" width="18" height="18" />
 	</Rule>
 </Style>
 
@@ -685,7 +709,7 @@
 		&maxscale_zoom10;
 		&minscale_zoom11;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#29cc5f</CssParameter>
+			<CssParameter name="stroke">#66cc89</CssParameter>
 			<CssParameter name="stroke-width">3</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 		</LineSymbolizer>
@@ -695,7 +719,7 @@
 		&maxscale_zoom12;
 		&minscale_zoom13;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#40c678</CssParameter>
+			<CssParameter name="stroke">#6DC693</CssParameter>
 			<CssParameter name="stroke-width">3</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 		</LineSymbolizer>
@@ -775,6 +799,17 @@
 
 <!--interchange casing-->
 <Style name="interchange casing">
+	<Rule>
+		<Filter>[highway] = 'motorway_link'</Filter>
+		&maxscale_zoom8;
+		&minscale_zoom10;
+		<LineSymbolizer>
+			<CssParameter name="stroke">#2d4880</CssParameter>
+			<CssParameter name="stroke-width">2</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-linecap">round</CssParameter>
+		</LineSymbolizer>
+	</Rule>
 	<Rule>
 		<Filter>[highway] = 'motorway_link'</Filter>
 		&maxscale_zoom11;
@@ -894,6 +929,17 @@
 </Style>
 <!--interchange-->
 <Style name="interchange">
+	<Rule>
+		<Filter>[highway] = 'motorway_link'</Filter>
+		&maxscale_zoom8;
+		&minscale_zoom10;
+		<LineSymbolizer>
+			<CssParameter name="stroke">#6289d9</CssParameter>
+			<CssParameter name="stroke-width">1</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-linecap">round</CssParameter>
+		</LineSymbolizer>
+	</Rule>
 	<Rule>
 		<Filter>[highway] = 'motorway_link'</Filter>
 		&maxscale_zoom11;
@@ -1209,6 +1255,13 @@
       ) as roads
 		</Parameter>
 	&datasource-settings;
+	</Datasource>
+</Layer>
+<Layer name="cul-de-sac" status="on" srs="&osm2pgsql_projection;">
+	<StyleName>cul-de-sac</StyleName>    
+	<Datasource>
+		<Parameter name="table">(select way from &prefix;_point where highway='turning_circle') as turning_circle</Parameter>
+		&datasource-settings;
 	</Datasource>
 </Layer>
 <Layer name="tertiary" status="on" srs="&osm2pgsql_projection;">

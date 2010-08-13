@@ -80,7 +80,7 @@
 <Style name="runway">
 	<Rule>
 		<Filter>[aeroway] = 'runway'</Filter>
-		&maxscale_zoom12;
+		&maxscale_zoom10;
 		&maxscale_zoom12;
 		<LineSymbolizer>
 			<CssParameter name="stroke">#b4b4b4</CssParameter>
@@ -184,228 +184,204 @@
 	</Rule>
 </Style>
 
-<!--tertiary casing-->
-<Style name="tertiary casing">
+<!--street 4 casing-->
+<Style name="street 4 casing">
 	<Rule>
-		<Filter>[highway] = 'tertiary' or [highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'tertiary_link' or [highway] = 'residential_link' or [highway] = 'unclassified_link'</Filter>
+		<Filter>[highway] = 'tertiary' or [highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' or [highway] = 'tertiary_link' or [highway] = 'residential_link' or [highway] = 'unclassified_link'</Filter>
 		&maxscale_zoom14;
-		&minscale_zoom15;
+		&minscale_zoom14;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#b4b4b4</CssParameter>
-			<CssParameter name="stroke-width">3.5</CssParameter>
-			<CssParameter name="stroke-linejoin">round</CssParameter>
-			<CssParameter name="stroke-linecap">round</CssParameter>
-		</LineSymbolizer>
-	</Rule>
-	<Rule>
-		<Filter>[highway] = 'tertiary' or [highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'tertiary_link' or [highway] = 'residential_link' or [highway] = 'unclassified_link'</Filter>
-		&maxscale_zoom16;
-		&minscale_zoom17;
-		<LineSymbolizer>
-			<CssParameter name="stroke">#bebebe</CssParameter>
-			<CssParameter name="stroke-width">8</CssParameter>
-			<CssParameter name="stroke-linejoin">round</CssParameter>
-			<CssParameter name="stroke-linecap">round</CssParameter>
-		</LineSymbolizer>
-	</Rule>
-	<Rule>
-		<Filter>[highway] = 'tertiary' or [highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'tertiary_link' or [highway] = 'residential_link' or [highway] = 'unclassified_link'</Filter>
-		&maxscale_zoom18;
-		<LineSymbolizer>
-			<CssParameter name="stroke">#bebebe</CssParameter>
-			<CssParameter name="stroke-width">10</CssParameter>
-			<CssParameter name="stroke-linejoin">round</CssParameter>
-			<CssParameter name="stroke-linecap">round</CssParameter>
-		</LineSymbolizer>
-	</Rule>
-</Style>
-<!--secondary casing-->
-<Style name="secondary casing">
-	<Rule>
-		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
-		&maxscale_zoom12;
-		&minscale_zoom13;
-		<LineSymbolizer>
-			<CssParameter name="stroke">#bebebe</CssParameter>
-			<CssParameter name="stroke-width">3</CssParameter>
-			<CssParameter name="stroke-linejoin">round</CssParameter>
-			<CssParameter name="stroke-linecap">round</CssParameter>
-		</LineSymbolizer>
-	</Rule>
-	<Rule>
-		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
-		&maxscale_zoom14;
-		&minscale_zoom15;
-		<LineSymbolizer>
-			<CssParameter name="stroke">#bebebe</CssParameter>
-			<CssParameter name="stroke-width">5</CssParameter>
-			<CssParameter name="stroke-linejoin">round</CssParameter>
-			<CssParameter name="stroke-linecap">round</CssParameter>
-		</LineSymbolizer>
-	</Rule>
-	<Rule>
-		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
-		&maxscale_zoom16;
-		&minscale_zoom17;
-		<LineSymbolizer>
-			<CssParameter name="stroke">#bebebe</CssParameter>
-			<CssParameter name="stroke-width">8</CssParameter>
-			<CssParameter name="stroke-linejoin">round</CssParameter>
-			<CssParameter name="stroke-linecap">round</CssParameter>
-		</LineSymbolizer>
-	</Rule>
-	<Rule>
-		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
-		&maxscale_zoom18;
-		<LineSymbolizer>
-			<CssParameter name="stroke">#bebebe</CssParameter>
-			<CssParameter name="stroke-width">10</CssParameter>
-			<CssParameter name="stroke-linejoin">round</CssParameter>
-			<CssParameter name="stroke-linecap">round</CssParameter>
-		</LineSymbolizer>
-	</Rule>
-</Style>
-<!--primary casing-->
-<Style name="primary casing">
-	<Rule>
-		<Filter>[highway] = 'primary' or [highway] = 'primary_link'</Filter>
-		&maxscale_zoom9;
-		&minscale_zoom9;
-		<LineSymbolizer>
-			<CssParameter name="stroke">#d19f54</CssParameter>
-			<CssParameter name="stroke-width">2</CssParameter>
-			<CssParameter name="stroke-linejoin">round</CssParameter>
-			<CssParameter name="stroke-linecap">round</CssParameter>
-		</LineSymbolizer>
-	</Rule>
-	<Rule>
-		<Filter>[highway] = 'primary' or [highway] = 'primary_link'</Filter>
-		&maxscale_zoom10;
-		&minscale_zoom11;
-		<LineSymbolizer>
-			<CssParameter name="stroke">#cf9321</CssParameter>
-			<CssParameter name="stroke-width">2</CssParameter>
-			<CssParameter name="stroke-linejoin">round</CssParameter>
-			<CssParameter name="stroke-linecap">round</CssParameter>
-		</LineSymbolizer>
-	</Rule>
-	<Rule>
-		<Filter>[highway] = 'primary' or [highway] = 'primary_link'</Filter>
-		&maxscale_zoom12;
-		&minscale_zoom13;
-		<LineSymbolizer>
-			<CssParameter name="stroke">#cf9321</CssParameter>
+			<CssParameter name="stroke">#b3b1b2</CssParameter>
 			<CssParameter name="stroke-width">4</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 			<CssParameter name="stroke-linecap">round</CssParameter>
 		</LineSymbolizer>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'primary' or [highway] = 'primary_link'</Filter>
-		&maxscale_zoom14;
-		&minscale_zoom14;
-		<LineSymbolizer>
-			<CssParameter name="stroke">#cf9321</CssParameter>
-			<CssParameter name="stroke-width">5</CssParameter>
-			<CssParameter name="stroke-linejoin">round</CssParameter>
-			<CssParameter name="stroke-linecap">round</CssParameter>
-		</LineSymbolizer>
-	</Rule>
-	<Rule>
-		<Filter>[highway] = 'primary' or [highway] = 'primary_link'</Filter>
+		<Filter>[highway] = 'tertiary' or [highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' or [highway] = 'tertiary_link' or [highway] = 'residential_link' or [highway] = 'unclassified_link'</Filter>
 		&maxscale_zoom15;
 		&minscale_zoom15;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#cf9321</CssParameter>
+			<CssParameter name="stroke">#b3b1b2</CssParameter>
 			<CssParameter name="stroke-width">6</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 			<CssParameter name="stroke-linecap">round</CssParameter>
 		</LineSymbolizer>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'primary' or [highway] = 'primary_link'</Filter>
+		<Filter>[highway] = 'tertiary' or [highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' or [highway] = 'tertiary_link' or [highway] = 'residential_link' or [highway] = 'unclassified_link'</Filter>
 		&maxscale_zoom16;
 		&minscale_zoom17;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#cf9321</CssParameter>
+			<CssParameter name="stroke">#b3b1b2</CssParameter>
+			<CssParameter name="stroke-width">8</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-linecap">round</CssParameter>
+		</LineSymbolizer>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'tertiary' or [highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' or [highway] = 'tertiary_link' or [highway] = 'residential_link' or [highway] = 'unclassified_link'</Filter>
+		&maxscale_zoom18;
+		<LineSymbolizer>
+			<CssParameter name="stroke">#b3b1b2</CssParameter>
 			<CssParameter name="stroke-width">10</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 			<CssParameter name="stroke-linecap">round</CssParameter>
 		</LineSymbolizer>
 	</Rule>
-	<Rule>
-		<Filter>[highway] = 'primary' or [highway] = 'primary_link'</Filter>
-		&maxscale_zoom18;
-		<LineSymbolizer>
-			<CssParameter name="stroke">#cf9321</CssParameter>
-			<CssParameter name="stroke-width">12</CssParameter>
-			<CssParameter name="stroke-linejoin">round</CssParameter>
-			<CssParameter name="stroke-linecap">round</CssParameter>
-		</LineSymbolizer>
-	</Rule>
 </Style>
-<!--trunk casing-->
-<Style name="trunk casing">
+<!--street 3 casing-->
+<Style name="street 3 casing">
 	<Rule>
-		<Filter>[highway] = 'trunk' or [highway] = 'trunk_link'</Filter>
-		&maxscale_zoom9;
-		&minscale_zoom9;
-		<LineSymbolizer>
-			<CssParameter name="stroke">#ab4453</CssParameter>
-			<CssParameter name="stroke-width">2</CssParameter>
-			<CssParameter name="stroke-linejoin">round</CssParameter>
-			<CssParameter name="stroke-linecap">round</CssParameter>
-		</LineSymbolizer>
-	</Rule>
-	<Rule>
-		<Filter>[highway] = 'trunk' or [highway] = 'trunk_link'</Filter>
+		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
 		&maxscale_zoom10;
-		&minscale_zoom10;
+		&minscale_zoom11;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#af5959</CssParameter>
+			<CssParameter name="stroke">#bfb38f</CssParameter>
 			<CssParameter name="stroke-width">3</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 			<CssParameter name="stroke-linecap">round</CssParameter>
 		</LineSymbolizer>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'trunk' or [highway] = 'trunk_link'</Filter>
-		&maxscale_zoom11;
+		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
+		&maxscale_zoom12;
 		&minscale_zoom13;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#af5959</CssParameter>
+			<CssParameter name="stroke">#ccad70</CssParameter>
 			<CssParameter name="stroke-width">4</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 			<CssParameter name="stroke-linecap">round</CssParameter>
 		</LineSymbolizer>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'trunk' or [highway] = 'trunk_link'</Filter>
+		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
 		&maxscale_zoom14;
-		&minscale_zoom15;
+		&minscale_zoom14;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#af5959</CssParameter>
+			<CssParameter name="stroke">#ccad70</CssParameter>
 			<CssParameter name="stroke-width">5</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 			<CssParameter name="stroke-linecap">round</CssParameter>
 		</LineSymbolizer>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'trunk' or [highway] = 'trunk_link'</Filter>
+		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
+		&maxscale_zoom15;
+		&minscale_zoom15;
+		<LineSymbolizer>
+			<CssParameter name="stroke">#ccad70</CssParameter>
+			<CssParameter name="stroke-width">6</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-linecap">round</CssParameter>
+		</LineSymbolizer>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
 		&maxscale_zoom16;
 		&minscale_zoom17;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#af5959</CssParameter>
+			<CssParameter name="stroke">#ccad70</CssParameter>
 			<CssParameter name="stroke-width">10</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 			<CssParameter name="stroke-linecap">round</CssParameter>
 		</LineSymbolizer>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'trunk' or [highway] = 'trunk_link'</Filter>
+		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
 		&maxscale_zoom18;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#af5959</CssParameter>
+			<CssParameter name="stroke">#ccad70</CssParameter>
+			<CssParameter name="stroke-width">12</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-linecap">round</CssParameter>
+		</LineSymbolizer>
+	</Rule>
+</Style>
+<!--street 2 casing-->
+<Style name="street 2 casing">
+	<Rule>
+		<Filter>[highway] = 'trunk' or [highway] = 'primary' or [highway] = 'trunk_link' or [highway] = 'primary_link'</Filter>
+		&maxscale_zoom8;
+		&minscale_zoom8;
+		<LineSymbolizer>
+			<CssParameter name="stroke">#d99836</CssParameter>
+			<CssParameter name="stroke-width">2</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-linecap">round</CssParameter>
+		</LineSymbolizer>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'trunk' or [highway] = 'primary' or [highway] = 'trunk_link' or [highway] = 'primary_link'</Filter>
+		&maxscale_zoom9;
+		&minscale_zoom9;
+		<LineSymbolizer>
+			<CssParameter name="stroke">#d99836</CssParameter>
+			<CssParameter name="stroke-width">2.5</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-linecap">round</CssParameter>
+		</LineSymbolizer>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'trunk' or [highway] = 'primary' or [highway] = 'trunk_link' or [highway] = 'primary_link'</Filter>
+		&maxscale_zoom10;
+		&minscale_zoom11;
+		<LineSymbolizer>
+			<CssParameter name="stroke">#cc8f33</CssParameter>
+			<CssParameter name="stroke-width">3.5</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-linecap">round</CssParameter>
+		</LineSymbolizer>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'trunk' or [highway] = 'primary' or [highway] = 'trunk_link' or [highway] = 'primary_link'</Filter>
+		&maxscale_zoom12;
+		&minscale_zoom13;
+		<LineSymbolizer>
+			<CssParameter name="stroke">#cc8f33</CssParameter>
+			<CssParameter name="stroke-width">4</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-linecap">round</CssParameter>
+		</LineSymbolizer>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'trunk' or [highway] = 'primary' or [highway] = 'trunk_link' or [highway] = 'primary_link'</Filter>
+		&maxscale_zoom14;
+		&minscale_zoom14;
+		<LineSymbolizer>
+			<CssParameter name="stroke">#d0a14a</CssParameter>
+			<CssParameter name="stroke-width">5</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-linecap">round</CssParameter>
+		</LineSymbolizer>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'trunk' or [highway] = 'primary' or [highway] = 'trunk_link' or [highway] = 'primary_link'</Filter>
+		&maxscale_zoom15;
+		&minscale_zoom15;
+		<LineSymbolizer>
+			<CssParameter name="stroke">#d0a14a</CssParameter>
+			<CssParameter name="stroke-width">6</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-linecap">round</CssParameter>
+		</LineSymbolizer>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'trunk' or [highway] = 'primary' or [highway] = 'trunk_link' or [highway] = 'primary_link'</Filter>
+		&maxscale_zoom16;
+		&minscale_zoom17;
+		<LineSymbolizer>
+			<CssParameter name="stroke">#d0a14a</CssParameter>
+			<CssParameter name="stroke-width">10</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-linecap">round</CssParameter>
+		</LineSymbolizer>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'trunk' or [highway] = 'primary' or [highway] = 'trunk_link' or [highway] = 'primary_link'</Filter>
+		&maxscale_zoom18;
+		<LineSymbolizer>
+			<CssParameter name="stroke">#d0a14a</CssParameter>
 			<CssParameter name="stroke-width">12</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 			<CssParameter name="stroke-linecap">round</CssParameter>
@@ -437,319 +413,272 @@
 	</Rule>
 </Style>
 
-<!--tertiary and residential-->
-<Style name="tertiary">
+<!--street 4-->
+<Style name="street 4">
 	<Rule>
-		<Filter>[highway] = 'tertiary' or [highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'tertiary_link' or [highway] = 'residential_link' or [highway] = 'unclassified_link'</Filter>
+		<Filter>[highway] = 'tertiary' or [highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' or [highway] = 'tertiary_link' or [highway] = 'residential_link' or [highway] = 'unclassified_link'</Filter>
 		&maxscale_zoom12;
 		&minscale_zoom12;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#b2b2b2</CssParameter>
-			<CssParameter name="stroke-width">.5</CssParameter>
-			<CssParameter name="stroke-opacity">.5</CssParameter>
+			<CssParameter name="stroke">#b4b4b4</CssParameter>
+			<CssParameter name="stroke-width">.3</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 			<CssParameter name="stroke-linecap">round</CssParameter>
 		</LineSymbolizer>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'tertiary' or [highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'tertiary_link' or [highway] = 'residential_link' or [highway] = 'unclassified_link'</Filter>
+		<Filter>[highway] = 'tertiary' or [highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' or [highway] = 'tertiary_link' or [highway] = 'residential_link' or [highway] = 'unclassified_link' or [highway] = 'tertiary_link' or [highway] = 'residential_link' or [highway] = 'unclassified_link'</Filter>
 		&maxscale_zoom13;
 		&minscale_zoom13;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#bebebe</CssParameter>
+			<CssParameter name="stroke">#b4b4b4</CssParameter>
 			<CssParameter name="stroke-width">.5</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 			<CssParameter name="stroke-linecap">round</CssParameter>
 		</LineSymbolizer>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'tertiary' or [highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'tertiary_link' or [highway] = 'residential_link' or [highway] = 'unclassified_link'</Filter>
+		<Filter>[highway] = 'tertiary' or [highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' or [highway] = 'tertiary_link' or [highway] = 'residential_link' or [highway] = 'unclassified_link'</Filter>
 		&maxscale_zoom14;
-		&minscale_zoom15;
+		&minscale_zoom14;
 		<LineSymbolizer>
 			<CssParameter name="stroke">#ffffff</CssParameter>
-			<CssParameter name="stroke-width">1.5</CssParameter>
-			<CssParameter name="stroke-linejoin">round</CssParameter>
-			<CssParameter name="stroke-linecap">round</CssParameter>
-		</LineSymbolizer>
-	</Rule>
-	<Rule>
-		<Filter>[highway] = 'tertiary' or [highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'tertiary_link' or [highway] = 'residential_link' or [highway] = 'unclassified_link'</Filter>
-		&maxscale_zoom16;
-		&minscale_zoom17;
-		<LineSymbolizer>
-			<CssParameter name="stroke">#ffffff</CssParameter>
-			<CssParameter name="stroke-width">5</CssParameter>
-			<CssParameter name="stroke-linejoin">round</CssParameter>
-			<CssParameter name="stroke-linecap">round</CssParameter>
-		</LineSymbolizer>
-	</Rule>
-	<Rule>
-		<Filter>[highway] = 'tertiary' or [highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'tertiary_link' or [highway] = 'residential_link' or [highway] = 'unclassified_link'</Filter>
-		&maxscale_zoom18;
-		<LineSymbolizer>
-			<CssParameter name="stroke">#ffffff</CssParameter>
-			<CssParameter name="stroke-width">6</CssParameter>
-			<CssParameter name="stroke-linejoin">round</CssParameter>
-			<CssParameter name="stroke-linecap">round</CssParameter>
-		</LineSymbolizer>
-	</Rule>
-</Style>
-<!--secondary-->
-<Style name="secondary">
-	<Rule>
-		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
-		&maxscale_zoom8;
-		&minscale_zoom9;
-		<LineSymbolizer>
-			<CssParameter name="stroke">#bebebe</CssParameter>
-			<CssParameter name="stroke-width">.5</CssParameter>
-			<CssParameter name="stroke-linejoin">round</CssParameter>
-			<CssParameter name="stroke-linecap">round</CssParameter>
-		</LineSymbolizer>
-	</Rule>
-	<Rule>
-		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
-		&maxscale_zoom10;
-		&minscale_zoom11;
-		<LineSymbolizer>
-			<CssParameter name="stroke">#bebebe</CssParameter>
-			<CssParameter name="stroke-width">1</CssParameter>
-			<CssParameter name="stroke-linejoin">round</CssParameter>
-			<CssParameter name="stroke-linecap">round</CssParameter>
-		</LineSymbolizer>
-	</Rule>
-	<Rule>
-		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
-		&maxscale_zoom12;
-		&minscale_zoom13;
-		<LineSymbolizer>
-			<CssParameter name="stroke">#ffffff</CssParameter>
-			<CssParameter name="stroke-width">1</CssParameter>
-			<CssParameter name="stroke-linejoin">round</CssParameter>
-			<CssParameter name="stroke-linecap">round</CssParameter>
-		</LineSymbolizer>
-	</Rule>
-	<Rule>
-		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
-		&maxscale_zoom14;
-		&minscale_zoom15;
-		<LineSymbolizer>
-			<CssParameter name="stroke">#ffffff</CssParameter>
-			<CssParameter name="stroke-width">3</CssParameter>
-			<CssParameter name="stroke-linejoin">round</CssParameter>
-			<CssParameter name="stroke-linecap">round</CssParameter>
-		</LineSymbolizer>
-	</Rule>
-	<Rule>
-		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
-		&maxscale_zoom16;
-		&minscale_zoom17;
-		<LineSymbolizer>
-			<CssParameter name="stroke">#ffffff</CssParameter>
-			<CssParameter name="stroke-width">5</CssParameter>
-			<CssParameter name="stroke-linejoin">round</CssParameter>
-			<CssParameter name="stroke-linecap">round</CssParameter>
-		</LineSymbolizer>
-	</Rule>
-	<Rule>
-		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
-		&maxscale_zoom18;
-		<LineSymbolizer>
-			<CssParameter name="stroke">#ffffff</CssParameter>
-			<CssParameter name="stroke-width">6</CssParameter>
-			<CssParameter name="stroke-linejoin">round</CssParameter>
-			<CssParameter name="stroke-linecap">round</CssParameter>
-		</LineSymbolizer>
-	</Rule>
-</Style>
-<!--primary-->
-<Style name="primary">
-	<Rule>
-		<Filter>[highway] = 'primary' or [highway] = 'primary_link'</Filter>
-		&maxscale_zoom7;
-		&minscale_zoom7;
-		<LineSymbolizer>
-			<CssParameter name="stroke">#bebebe</CssParameter>
-			<CssParameter name="stroke-width">.5</CssParameter>
-			<CssParameter name="stroke-opacity">.75</CssParameter>
-			<CssParameter name="stroke-linejoin">round</CssParameter>
-			<CssParameter name="stroke-linecap">round</CssParameter>
-		</LineSymbolizer>
-	</Rule>
-	<Rule>
-		<Filter>[highway] = 'primary' or [highway] = 'primary_link'</Filter>
-		&maxscale_zoom8;
-		&minscale_zoom8;
-		<LineSymbolizer>
-			<CssParameter name="stroke">#e6d373</CssParameter>
-			<CssParameter name="stroke-width">1</CssParameter>
-			<CssParameter name="stroke-linejoin">round</CssParameter>
-			<CssParameter name="stroke-linecap">round</CssParameter>
-		</LineSymbolizer>
-	</Rule>
-	<Rule>
-		<Filter>[highway] = 'primary' or [highway] = 'primary_link'</Filter>
-		&maxscale_zoom9;
-		&minscale_zoom9;
-		<LineSymbolizer>
-			<CssParameter name="stroke">#fdeb8c</CssParameter>
-			<CssParameter name="stroke-width">.5</CssParameter>
-			<CssParameter name="stroke-linejoin">round</CssParameter>
-			<CssParameter name="stroke-linecap">round</CssParameter>
-		</LineSymbolizer>
-	</Rule>
-	<Rule>
-		<Filter>[highway] = 'primary' or [highway] = 'primary_link'</Filter>
-		&maxscale_zoom10;
-		&minscale_zoom11;
-		<LineSymbolizer>
-			<CssParameter name="stroke">#fbe297</CssParameter>
-			<CssParameter name="stroke-width">.5</CssParameter>
-			<CssParameter name="stroke-linejoin">round</CssParameter>
-			<CssParameter name="stroke-linecap">round</CssParameter>
-		</LineSymbolizer>
-	</Rule>
-	<Rule>
-		<Filter>[highway] = 'primary' or [highway] = 'primary_link'</Filter>
-		&maxscale_zoom12;
-		&minscale_zoom13;
-		<LineSymbolizer>
-			<CssParameter name="stroke">#fbe297</CssParameter>
 			<CssParameter name="stroke-width">2</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 			<CssParameter name="stroke-linecap">round</CssParameter>
 		</LineSymbolizer>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'primary' or [highway] = 'primary_link'</Filter>
-		&maxscale_zoom14;
-		&minscale_zoom14;
-		<LineSymbolizer>
-			<CssParameter name="stroke">#fbe297</CssParameter>
-			<CssParameter name="stroke-width">3</CssParameter>
-			<CssParameter name="stroke-linejoin">round</CssParameter>
-			<CssParameter name="stroke-linecap">round</CssParameter>
-		</LineSymbolizer>
-	</Rule>
-	<Rule>
-		<Filter>[highway] = 'primary' or [highway] = 'primary_link'</Filter>
+		<Filter>[highway] = 'tertiary' or [highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' or [highway] = 'tertiary_link' or [highway] = 'residential_link' or [highway] = 'unclassified_link'</Filter>
 		&maxscale_zoom15;
 		&minscale_zoom15;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#fbe297</CssParameter>
+			<CssParameter name="stroke">#ffffff</CssParameter>
 			<CssParameter name="stroke-width">4</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 			<CssParameter name="stroke-linecap">round</CssParameter>
 		</LineSymbolizer>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'primary' or [highway] = 'primary_link'</Filter>
+		<Filter>[highway] = 'tertiary' or [highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' or [highway] = 'tertiary_link' or [highway] = 'residential_link' or [highway] = 'unclassified_link'</Filter>
 		&maxscale_zoom16;
 		&minscale_zoom17;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#fbe297</CssParameter>
+			<CssParameter name="stroke">#ffffff</CssParameter>
+			<CssParameter name="stroke-width">5</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-linecap">round</CssParameter>
+		</LineSymbolizer>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'tertiary' or [highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' or [highway] = 'tertiary_link' or [highway] = 'residential_link' or [highway] = 'unclassified_link'</Filter>
+		&maxscale_zoom18;
+		<LineSymbolizer>
+			<CssParameter name="stroke">#ffffff</CssParameter>
 			<CssParameter name="stroke-width">6</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 			<CssParameter name="stroke-linecap">round</CssParameter>
 		</LineSymbolizer>
 	</Rule>
-	<Rule>
-		<Filter>[highway] = 'primary' or [highway] = 'primary_link'</Filter>
-		&maxscale_zoom18;
-		<LineSymbolizer>
-			<CssParameter name="stroke">#fbe297</CssParameter>
-			<CssParameter name="stroke-width">8</CssParameter>
-			<CssParameter name="stroke-linejoin">round</CssParameter>
-			<CssParameter name="stroke-linecap">round</CssParameter>
-		</LineSymbolizer>
-	</Rule>
 </Style>
-<!--trunk-->
-<Style name="trunk">
+<!--street 3-->
+<Style name="street 3">
 	<Rule>
-		<Filter>[highway] = 'trunk' or [highway] = 'trunk_link'</Filter>
-		&maxscale_zoom7;
-		&minscale_zoom7;
-		<LineSymbolizer>
-			<CssParameter name="stroke">#d96d6d</CssParameter>
-			<CssParameter name="stroke-width">1</CssParameter>
-			<CssParameter name="stroke-opacity">.75</CssParameter>
-			<CssParameter name="stroke-linejoin">round</CssParameter>
-			<CssParameter name="stroke-linecap">round</CssParameter>
-		</LineSymbolizer>
-	</Rule>
-	<Rule>
-		<Filter>[highway] = 'trunk' or [highway] = 'trunk_link'</Filter>
+		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
 		&maxscale_zoom8;
 		&minscale_zoom8;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#faafbb</CssParameter>
-			<CssParameter name="stroke-width">1</CssParameter>
-			<CssParameter name="stroke-linejoin">round</CssParameter>
-			<CssParameter name="stroke-linecap">round</CssParameter>
-		</LineSymbolizer>
-	</Rule>
-	<Rule>
-		<Filter>[highway] = 'trunk' or [highway] = 'trunk_link'</Filter>
-		&maxscale_zoom9;
-		&minscale_zoom9;
-		<LineSymbolizer>
-			<CssParameter name="stroke">#faafbb</CssParameter>
+			<CssParameter name="stroke">#bfbfbf</CssParameter>
 			<CssParameter name="stroke-width">.5</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 			<CssParameter name="stroke-linecap">round</CssParameter>
 		</LineSymbolizer>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'trunk' or [highway] = 'trunk_link'</Filter>
-		&maxscale_zoom10;
-		&minscale_zoom10;
+		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
+		&maxscale_zoom9;
+		&minscale_zoom9;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#e2a9a9</CssParameter>
+			<CssParameter name="stroke">#a99f85</CssParameter>
+			<CssParameter name="stroke-width">.5</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-linecap">round</CssParameter>
+		</LineSymbolizer>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
+		&maxscale_zoom10;
+		&minscale_zoom11;
+		<LineSymbolizer>
+			<CssParameter name="stroke">#f4faa0</CssParameter>
 			<CssParameter name="stroke-width">1</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 			<CssParameter name="stroke-linecap">round</CssParameter>
 		</LineSymbolizer>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'trunk' or [highway] = 'trunk_link'</Filter>
-		&maxscale_zoom11;
+		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
+		&maxscale_zoom12;
 		&minscale_zoom13;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#e2a9a9</CssParameter>
-			<CssParameter name="stroke-width">1.5</CssParameter>
+			<CssParameter name="stroke">#f2f291</CssParameter>
+			<CssParameter name="stroke-width">2</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 			<CssParameter name="stroke-linecap">round</CssParameter>
 		</LineSymbolizer>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'trunk' or [highway] = 'trunk_link'</Filter>
+		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
 		&maxscale_zoom14;
-		&minscale_zoom15;
+		&minscale_zoom14;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#e2a9a9</CssParameter>
+			<CssParameter name="stroke">#f6f0a3</CssParameter>
 			<CssParameter name="stroke-width">3</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 			<CssParameter name="stroke-linecap">round</CssParameter>
 		</LineSymbolizer>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'trunk' or [highway] = 'trunk_link'</Filter>
+		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
+		&maxscale_zoom15;
+		&minscale_zoom15;
+		<LineSymbolizer>
+			<CssParameter name="stroke">#f6f0a3</CssParameter>
+			<CssParameter name="stroke-width">4</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-linecap">round</CssParameter>
+		</LineSymbolizer>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
 		&maxscale_zoom16;
 		&minscale_zoom17;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#e2a9a9</CssParameter>
+			<CssParameter name="stroke">#f6f0a3</CssParameter>
 			<CssParameter name="stroke-width">6</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 			<CssParameter name="stroke-linecap">round</CssParameter>
 		</LineSymbolizer>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'trunk' or [highway] = 'trunk_link'</Filter>
+		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
 		&maxscale_zoom18;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#e2a9a9</CssParameter>
+			<CssParameter name="stroke">#f6f0a3</CssParameter>
+			<CssParameter name="stroke-width">8</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-linecap">round</CssParameter>
+		</LineSymbolizer>
+	</Rule>
+</Style>
+<!--street 2-->
+<Style name="street 2">
+	<Rule>
+		<Filter>[highway] = 'trunk' or [highway] = 'primary' or [highway] = 'trunk_link' or [highway] = 'primary_link'</Filter>
+		&maxscale_zoom6;
+		&minscale_zoom6;
+		<LineSymbolizer>
+			<CssParameter name="stroke">#646464</CssParameter>
+			<CssParameter name="stroke-width">.5</CssParameter>
+			<CssParameter name="stroke-opacity">.15</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-linecap">round</CssParameter>
+		</LineSymbolizer>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'trunk' or [highway] = 'primary' or [highway] = 'trunk_link' or [highway] = 'primary_link'</Filter>
+		&maxscale_zoom7;
+		&minscale_zoom7;
+		<LineSymbolizer>
+			<CssParameter name="stroke">#e6b216</CssParameter>
+			<CssParameter name="stroke-width">.75</CssParameter>
+			<CssParameter name="stroke-opacity">.5</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-linecap">round</CssParameter>
+		</LineSymbolizer>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'trunk' or [highway] = 'primary' or [highway] = 'trunk_link' or [highway] = 'primary_link'</Filter>
+		&maxscale_zoom8;
+		&minscale_zoom8;
+		<LineSymbolizer>
+			<CssParameter name="stroke">#f2c279</CssParameter>
+			<CssParameter name="stroke-width">1</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-linecap">round</CssParameter>
+		</LineSymbolizer>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'trunk' or [highway] = 'primary' or [highway] = 'trunk_link' or [highway] = 'primary_link'</Filter>
+		&maxscale_zoom9;
+		&minscale_zoom9;
+		<LineSymbolizer>
+			<CssParameter name="stroke">#f2c279</CssParameter>
+			<CssParameter name="stroke-width">1</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-linecap">round</CssParameter>
+		</LineSymbolizer>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'trunk' or [highway] = 'primary' or [highway] = 'trunk_link' or [highway] = 'primary_link'</Filter>
+		&maxscale_zoom10;
+		&minscale_zoom11;
+		<LineSymbolizer>
+			<CssParameter name="stroke">#fac87d</CssParameter>
+			<CssParameter name="stroke-width">1.5</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-linecap">round</CssParameter>
+		</LineSymbolizer>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'trunk' or [highway] = 'primary' or [highway] = 'trunk_link' or [highway] = 'primary_link'</Filter>
+		&maxscale_zoom12;
+		&minscale_zoom13;
+		<LineSymbolizer>
+			<CssParameter name="stroke">#fac87d</CssParameter>
+			<CssParameter name="stroke-width">2</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-linecap">round</CssParameter>
+		</LineSymbolizer>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'trunk' or [highway] = 'primary' or [highway] = 'trunk_link' or [highway] = 'primary_link'</Filter>
+		&maxscale_zoom14;
+		&minscale_zoom14;
+		<LineSymbolizer>
+			<CssParameter name="stroke">#f5d290</CssParameter>
+			<CssParameter name="stroke-width">3</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-linecap">round</CssParameter>
+		</LineSymbolizer>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'trunk' or [highway] = 'primary' or [highway] = 'trunk_link' or [highway] = 'primary_link'</Filter>
+		&maxscale_zoom15;
+		&minscale_zoom15;
+		<LineSymbolizer>
+			<CssParameter name="stroke">#f5d290</CssParameter>
+			<CssParameter name="stroke-width">4</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-linecap">round</CssParameter>
+		</LineSymbolizer>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'trunk' or [highway] = 'primary' or [highway] = 'trunk_link' or [highway] = 'primary_link'</Filter>
+		&maxscale_zoom16;
+		&minscale_zoom17;
+		<LineSymbolizer>
+			<CssParameter name="stroke">#f5d290</CssParameter>
+			<CssParameter name="stroke-width">6</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-linecap">round</CssParameter>
+		</LineSymbolizer>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'trunk' or [highway] = 'primary' or [highway] = 'trunk_link' or [highway] = 'primary_link'</Filter>
+		&maxscale_zoom18;
+		<LineSymbolizer>
+			<CssParameter name="stroke">#f5d290</CssParameter>
 			<CssParameter name="stroke-width">8</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 			<CssParameter name="stroke-linecap">round</CssParameter>
@@ -758,35 +687,24 @@
 </Style>
 
 <!--interchange casing-->
-<Style name="interchange casing">
-	<Rule>
-		<Filter>[highway] = 'motorway_link'</Filter>
-		&maxscale_zoom8;
-		&minscale_zoom10;
-		<LineSymbolizer>
-			<CssParameter name="stroke">#ab5468</CssParameter>
-			<CssParameter name="stroke-width">3</CssParameter>
-			<CssParameter name="stroke-linejoin">round</CssParameter>
-			<CssParameter name="stroke-linecap">round</CssParameter>
-		</LineSymbolizer>
-	</Rule>
-	<Rule>
-		<Filter>[highway] = 'motorway_link'</Filter>
-		&maxscale_zoom11;
-		&minscale_zoom13;
-		<LineSymbolizer>
-			<CssParameter name="stroke">#ab5468</CssParameter>
-			<CssParameter name="stroke-width">3</CssParameter>
-			<CssParameter name="stroke-linejoin">round</CssParameter>
-			<CssParameter name="stroke-linecap">round</CssParameter>
-		</LineSymbolizer>
-	</Rule>
+<Style name="ramp casing">
 	<Rule>
 		<Filter>[highway] = 'motorway_link'</Filter>
 		&maxscale_zoom14;
-		&minscale_zoom15;
+		&minscale_zoom14;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#ab5468</CssParameter>
+			<CssParameter name="stroke">#b89e7d</CssParameter>
+			<CssParameter name="stroke-width">3</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-linecap">round</CssParameter>
+		</LineSymbolizer>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'motorway_link'</Filter>
+		&maxscale_zoom15;
+		&minscale_zoom16;
+		<LineSymbolizer>
+			<CssParameter name="stroke">#b89e7d</CssParameter>
 			<CssParameter name="stroke-width">5</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 			<CssParameter name="stroke-linecap">round</CssParameter>
@@ -794,11 +712,11 @@
 	</Rule>
 	<Rule>
 		<Filter>[highway] = 'motorway_link'</Filter>
-		&maxscale_zoom16;
+		&maxscale_zoom17;
 		&minscale_zoom17;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#ab5468</CssParameter>
-			<CssParameter name="stroke-width">8</CssParameter>
+			<CssParameter name="stroke">#b89e7d</CssParameter>
+			<CssParameter name="stroke-width">6</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 			<CssParameter name="stroke-linecap">round</CssParameter>
 		</LineSymbolizer>
@@ -807,7 +725,7 @@
 		<Filter>[highway] = 'motorway_link'</Filter>
 		&maxscale_zoom18;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#ab5468</CssParameter>
+			<CssParameter name="stroke">#b89e7d</CssParameter>
 			<CssParameter name="stroke-width">10</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 			<CssParameter name="stroke-linecap">round</CssParameter>
@@ -815,13 +733,23 @@
 	</Rule>
 </Style>
 <!--street 1 casing-->
-<Style name="motorway casing">
+<Style name="street 1 casing">
 	<Rule>
 		<Filter>[highway] = 'motorway'</Filter>
 		&maxscale_zoom10;
+		&minscale_zoom11;
+		<LineSymbolizer>
+			<CssParameter name="stroke">#2e4880</CssParameter>
+			<CssParameter name="stroke-width">5</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+		</LineSymbolizer>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'motorway'</Filter>
+		&maxscale_zoom12;
 		&minscale_zoom13;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#ab5468</CssParameter>
+			<CssParameter name="stroke">#2e4880</CssParameter>
 			<CssParameter name="stroke-width">6</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 		</LineSymbolizer>
@@ -831,7 +759,7 @@
 		&maxscale_zoom14;
 		&minscale_zoom15;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#ab5468</CssParameter>
+			<CssParameter name="stroke">#495f8c</CssParameter>
 			<CssParameter name="stroke-width">8</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 		</LineSymbolizer>
@@ -841,8 +769,8 @@
 		&maxscale_zoom16;
 		&minscale_zoom17;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#ab5468</CssParameter>
-			<CssParameter name="stroke-width">12</CssParameter>
+			<CssParameter name="stroke">#495f8c</CssParameter>
+			<CssParameter name="stroke-width">10</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 		</LineSymbolizer>
 	</Rule>
@@ -850,32 +778,21 @@
 		<Filter>[highway] = 'motorway'</Filter>
 		&maxscale_zoom18;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#ab5468</CssParameter>
-			<CssParameter name="stroke-width">16</CssParameter>
+			<CssParameter name="stroke">#495f8c</CssParameter>
+			<CssParameter name="stroke-width">12</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 		</LineSymbolizer>
 	</Rule>
 </Style>
 <!--interchange-->
-<Style name="interchange">
+<Style name="ramp">
 	<Rule>
 		<Filter>[highway] = 'motorway_link'</Filter>
-		&maxscale_zoom8;
-		&minscale_zoom10;
-		<LineSymbolizer>
-			<CssParameter name="stroke">#e55050</CssParameter>
-			<CssParameter name="stroke-width">1</CssParameter>
-			<CssParameter name="stroke-linejoin">round</CssParameter>
-			<CssParameter name="stroke-linecap">round</CssParameter>
-		</LineSymbolizer>
-	</Rule>
-	<Rule>
-		<Filter>[highway] = 'motorway_link'</Filter>
-		&maxscale_zoom11;
+		&maxscale_zoom12;
 		&minscale_zoom13;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#e55050</CssParameter>
-			<CssParameter name="stroke-width">1</CssParameter>
+			<CssParameter name="stroke">#aaa096</CssParameter>
+			<CssParameter name="stroke-width">1.5</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 			<CssParameter name="stroke-linecap">round</CssParameter>
 		</LineSymbolizer>
@@ -883,9 +800,20 @@
 	<Rule>
 		<Filter>[highway] = 'motorway_link'</Filter>
 		&maxscale_zoom14;
-		&minscale_zoom15;
+		&minscale_zoom14;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#e55050</CssParameter>
+			<CssParameter name="stroke">#dcbf95</CssParameter>
+			<CssParameter name="stroke-width">1</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-linecap">round</CssParameter>
+		</LineSymbolizer>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'motorway_link'</Filter>
+		&maxscale_zoom15;
+		&minscale_zoom16;
+		<LineSymbolizer>
+			<CssParameter name="stroke">#dcbf95</CssParameter>
 			<CssParameter name="stroke-width">3</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 			<CssParameter name="stroke-linecap">round</CssParameter>
@@ -893,10 +821,10 @@
 	</Rule>
 	<Rule>
 		<Filter>[highway] = 'motorway_link'</Filter>
-		&maxscale_zoom16;
+		&maxscale_zoom17;
 		&minscale_zoom17;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#e55050</CssParameter>
+			<CssParameter name="stroke">#dcbf95</CssParameter>
 			<CssParameter name="stroke-width">4</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 			<CssParameter name="stroke-linecap">round</CssParameter>
@@ -906,23 +834,34 @@
 		<Filter>[highway] = 'motorway_link'</Filter>
 		&maxscale_zoom18;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#e55050</CssParameter>
+			<CssParameter name="stroke">#dcbf95</CssParameter>
 			<CssParameter name="stroke-width">6</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 			<CssParameter name="stroke-linecap">round</CssParameter>
 		</LineSymbolizer>
 	</Rule>
 </Style>
-<!--motorway-->
-<Style name="motorway">
+<!--street 1-->
+<Style name="street 1">
 	<Rule>
 		<Filter>[highway] = 'motorway'</Filter>
 		&maxscale_zoom5;
+		&minscale_zoom5;
+		<LineSymbolizer>
+			<CssParameter name="stroke">#0040ff</CssParameter>
+			<CssParameter name="stroke-width">1</CssParameter>
+			<CssParameter name="stroke-opacity">.1</CssParameter>		
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+		</LineSymbolizer>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'motorway'</Filter>
+		&maxscale_zoom6;
 		&minscale_zoom6;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#73452e</CssParameter>
-			<CssParameter name="stroke-width">1</CssParameter>
-			<CssParameter name="stroke-opacity">.25</CssParameter>
+			<CssParameter name="stroke">#0040ff</CssParameter>
+			<CssParameter name="stroke-width">1.5</CssParameter>
+			<CssParameter name="stroke-opacity">.2</CssParameter>		
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 		</LineSymbolizer>
 	</Rule>
@@ -931,38 +870,38 @@
 		&maxscale_zoom7;
 		&minscale_zoom7;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#d96d6d</CssParameter>
-			<CssParameter name="stroke-width">1</CssParameter>
-			<CssParameter name="stroke-opacity">.75</CssParameter>
+			<CssParameter name="stroke">#406dcc</CssParameter>
+			<CssParameter name="stroke-width">1.5</CssParameter>
+			<CssParameter name="stroke-opacity">.5</CssParameter>		
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 		</LineSymbolizer>
 	</Rule>
 	<Rule>
 		<Filter>[highway] = 'motorway'</Filter>
 		&maxscale_zoom8;
-		&minscale_zoom8;
+		&minscale_zoom9;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#d94c4c</CssParameter>
+			<CssParameter name="stroke">#476bb2</CssParameter>
 			<CssParameter name="stroke-width">4</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 		</LineSymbolizer>
 	</Rule>
 	<Rule>
 		<Filter>[highway] = 'motorway'</Filter>
-		&maxscale_zoom9;
-		&minscale_zoom9;
+		&maxscale_zoom10;
+		&minscale_zoom11;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#d94c4c</CssParameter>
-			<CssParameter name="stroke-width">5</CssParameter>
+			<CssParameter name="stroke">#6c91d9</CssParameter>
+			<CssParameter name="stroke-width">3</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 		</LineSymbolizer>
 	</Rule>
 	<Rule>
 		<Filter>[highway] = 'motorway'</Filter>
-		&maxscale_zoom10;
+		&maxscale_zoom12;
 		&minscale_zoom13;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#e55050</CssParameter>
+			<CssParameter name="stroke">#6c91d9</CssParameter>
 			<CssParameter name="stroke-width">4</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 		</LineSymbolizer>
@@ -972,7 +911,7 @@
 		&maxscale_zoom14;
 		&minscale_zoom15;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#e55050</CssParameter>
+			<CssParameter name="stroke">#6c91d9</CssParameter>
 			<CssParameter name="stroke-width">5</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 		</LineSymbolizer>
@@ -982,7 +921,7 @@
 		&maxscale_zoom16;
 		&minscale_zoom17;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#e55050</CssParameter>
+			<CssParameter name="stroke">#6c91d9</CssParameter>
 			<CssParameter name="stroke-width">7</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 		</LineSymbolizer>
@@ -991,41 +930,41 @@
 		<Filter>[highway] = 'motorway'</Filter>
 		&maxscale_zoom18;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#e55050</CssParameter>
+			<CssParameter name="stroke">#6c91d9</CssParameter>
 			<CssParameter name="stroke-width">10</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 		</LineSymbolizer>
 	</Rule>
 </Style>
-<!--motorway centerline-->
-<Style name="motorway centerline">
+<!--street 1 centerline-->
+<Style name="centerline">
 	<Rule>
 		<Filter>[highway] = 'motorway'</Filter>
 		&maxscale_zoom8;
-		&minscale_zoom8;
-		<LineSymbolizer>
-			<CssParameter name="stroke">#fae57d</CssParameter>
-			<CssParameter name="stroke-width">1</CssParameter>
-			<CssParameter name="stroke-linejoin">round</CssParameter>
-		</LineSymbolizer>
-	</Rule>
-	<Rule>
-		<Filter>[highway] = 'motorway'</Filter>
-		&maxscale_zoom9;
 		&minscale_zoom9;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#fae57d</CssParameter>
-			<CssParameter name="stroke-width">1.5</CssParameter>
+			<CssParameter name="stroke">#b6caf2</CssParameter>
+			<CssParameter name="stroke-width">1</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 		</LineSymbolizer>
 	</Rule>
 	<Rule>
 		<Filter>[highway] = 'motorway'</Filter>
 		&maxscale_zoom10;
+		&minscale_zoom11;
+		<LineSymbolizer>
+			<CssParameter name="stroke">#d3dbeb</CssParameter>
+			<CssParameter name="stroke-width">1</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+		</LineSymbolizer>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'motorway'</Filter>
+		&maxscale_zoom12;
 		&minscale_zoom13;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#ffe14c</CssParameter>
-			<CssParameter name="stroke-width">1</CssParameter>
+			<CssParameter name="stroke">#d3dbeb</CssParameter>
+			<CssParameter name="stroke-width">1.5</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 		</LineSymbolizer>
 	</Rule>
@@ -1034,7 +973,7 @@
 		&maxscale_zoom14;
 		&minscale_zoom15;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#ffe14c</CssParameter>
+			<CssParameter name="stroke">#d3dbeb</CssParameter>
 			<CssParameter name="stroke-width">2</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 		</LineSymbolizer>
@@ -1044,7 +983,7 @@
 		&maxscale_zoom16;
 		&minscale_zoom17;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#ffe14c</CssParameter>
+			<CssParameter name="stroke">#d3dbeb</CssParameter>
 			<CssParameter name="stroke-width">3</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 		</LineSymbolizer>
@@ -1053,12 +992,13 @@
 		<Filter>[highway] = 'motorway'</Filter>
 		&maxscale_zoom18;
 		<LineSymbolizer>
-			<CssParameter name="stroke">#ffe14c</CssParameter>
+			<CssParameter name="stroke">#d3dbeb</CssParameter>
 			<CssParameter name="stroke-width">4</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
 		</LineSymbolizer>
 	</Rule>
 </Style>
+
 
 <Layer name="ferry-routes" status="on" srs="&osm2pgsql_projection;">
 	<StyleName>ferry-routes</StyleName>
@@ -1107,9 +1047,16 @@
     <StyleName>runway</StyleName>
     <Datasource>
       <Parameter name="table">
-      (select way,aeroway
+      (select way,highway,horse,bicycle,foot,construction,aeroway,service,
+       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel,
+       case when bridge in ('yes','true','1') then 'yes'::text else bridge end as bridge,
+       case when railway in ('spur','siding')
+              or (railway='rail' and service in ('spur','siding','yard'))
+            then 'spur-siding-yard'::text else railway end as railway
        from &prefix;_line
-       where aeroway in ('runway','taxiway')
+       where highway is not null
+          or aeroway in ('runway','taxiway')
+          or railway in ('light_rail','narrow_gauge','funicular','rail','subway','tram','spur','siding','platform','disused','abandoned','construction')
        order by z_order) as roads
       </Parameter>
       &datasource-settings;
@@ -1119,66 +1066,71 @@
     <StyleName>rail</StyleName>
     <Datasource>
       <Parameter name="table">
-	      (select way,railway,
-	       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
-	       from &prefix;_line
-	       where railway is not null
-	       order by z_order
-	      ) as roads
-      </Parameter>
-      &datasource-settings;
-    </Datasource>
-</Layer>
-<Layer name="tertiary casing" status="on" srs="&osm2pgsql_projection;">
-    <StyleName>tertiary casing</StyleName>
-    <Datasource>
-      <Parameter name="table">
-	      (select way,highway,
+	      (select way,highway,railway,
 	       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
 	       from &prefix;_line
 	       where highway is not null
+	          or railway is not null
 	       order by z_order
 	      ) as roads
       </Parameter>
       &datasource-settings;
     </Datasource>
 </Layer>
-<Layer name="secondary casing" status="on" srs="&osm2pgsql_projection;">
-	<StyleName>secondary casing</StyleName>
+<Layer name="ramp casing" status="on" srs="&osm2pgsql_projection;">
+	<StyleName>ramp casing</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,
+      (select way,highway,railway,
        case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
        from &prefix;_roads
-       where highway in ('secondary', 'secondary_link')
+       where highway is not null
+          or railway is not null
        order by z_order
       ) as roads
 		</Parameter>
 	&datasource-settings;
 	</Datasource>
 </Layer>
-<Layer name="primary casing" status="on" srs="&osm2pgsql_projection;">
-	<StyleName>primary casing</StyleName>
+<Layer name="street 4 casing" status="on" srs="&osm2pgsql_projection;">
+    <StyleName>street 4 casing</StyleName>
+    <Datasource>
+      <Parameter name="table">
+	      (select way,highway,railway,
+	       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
+	       from &prefix;_line
+	       where highway is not null
+	          or railway is not null
+	       order by z_order
+	      ) as roads
+      </Parameter>
+      &datasource-settings;
+    </Datasource>
+</Layer>
+<Layer name="street 3 casing" status="on" srs="&osm2pgsql_projection;">
+	<StyleName>street 3 casing</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,
+      (select way,highway,railway,
        case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
        from &prefix;_roads
-       where highway in ('primary', 'primary_link')
+       where highway is not null
+          or railway is not null
        order by z_order
       ) as roads
 		</Parameter>
 	&datasource-settings;
 	</Datasource>
 </Layer>
-<Layer name="trunk casing" status="on" srs="&osm2pgsql_projection;">
-	<StyleName>trunk casing</StyleName>
+<Layer name="street 2 casing" status="on" srs="&osm2pgsql_projection;">
+	<StyleName>street 2 casing</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,
+      (select way,highway,railway,
        case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
        from &prefix;_roads
-       where highway in ('trunk', 'trunk_link')
+       where highway is not null
+          or railway is not null
        order by z_order
       ) as roads
 		</Parameter>
@@ -1192,126 +1144,105 @@
 		&datasource-settings;
 	</Datasource>
 </Layer>
-<Layer name="tertiary" status="on" srs="&osm2pgsql_projection;">
-    <StyleName>tertiary</StyleName>
+<Layer name="ramp" status="on" srs="&osm2pgsql_projection;">
+	<StyleName>ramp</StyleName>
+	<Datasource>
+		<Parameter name="table">
+      (select way,highway,railway,
+       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
+       from &prefix;_roads
+       where highway is not null
+          or railway is not null
+       order by z_order
+      ) as roads
+		</Parameter>
+	&datasource-settings;
+	</Datasource>
+</Layer>
+<Layer name="street 4" status="on" srs="&osm2pgsql_projection;">
+    <StyleName>street 4</StyleName>
     <Datasource>
       <Parameter name="table">
-	      (select way,highway,
+	      (select way,highway,railway,
 	       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
 	       from &prefix;_line
 	       where highway is not null
+	          or railway is not null
 	       order by z_order
 	      ) as roads
       </Parameter>
       &datasource-settings;
     </Datasource>
 </Layer>
-<Layer name="secondary" status="on" srs="&osm2pgsql_projection;">
-	<StyleName>secondary</StyleName>
+<Layer name="street 3" status="on" srs="&osm2pgsql_projection;">
+	<StyleName>street 3</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,
+      (select way,highway,railway,
        case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
        from &prefix;_roads
-       where highway in ('secondary', 'secondary_link')
+       where highway is not null
+          or railway is not null
        order by z_order
       ) as roads
 		</Parameter>
 	&datasource-settings;
 	</Datasource>
 </Layer>
-<Layer name="primary" status="on" srs="&osm2pgsql_projection;">
-	<StyleName>primary</StyleName>
+<Layer name="street 2" status="on" srs="&osm2pgsql_projection;">
+	<StyleName>street 2</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,
+      (select way,highway,railway,
        case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
        from &prefix;_roads
-       where highway in ('primary', 'primary_link')
+       where highway is not null
+          or railway is not null
        order by z_order
       ) as roads
 		</Parameter>
 	&datasource-settings;
 	</Datasource>
 </Layer>
-<Layer name="trunk" status="on" srs="&osm2pgsql_projection;">
-	<StyleName>trunk</StyleName>
+<Layer name="street 1 casing" status="on" srs="&osm2pgsql_projection;">
+	<StyleName>street 1 casing</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,
+      (select way,highway,railway,
        case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
        from &prefix;_roads
-       where highway in ('trunk', 'trunk_link')
+       where highway is not null
+          or railway is not null
        order by z_order
       ) as roads
 		</Parameter>
 	&datasource-settings;
 	</Datasource>
 </Layer>
-<Layer name="interchange casing" status="on" srs="&osm2pgsql_projection;">
-	<StyleName>interchange casing</StyleName>
+<Layer name="street 1" status="on" srs="&osm2pgsql_projection;">
+	<StyleName>street 1</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,
+      (select way,highway,railway,
        case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
        from &prefix;_roads
-       where highway in ('motorway_link')
+       where highway is not null
+          or railway is not null
        order by z_order
       ) as roads
 		</Parameter>
 	&datasource-settings;
 	</Datasource>
 </Layer>
-<Layer name="motorway casing" status="on" srs="&osm2pgsql_projection;">
-	<StyleName>motorway casing</StyleName>
+<Layer name="centerline" status="on" srs="&osm2pgsql_projection;">
+	<StyleName>centerline</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,
+      (select way,highway,railway,
        case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
        from &prefix;_roads
-       where highway in ('motorway')
-       order by z_order
-      ) as roads
-		</Parameter>
-	&datasource-settings;
-	</Datasource>
-</Layer>
-<Layer name="interchange" status="on" srs="&osm2pgsql_projection;">
-	<StyleName>interchange</StyleName>
-	<Datasource>
-		<Parameter name="table">
-      (select way,highway,
-       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
-       from &prefix;_roads
-       where highway in ('motorway_link')
-       order by z_order
-      ) as roads
-		</Parameter>
-	&datasource-settings;
-	</Datasource>
-</Layer>
-<Layer name="motorway" status="on" srs="&osm2pgsql_projection;">
-	<StyleName>motorway</StyleName>
-	<Datasource>
-		<Parameter name="table">
-      (select way,highway,
-       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
-       from &prefix;_roads
-       where highway in ('motorway')
-       order by z_order
-      ) as roads
-		</Parameter>
-	&datasource-settings;
-	</Datasource>
-</Layer>
-<Layer name="motorway centerline" status="on" srs="&osm2pgsql_projection;">
-	<StyleName>motorway centerline</StyleName>
-	<Datasource>
-		<Parameter name="table">
-      (select way,highway,
-       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
-       from &prefix;_roads
-       where highway in ('motorway')
+       where highway is not null
+          or railway is not null
        order by z_order
       ) as roads
 		</Parameter>

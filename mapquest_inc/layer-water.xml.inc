@@ -87,11 +87,12 @@
 		</LineSymbolizer>
 	</Rule>
 </Style>
-<Style name="water_areas">
+<Style name="water_areas_lowzoom">
 <!--glacier-->
 	<Rule>
 		<Filter>[natural] = 'glacier'</Filter>
 		&maxscale_zoom6;
+		&minscale_zoom9;
 		<PolygonSymbolizer>
 			<CssParameter name="fill">#ffffff</CssParameter>
 		</PolygonSymbolizer>
@@ -100,23 +101,54 @@
 	<Rule>
 		<Filter>[waterway] = 'dock' or [waterway] = 'mill_pond' or [waterway]='canal'</Filter>
 		&maxscale_zoom9;
+		&minscale_zoom9;
 		<PolygonPatternSymbolizer file="&symbols;/water.png" type="png" width="256" height="256"/>
 	</Rule>
 <!--basin-->
 	<Rule>
 		<Filter>[landuse] = 'basin'</Filter>
 		&maxscale_zoom7;
+		&minscale_zoom9;
 		<PolygonPatternSymbolizer file="&symbols;/water.png" type="png" width="256" height="256"/>
 	</Rule>
 <!--lake, reservoir, and riverbank -->
 	<Rule>
 		<Filter>[natural] = 'lake' or [natural] = 'water' or [landuse] = 'reservoir' or [waterway] = 'riverbank' or [landuse] = 'water'</Filter>
 		&maxscale_zoom6;
+		&minscale_zoom9;
 		<PolygonPatternSymbolizer file="&symbols;/water.png" type="png" width="256" height="256"/>
 	</Rule>
 
 </Style>
+<Style name="water_areas">
+<!--glacier-->
+	<Rule>
+		<Filter>[natural] = 'glacier'</Filter>
+		&maxscale_zoom10;
+		<PolygonSymbolizer>
+			<CssParameter name="fill">#ffffff</CssParameter>
+		</PolygonSymbolizer>
+	</Rule>
+<!--pond and canal-->
+	<Rule>
+		<Filter>[waterway] = 'dock' or [waterway] = 'mill_pond' or [waterway]='canal'</Filter>
+		&maxscale_zoom10;
+		<PolygonPatternSymbolizer file="&symbols;/water.png" type="png" width="256" height="256"/>
+	</Rule>
+<!--basin-->
+	<Rule>
+		<Filter>[landuse] = 'basin'</Filter>
+		&maxscale_zoom10;
+		<PolygonPatternSymbolizer file="&symbols;/water.png" type="png" width="256" height="256"/>
+	</Rule>
+<!--lake, reservoir, and riverbank -->
+	<Rule>
+		<Filter>[natural] = 'lake' or [natural] = 'water' or [landuse] = 'reservoir' or [waterway] = 'riverbank' or [landuse] = 'water'</Filter>
+		&maxscale_zoom10;
+		<PolygonPatternSymbolizer file="&symbols;/water.png" type="png" width="256" height="256"/>
+	</Rule>
 
+</Style>
 <Layer name="water_lines" status="on" srs="&osm2pgsql_projection;">
     <StyleName>water_lines</StyleName>
     <Datasource>
@@ -128,6 +160,21 @@
         and (bridge is null or bridge not in ('yes','true','1','aqueduct'))
       order by z_order
       ) as water_lines</Parameter>
+      &datasource-settings;
+    </Datasource>
+</Layer>
+<Layer name="water_areas_lowzoom" status="on" srs="&osm2pgsql_projection;">
+    <StyleName>water_areas_lowzoom</StyleName>
+    <Datasource>
+      <Parameter name="table">
+      (select way,"natural",waterway,landuse,name
+     from &prefix;_polygon
+      where (waterway in ('dock','mill_pond','riverbank','canal')
+         or landuse in ('reservoir','water','basin')
+         or "natural" in ('lake','water','land','marsh','scrub','wetland','glacier'))
+	and way_area > 200000
+      order by z_order,way_area desc
+      ) as water_areas</Parameter>
       &datasource-settings;
     </Datasource>
 </Layer>

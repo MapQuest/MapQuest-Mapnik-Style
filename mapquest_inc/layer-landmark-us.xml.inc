@@ -16,12 +16,8 @@
 		<Filter>[landuse] = 'cemetery' or [landuse] = 'grave_yard' or [amenity]='grave_yard'</Filter>
 		<PolygonSymbolizer fill-opacity=".25" fill="#619e3a"/>
 	</Rule>
-<!--military fill--><Rule>
-		&maxscale_zoom7;
-		&minscale_zoom9;
-		<Filter>[landuse]='military'</Filter>
-		<PolygonSymbolizer fill-opacity="0.1" fill="#7a941e"/>
-	</Rule><Rule>
+<!--military fill-->
+	<Rule>
 		&maxscale_zoom10;
 		&minscale_zoom14;
 		<Filter>[landuse]='military'</Filter>
@@ -145,6 +141,14 @@
 		<PolygonSymbolizer fill="#f0eee4"/>
 	</Rule>
 </Style>
+<Style name="military-lowzoom">
+	<Rule>
+		&maxscale_zoom7;
+		&minscale_zoom9;
+		<Filter>[landuse]='military'</Filter>
+		<PolygonSymbolizer fill-opacity="0.1" fill="#7a941e"/>
+	</Rule>
+</Style>
 <Style name="barriers">
 	<Rule>
 		&maxscale_zoom16;
@@ -170,6 +174,19 @@
        order by z_order,way_area desc
       ) as leisure
 		</Parameter>
+	&datasource-settings;
+	</Datasource>
+</Layer>
+<Layer name="military-lowzoom" status="on" srs="&osm2pgsql_projection;">
+	<StyleName>military-lowzoom</StyleName>
+	<Datasource>
+	<Parameter name="table">
+       (select way,landuse
+        from &prefix;_polygon
+        where landuse in ('military')
+        order by z_order,way_area desc
+       ) as military
+	</Parameter>
 	&datasource-settings;
 	</Datasource>
 </Layer>

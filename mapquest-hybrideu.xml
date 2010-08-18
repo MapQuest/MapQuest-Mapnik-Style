@@ -40,7 +40,7 @@ THE SOFTWARE.
 <!-- LAYERS DRAW IN REVERSE ORDER OF LIST BELOW -->
 
 <!--BASE layers-->
-&layer-base;
+<!--&layer-base;-->
 <!--TRANSPORTATION layers;-->
 &layer-transportation;
 <!--&layer-overpass;-->

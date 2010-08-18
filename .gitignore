@@ -2,6 +2,9 @@
 mapquest_inc/datasource-settings.xml.inc
 mapquest_inc/fontset-settings.xml.inc
 mapquest_inc/settings.xml.inc
+hybrid_inc/datasource-settings.xml.inc
+hybrid_inc/fontset-settings.xml.inc
+hybrid_inc/settings.xml.inc
 
 # technically this can be anywhere, but it's common to have it (or a symlink) here
 world_boundaries

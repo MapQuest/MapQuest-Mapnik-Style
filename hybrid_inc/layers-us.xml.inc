@@ -2,9 +2,9 @@
 <!ENTITY layer-text SYSTEM "layer-text.xml.inc">
 <!ENTITY layer-amenity-symbols SYSTEM "layer-symbols.xml.inc">
 <!ENTITY layer-border SYSTEM "layer-border-us.xml.inc">
-<!ENTITY layer-buildings SYSTEM "layer-buildings.xml.inc">
-<!ENTITY layer-overpass SYSTEM "layer-overpass-us.xml.inc">
+
+
 <!ENTITY layer-transportation SYSTEM "layer-transportation-us.xml.inc">
-<!ENTITY layer-water SYSTEM "layer-water.xml.inc">
-<!ENTITY layer-landmark SYSTEM "layer-landmark-us.xml.inc">
+
+
 <!ENTITY layer-base SYSTEM "layer-base.xml.inc">

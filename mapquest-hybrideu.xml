@@ -4,6 +4,7 @@
 <!ENTITY % layers SYSTEM "hybrid_inc/layers-eu.xml.inc">
 %entities;
 ]>
+
 <!--
 
 This software is distributed under the following MIT License
@@ -29,6 +30,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 -->
+
 <!-- This stylesheet uses features only available in mapnik builds with
      libxml2 as the XML parser. Furthermore, there are other features
      that necessitate an upgrade to at least mapnik 0.6.1 -->
@@ -43,13 +45,13 @@ THE SOFTWARE.
 <!--&layer-base;-->
 <!--TRANSPORTATION layers;-->
 &layer-transportation;
-<!--&layer-overpass;-->
 <!--BORDER layers-->
 &layer-border;
 <!--SYMBOL layers-->
-&layer-amenity-symbols;
+&layer-symbols;
 <!--TEXT layers-->
-&layer-text;
 &layer-streetnames;
+&layer-text;
+
 
 </Map>

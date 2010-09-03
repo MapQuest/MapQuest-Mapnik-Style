@@ -33,8 +33,7 @@ THE SOFTWARE.
      libxml2 as the XML parser. Furthermore, there are other features
      that necessitate an upgrade to at least mapnik 0.6.1 -->
 <Map bgcolor="#cce7ff" srs="&srs900913;" minimum_version="0.6.1" buffer_size="256">
-
-<!--settings for Mapnik fonts-->
+	<!--settings for Mapnik fonts-->
 &fontset-settings;
 
 <!-- LAYERS DRAW IN REVERSE ORDER OF LIST BELOW -->
@@ -49,7 +48,7 @@ THE SOFTWARE.
 &layer-transportation;
 &layer-overpass;
 <!--BUILDING layers-->
-&layer-buildings;
+&layer-building;
 <!--BORDER layers-->
 &layer-border;
 <!--SYMBOL layers-->

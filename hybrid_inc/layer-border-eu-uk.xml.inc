@@ -106,7 +106,7 @@
 			<CssParameter name="stroke">#ffffff</CssParameter>
 			<CssParameter name="stroke-width">3</CssParameter>
 			<CssParameter name="stroke-linejoin">round</CssParameter>
-			<CssParameter name="stroke-opacity">.5</CssParameter>
+			<CssParameter name="stroke-opacity">.25</CssParameter>
 		</LineSymbolizer>
 	</Rule>
 </Style>

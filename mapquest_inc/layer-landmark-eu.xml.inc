@@ -1,244 +1,170 @@
 <!--landmark layer styles-->
 <Style name="landmark">
-<!--attraction-->
+	<!--attraction-->
 	<Rule>
 		<Filter>[tourism] = 'attraction' or [tourism] = 'zoo'</Filter>
 		&maxscale_zoom10;
-		<PolygonSymbolizer>
-			<CssParameter name="fill">#e8d1ba</CssParameter>
-			<CssParameter name="fill-opacity">0.8</CssParameter>
-		</PolygonSymbolizer>
+		<PolygonSymbolizer fill-opacity="0.8" fill="#e8d1ba"/>
 	</Rule>
-<!--cemetery fill-->
+	<!--cemetery fill-->
 	<Rule>
 		&maxscale_zoom12;
 		&minscale_zoom14;
 		<Filter>[landuse] = 'cemetery' or [landuse] = 'grave_yard' or [amenity]='grave_yard'</Filter>
-		<PolygonSymbolizer>
-			<CssParameter name="fill">#619e3a</CssParameter>
-			<CssParameter name="fill-opacity">.15</CssParameter>
-		</PolygonSymbolizer>
+		<PolygonSymbolizer fill-opacity=".15" fill="#619e3a"/>
 	</Rule>
 	<Rule>
 		&maxscale_zoom15;
 		<Filter>[landuse] = 'cemetery' or [landuse] = 'grave_yard' or [amenity]='grave_yard'</Filter>
-		<PolygonSymbolizer>
-			<CssParameter name="fill">#619e3a</CssParameter>
-			<CssParameter name="fill-opacity">.25</CssParameter>
-		</PolygonSymbolizer>
+		<PolygonSymbolizer fill-opacity=".25" fill="#619e3a"/>
 	</Rule>
-<!--military fill-->
+		<!--military fill-->
+	<Rule>
+		&maxscale_zoom7;
+		&minscale_zoom9;
+		<Filter>[landuse]='military'</Filter>
+		<PolygonSymbolizer fill-opacity="0.1" fill="#7a941e"/>
+	</Rule>
 	<Rule>
 		&maxscale_zoom10;
 		&minscale_zoom14;
 		<Filter>[landuse]='military'</Filter>
-		<PolygonSymbolizer>
-			<CssParameter name="fill">#7a941e</CssParameter>
-			<CssParameter name="fill-opacity">0.15</CssParameter>
-		</PolygonSymbolizer>
+		<PolygonSymbolizer fill-opacity="0.15" fill="#7a941e"/>
 	</Rule>
 	<Rule>
 		&maxscale_zoom15;
 		<Filter>[landuse]='military'</Filter>
-		<PolygonSymbolizer>
-			<CssParameter name="fill">#7a941e</CssParameter>
-			<CssParameter name="fill-opacity">0.25</CssParameter>
-		</PolygonSymbolizer>
+		<PolygonSymbolizer fill-opacity="0.25" fill="#7a941e"/>
 	</Rule>
-<!--barracks-->
+	<!--barracks-->
 	<Rule>
 		&maxscale_zoom10;
 		<Filter>[military] = 'barracks'</Filter>
-		<PolygonSymbolizer>
-			<CssParameter name="fill">#d4d9c1</CssParameter>
-		</PolygonSymbolizer>
+		<PolygonSymbolizer fill="#d4d9c1"/>
 	</Rule>
-<!--park fill-->
+	<!--park fill-->
 	<Rule>
 		<Filter>[leisure] = 'park' or [leisure] = 'playground' or [leisure] = 'recreation_ground' or [leisure] = 'nature_reserve' or [leisure] = 'common' or [leisure] = 'pitch'</Filter>
 		&maxscale_zoom9;
 		&minscale_zoom9;
-		<PolygonSymbolizer>
-			<CssParameter name="fill">#00ac42</CssParameter>
-			<CssParameter name="fill-opacity">0.1</CssParameter>
-		</PolygonSymbolizer>
+		<PolygonSymbolizer fill-opacity="0.1" fill="#00ac42"/>
 	</Rule>
 	<Rule>
 		<Filter>[leisure] = 'park' or [leisure] = 'playground' or [leisure] = 'recreation_ground' or [leisure] = 'nature_reserve' or [leisure] = 'common' or [leisure] = 'pitch'</Filter>
 		&maxscale_zoom10;
 		&minscale_zoom11;
-		<PolygonSymbolizer>
-			<CssParameter name="fill">#00ac42</CssParameter>
-			<CssParameter name="fill-opacity">0.15</CssParameter>
-		</PolygonSymbolizer>
+		<PolygonSymbolizer fill-opacity="0.15" fill="#00ac42"/>
 	</Rule>
 	<Rule>
 		<Filter>[leisure] = 'park' or [leisure] = 'playground' or [leisure] = 'recreation_ground' or [leisure] = 'nature_reserve' or [leisure] = 'common' or [leisure] = 'pitch'</Filter>
 		&maxscale_zoom12;
 		&minscale_zoom14;
-		<PolygonSymbolizer>
-			<CssParameter name="fill">#0e982b</CssParameter>
-			<CssParameter name="fill-opacity">0.15</CssParameter>
-		</PolygonSymbolizer>
+		<PolygonSymbolizer fill-opacity="0.15" fill="#0e982b"/>
 	</Rule>
 	<Rule>
 		<Filter>[leisure] = 'park' or [leisure] = 'playground' or [leisure] = 'recreation_ground' or [leisure] = 'nature_reserve' or [leisure] = 'common' or [leisure] = 'pitch'</Filter>
 		&maxscale_zoom15;
 		&minscale_zoom16;
-		<PolygonSymbolizer>
-			<CssParameter name="fill">#009a2b</CssParameter>
-			<CssParameter name="fill-opacity">0.3</CssParameter>
-		</PolygonSymbolizer>
+		<PolygonSymbolizer fill-opacity="0.3" fill="#009a2b"/>
 	</Rule>
 	<Rule>
 		<Filter>[leisure] = 'park' or [leisure] = 'playground' or [leisure] = 'recreation_ground' or [leisure] = 'nature_reserve' or [leisure] = 'common' or [leisure] = 'pitch'</Filter>
 		&maxscale_zoom17;
-		<PolygonSymbolizer>
-			<CssParameter name="fill">#00a635</CssParameter>
-			<CssParameter name="fill-opacity">0.3</CssParameter>
-		</PolygonSymbolizer>
+		<PolygonSymbolizer fill-opacity="0.3" fill="#00a635"/>
 	</Rule>
-<!--golf course fill-->
+	<!--golf course fill-->
 	<Rule>
 		<Filter>[leisure] = 'golf_course'</Filter>
 		&maxscale_zoom12;
-		<PolygonSymbolizer>
-			<CssParameter name="fill">#b2dc81</CssParameter>
-			<CssParameter name="fill-opacity">.7</CssParameter>
-		</PolygonSymbolizer>
+		<PolygonSymbolizer fill-opacity=".7" fill="#b2dc81"/>
 	</Rule>
-<!--forest fill-->
+	<!--forest fill-->
 	<Rule>
 		<Filter>[landuse] = 'forest' or [landuse] = 'recreation_ground' or [landuse] = 'conservation' or [natural] = 'wood' or [landuse] = 'wood'</Filter>
 		&maxscale_zoom9;
 		&minscale_zoom11;
-		<PolygonSymbolizer>
-			<CssParameter name="fill">#00b844</CssParameter>
-			<CssParameter name="fill-opacity">.25</CssParameter>
-		</PolygonSymbolizer>
+		<PolygonSymbolizer fill-opacity=".25" fill="#00b844"/>
 	</Rule>
 	<Rule>
 		<Filter>[landuse] = 'forest' or [landuse] = 'recreation_ground' or [landuse] = 'conservation' or [natural] = 'wood' or [landuse] = 'wood'</Filter>
 		&maxscale_zoom12;
 		&minscale_zoom14;
-		<PolygonSymbolizer>
-			<CssParameter name="fill">#59bf26</CssParameter>
-			<CssParameter name="fill-opacity">.25</CssParameter>
-		</PolygonSymbolizer>
+		<PolygonSymbolizer fill-opacity=".25" fill="#59bf26"/>
 	</Rule>
 	<Rule>
 		<Filter>[landuse] = 'forest' or [landuse] = 'recreation_ground' or [landuse] = 'conservation' or [natural] = 'wood' or [landuse] = 'wood'</Filter>
 		&maxscale_zoom15;
 		&minscale_zoom16;
-		<PolygonSymbolizer>
-			<CssParameter name="fill">#009a2b</CssParameter>
-			<CssParameter name="fill-opacity">.2</CssParameter>
-		</PolygonSymbolizer>
+		<PolygonSymbolizer fill-opacity=".2" fill="#009a2b"/>
 	</Rule>
 	<Rule>
 		<Filter>[landuse] = 'forest' or [landuse] = 'recreation_ground' or [landuse] = 'conservation' or [natural] = 'wood' or [landuse] = 'wood'</Filter>
 		&maxscale_zoom17;
-		<PolygonSymbolizer>
-			<CssParameter name="fill">#00a635</CssParameter>
-			<CssParameter name="fill-opacity">.2</CssParameter>
-		</PolygonSymbolizer>
+		<PolygonSymbolizer fill-opacity=".2" fill="#00a635"/>
 	</Rule>
-<!--beach fill-->
+	<!--beach fill-->
 	<Rule>
 		<Filter>[natural] = 'beach'</Filter>
 		&maxscale_zoom12;
-		<PolygonSymbolizer>
-			<CssParameter name="fill">#f5efd7</CssParameter>
-		</PolygonSymbolizer>
+		<PolygonSymbolizer fill="#f5efd7"/>
 	</Rule>
-<!--stadium fill-->
+	<!--stadium fill-->
 	<Rule>
 		<Filter>[leisure] = 'stadium' or [leisure] = 'sports_centre'</Filter>
 		&maxscale_zoom13;
-		<PolygonSymbolizer>
-			<CssParameter name="fill">#e8d1ba</CssParameter>
-		</PolygonSymbolizer>
+		<PolygonSymbolizer fill="#e8d1ba"/>
 	</Rule>
-<!--school fill-->
+	<!--school fill-->
 	<Rule>
 		<Filter>[amenity] = 'university' or [amenity] = 'college' or [amenity] = 'school' or [amenity]='kindergarten'</Filter>
 		&maxscale_zoom13;
-		<PolygonSymbolizer>
-			<CssParameter name="fill">#e0dbc6</CssParameter>
-		</PolygonSymbolizer>
+		<PolygonSymbolizer fill="#e0dbc6"/>
 	</Rule>
-<!--hospital fill-->
+	<!--hospital fill-->
 	<Rule>
 		<Filter>[amenity]='hospital'</Filter>
 		&maxscale_zoom12;
-		<PolygonSymbolizer>
-			<CssParameter name="fill">#c6e0e0</CssParameter>
-		</PolygonSymbolizer>
+		<PolygonSymbolizer fill="#c6e0e0"/>
 	</Rule>
-<!--shopping center fill-->
+	<!--shopping center fill-->
 	<Rule>
 		<Filter>[landuse] = 'retail'</Filter>
 		&maxscale_zoom13;
-		<PolygonSymbolizer>
-			<CssParameter name="fill">#e6e3c3</CssParameter>
-		</PolygonSymbolizer>
+		<PolygonSymbolizer fill="#e6e3c3"/>
 	</Rule>
-<!--airport-->
+	<!--airport-->
 	<Rule>
 		<Filter>[aeroway] = 'apron' or [aeroway] = 'aerodrome'</Filter>
 		&maxscale_zoom10;
-		<PolygonSymbolizer>
-			<CssParameter name="fill">#d1d2e0</CssParameter>
-		</PolygonSymbolizer>
+		<PolygonSymbolizer fill="#d1d2e0"/>
 	</Rule>
-<!--airport runway-->
+	<!--airport runway-->
 	<Rule>
 		<Filter>[aeroway] = 'runway'</Filter>
 		&maxscale_zoom10;
-		<PolygonSymbolizer>
-			<CssParameter name="fill">#b4b4b4</CssParameter>
-		</PolygonSymbolizer>
+		<PolygonSymbolizer fill="#b4b4b4"/>
 	</Rule>
-<!--residential-->
+	<!--residential-->
 	<Rule>
 		&maxscale_zoom10;
 		&minscale_zoom18;
 		<Filter>[landuse] = 'residential'</Filter>
-		<PolygonSymbolizer>
-			<CssParameter name="fill">#f0eee4</CssParameter>
-		</PolygonSymbolizer>
+		<PolygonSymbolizer fill="#f0eee4"/>
 	</Rule>
 	<!--barracks-->
 	<Rule>
 		&maxscale_zoom10;
 		&minscale_zoom18;
 		<Filter>[military] = 'barracks'</Filter>
-		<PolygonSymbolizer>
-			<CssParameter name="fill">#ff8f8f</CssParameter>
-		</PolygonSymbolizer>
-	</Rule>
-</Style>
-<Style name="military-lowzoom">
-	<Rule>
-		&maxscale_zoom7;
-		&minscale_zoom9;
-		<Filter>[landuse]='military'</Filter>
-		<PolygonSymbolizer>
-			<CssParameter name="fill">#7a941e</CssParameter>
-			<CssParameter name="fill-opacity">0.1</CssParameter>
-		</PolygonSymbolizer>
+		<PolygonSymbolizer fill="#ff8f8f"/>
 	</Rule>
 </Style>
 <Style name="barriers">
 	<Rule>
 		&maxscale_zoom16;
-		<LineSymbolizer>
-			<CssParameter name="stroke">#b4b4b4</CssParameter>
-			<CssParameter name="stroke-width">0.5</CssParameter>
-		</LineSymbolizer>
+		<LineSymbolizer stroke="#b4b4b4" stroke-width="0.5"/>
 	</Rule>
 </Style>
-
 <!--landmark layer data-->
 <Layer name="landmark" status="on" srs="&osm2pgsql_projection;">
 	<StyleName>landmark</StyleName>
@@ -257,19 +183,6 @@
           or tourism in ('attraction','camp_site','caravan_site','picnic_site','zoo')
        order by z_order,way_area desc
       ) as leisure
-	</Parameter>
-	&datasource-settings;
-	</Datasource>
-</Layer>
-<Layer name="military-lowzoom" status="on" srs="&osm2pgsql_projection;">
-	<StyleName>military-lowzoom</StyleName>
-	<Datasource>
-	<Parameter name="table">
-       (select way,landuse
-        from &prefix;_polygon
-        where landuse in ('military')
-        order by z_order,way_area desc
-       ) as military
 	</Parameter>
 	&datasource-settings;
 	</Datasource>

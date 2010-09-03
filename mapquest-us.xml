@@ -32,8 +32,8 @@ THE SOFTWARE.
 <!-- This stylesheet uses features only available in mapnik builds with
      libxml2 as the XML parser. Furthermore, there are other features
      that necessitate an upgrade to at least mapnik 0.6.1 -->
-<Map bgcolor="#cce7ff" srs="&srs900913;" minimum_version="0.6.1" buffer_size="256">
 
+<Map bgcolor="#cce7ff" srs="&srs900913;" minimum_version="0.6.1" buffer_size="256">
 <!--settings for Mapnik fonts-->
 &fontset-settings;
 
@@ -57,5 +57,6 @@ THE SOFTWARE.
 <!--TEXT layers-->
 &layer-text;
 &layer-streetnames;
+
 
 </Map>

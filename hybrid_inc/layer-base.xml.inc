@@ -3,20 +3,15 @@
 	<Rule>
 		&maxscale_zoom0;
 		&minscale_zoom9;
-		<PolygonSymbolizer>
-			<CssParameter name="fill">#799575</CssParameter>
-		</PolygonSymbolizer>
+		<PolygonSymbolizer fill="#4C5B4A"/>
 	</Rule>
 </Style>
 <Style name="coast-poly">
 	<Rule>
 		&maxscale_zoom10;
-		<PolygonSymbolizer>
-			<CssParameter name="fill">#799575</CssParameter>
-		</PolygonSymbolizer>
+		<PolygonSymbolizer fill="#4C5B4A"/>
 	</Rule>
 </Style>
-
 <Layer name="world" status="on" srs="&srs900913;">
 	<StyleName>world</StyleName>
 	<Datasource>

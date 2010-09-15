@@ -20,6 +20,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-This stylesheet uses features only available in mapnik builds with libxml2 as the XML parser. Furthermore, there are other features that necessitate an upgrade to at least mapnik 0.6.1
+This stylesheet uses features only available in mapnik builds with libxml2 as the XML parser. 
+Furthermore, there are other features that necessitate an upgrade to at least mapnik 0.8.0
 
-More details coming soon

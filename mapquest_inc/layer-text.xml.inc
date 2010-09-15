@@ -261,7 +261,7 @@
 <Style name="symbol-text">
   <!--motorway junction--><Rule>
     &maxscale_zoom15;
-    <ShieldSymbolizer name="[shield_name]" fontset_name="bold-fonts" size="10" fill="#ffffff" placement="point" shield_dy="-15" shield_dx="10" file="&symbols;/exit.png"/> 
+    <ShieldSymbolizer name="[shield_name]" fontset_name="bold-fonts" size="10" fill="#ffffff" placement="point" shield_dy="-5" shield_dx="10" file="&symbols;/exit.png"/> 
   </Rule>
 </Style>
 <Style name="locality">

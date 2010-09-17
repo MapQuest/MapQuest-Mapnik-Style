@@ -26,13 +26,6 @@
 		<LineSymbolizer stroke="#808040" stroke-width="2" stroke-opacity=".3"/>
 	</Rule>
 </Style>
-<Style name="pedestrian-polygon">
-	<Rule>
-		<Filter>[highway] = 'living_street' or [highway] = 'pedestrian' or [highway]='service' or [highway]='footway' or [highway]='path' or [highway] = 'residential' or [highway]='unclassified' or [highway]='service' or [highway] = 'track'</Filter>
-		&maxscale_zoom14;
-		<PolygonSymbolizer fill="#c8c8c8"/>
-	</Rule>
-</Style>
 <!--cycleway-->
 <Style name="cycleway">
 	<Rule>
@@ -269,7 +262,7 @@
 		<Filter>[highway] = 'primary' or [highway] = 'primary_link'</Filter>
 		&maxscale_zoom12;
 		&minscale_zoom13;
-		<LineSymbolizer stroke-linejoin="round" stroke="#fbe297" stroke-width="1" stroke-linecap="round" stroke-opacity=".5"/>
+		<LineSymbolizer stroke-linejoin="round" stroke="#fbe297" stroke-width="1" stroke-linecap="round" stroke-opacity=".8"/>
 	</Rule>
 	<Rule>
 		<Filter>[highway] = 'primary' or [highway] = 'primary_link'</Filter>
@@ -403,24 +396,24 @@
 		<Filter>[highway] = 'motorway_link'</Filter>
 		&maxscale_zoom11;
 		&minscale_zoom13;
-		<LineSymbolizer stroke-linejoin="round" stroke="#e55050" stroke-width="1" stroke-linecap="round"/>
+		<LineSymbolizer stroke-linejoin="round" stroke="#e55050" stroke-width="1" stroke-linecap="round" stroke-opacity=".8"/>
 	</Rule>
 	<Rule>
 		<Filter>[highway] = 'motorway_link'</Filter>
 		&maxscale_zoom14;
 		&minscale_zoom15;
-		<LineSymbolizer stroke-linejoin="round" stroke="#e55050" stroke-width="3" stroke-linecap="round"/>
+		<LineSymbolizer stroke-linejoin="round" stroke="#e55050" stroke-width="3" stroke-linecap="round" stroke-opacity=".8"/>
 	</Rule>
 	<Rule>
 		<Filter>[highway] = 'motorway_link'</Filter>
 		&maxscale_zoom16;
 		&minscale_zoom17;
-		<LineSymbolizer stroke-linejoin="round" stroke="#e55050" stroke-width="4" stroke-linecap="round"/>
+		<LineSymbolizer stroke-linejoin="round" stroke="#e55050" stroke-width="4" stroke-linecap="round" stroke-opacity=".8"/>
 	</Rule>
 	<Rule>
 		<Filter>[highway] = 'motorway_link'</Filter>
 		&maxscale_zoom18;
-		<LineSymbolizer stroke-linejoin="round" stroke="#e55050" stroke-width="6" stroke-linecap="round"/>
+		<LineSymbolizer stroke-linejoin="round" stroke="#e55050" stroke-width="6" stroke-linecap="round" stroke-opacity=".8"/>
 	</Rule>
 </Style>
 <!--motorway-->
@@ -511,6 +504,7 @@
 		<LineSymbolizer stroke-linejoin="round" stroke="#ffe14c" stroke-width="4" stroke-opacity=".8"/>
 	</Rule>
 </Style>
+
 <Layer name="ferry-routes" status="on" srs="&osm2pgsql_projection;">
 	<StyleName>ferry-routes</StyleName>
 	<Datasource>
@@ -519,7 +513,7 @@
       from &prefix;_line
       where route is not null
       ) as routes
-		</Parameter>
+	</Parameter>
 	&datasource-settings;
 	</Datasource>
 </Layer>
@@ -541,7 +535,7 @@
       (select way,highway from &prefix;_polygon
        where highway in ('residential','unclassified','pedestrian','service','footway','living_street','track','path')
        order by z_order,way_area desc) as roads
-		</Parameter>
+      </Parameter>
       &datasource-settings;
 	</Datasource>
 </Layer>
@@ -558,60 +552,50 @@
 	<StyleName>runway</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,horse,bicycle,foot,construction,aeroway,service,
-       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel,
-       case when bridge in ('yes','true','1') then 'yes'::text else bridge end as bridge,
-       case when railway in ('spur','siding')
-              or (railway='rail' and service in ('spur','siding','yard'))
-            then 'spur-siding-yard'::text else railway end as railway
+      (select way,aeroway
        from &prefix;_line
-       where highway is not null
-          or aeroway in ('runway','taxiway')
-          or railway in ('light_rail','narrow_gauge','funicular','rail','subway','tram','spur','siding','platform','disused','abandoned','construction')
+       where aeroway in ('runway','taxiway')
        order by z_order) as roads
-		</Parameter>
+      </Parameter>
       &datasource-settings;
-    </Datasource>
+	</Datasource>
 </Layer>
 <Layer name="rail" status="on" srs="&osm2pgsql_projection;">
 	<StyleName>rail</StyleName>
 	<Datasource>
 		<Parameter name="table">
-	      (select way,highway,railway,
+	      (select way,railway,
 	       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
 	       from &prefix;_line
-	       where highway is not null
-	          or railway is not null
+	       where railway is not null
 	       order by z_order
 	      ) as roads
-		</Parameter>
-		&datasource-settings;
+      </Parameter>
+      &datasource-settings;
 	</Datasource>
 </Layer>
 <Layer name="tertiary casing" status="on" srs="&osm2pgsql_projection;">
 	<StyleName>tertiary casing</StyleName>
 	<Datasource>
 		<Parameter name="table">
-	      (select way,highway,railway,
+	      (select way,highway,
 	       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
 	       from &prefix;_line
 	       where highway is not null
-	          or railway is not null
 	       order by z_order
 	      ) as roads
-		</Parameter>
-		&datasource-settings;
+      </Parameter>
+      &datasource-settings;
 	</Datasource>
 </Layer>
 <Layer name="secondary casing" status="on" srs="&osm2pgsql_projection;">
 	<StyleName>secondary casing</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,railway,
+      (select way,highway,
        case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
        from &prefix;_roads
-       where highway is not null
-          or railway is not null
+       where highway in ('secondary', 'secondary_link')
        order by z_order
       ) as roads
 		</Parameter>
@@ -622,11 +606,10 @@
 	<StyleName>primary casing</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,railway,
+      (select way,highway,
        case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
        from &prefix;_roads
-       where highway is not null
-          or railway is not null
+       where highway in ('primary', 'primary_link')
        order by z_order
       ) as roads
 		</Parameter>
@@ -637,11 +620,10 @@
 	<StyleName>trunk casing</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,railway,
+      (select way,highway,
        case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
        from &prefix;_roads
-       where highway is not null
-          or railway is not null
+       where highway in ('trunk', 'trunk_link')
        order by z_order
       ) as roads
 		</Parameter>
@@ -659,26 +641,24 @@
 	<StyleName>tertiary</StyleName>
 	<Datasource>
 		<Parameter name="table">
-	      (select way,highway,railway,
+	      (select way,highway,
 	       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
 	       from &prefix;_line
 	       where highway is not null
-	          or railway is not null
 	       order by z_order
 	      ) as roads
-		</Parameter>
-		&datasource-settings;
+      </Parameter>
+      &datasource-settings;
 	</Datasource>
 </Layer>
 <Layer name="secondary" status="on" srs="&osm2pgsql_projection;">
 	<StyleName>secondary</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,railway,
+      (select way,highway,
        case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
        from &prefix;_roads
-       where highway is not null
-          or railway is not null
+       where highway in ('secondary', 'secondary_link')
        order by z_order
       ) as roads
 		</Parameter>
@@ -689,11 +669,10 @@
 	<StyleName>primary</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,railway,
+      (select way,highway,
        case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
        from &prefix;_roads
-       where highway is not null
-          or railway is not null
+       where highway in ('primary', 'primary_link')
        order by z_order
       ) as roads
 		</Parameter>
@@ -704,11 +683,10 @@
 	<StyleName>trunk</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,railway,
+      (select way,highway,
        case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
        from &prefix;_roads
-       where highway is not null
-          or railway is not null
+       where highway in ('trunk', 'trunk_link')
        order by z_order
       ) as roads
 		</Parameter>
@@ -719,11 +697,10 @@
 	<StyleName>interchange casing</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,railway,
+      (select way,highway,
        case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
        from &prefix;_roads
-       where highway is not null
-          or railway is not null
+       where highway in ('motorway_link')
        order by z_order
       ) as roads
 		</Parameter>
@@ -734,11 +711,10 @@
 	<StyleName>motorway casing</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,railway,
+      (select way,highway,
        case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
        from &prefix;_roads
-       where highway is not null
-          or railway is not null
+       where highway in ('motorway')
        order by z_order
       ) as roads
 		</Parameter>
@@ -749,11 +725,10 @@
 	<StyleName>interchange</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,railway,
+      (select way,highway,
        case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
        from &prefix;_roads
-       where highway is not null
-          or railway is not null
+       where highway in ('motorway_link')
        order by z_order
       ) as roads
 		</Parameter>
@@ -764,11 +739,10 @@
 	<StyleName>motorway</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,railway,
+      (select way,highway,
        case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
        from &prefix;_roads
-       where highway is not null
-          or railway is not null
+       where highway in ('motorway')
        order by z_order
       ) as roads
 		</Parameter>
@@ -779,11 +753,10 @@
 	<StyleName>motorway centerline</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,railway,
+      (select way,highway,
        case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
        from &prefix;_roads
-       where highway is not null
-          or railway is not null
+       where highway in ('motorway')
        order by z_order
       ) as roads
 		</Parameter>

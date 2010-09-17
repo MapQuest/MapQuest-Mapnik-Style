@@ -52,19 +52,19 @@
 	<Rule>
 		<Filter>[aeroway] = 'runway'</Filter>
 		&maxscale_zoom10;
-		&minscale_zoom12;
+		&maxscale_zoom12;
 		<LineSymbolizer stroke="#b4b4b4" stroke-width="3"/>
 	</Rule>
 	<Rule>
 		<Filter>[aeroway] = 'runway'</Filter>
 		&maxscale_zoom13;
-		&minscale_zoom14;
+		&maxscale_zoom14;
 		<LineSymbolizer stroke="#b4b4b4" stroke-width="5"/>
 	</Rule>
 	<Rule>
 		<Filter>[aeroway] = 'runway'</Filter>
 		&maxscale_zoom15;
-		&minscale_zoom16;
+		&maxscale_zoom16;
 		<LineSymbolizer stroke="#b4b4b4" stroke-width="15"/>
 	</Rule>
 	<Rule>
@@ -75,19 +75,19 @@
 	<Rule>
 		<Filter>[aeroway] = 'taxiway'</Filter>
 		&maxscale_zoom12;
-		&minscale_zoom12;
+		&maxscale_zoom12;
 		<LineSymbolizer stroke="#b4b4b4" stroke-width="1"/>
 	</Rule>
 	<Rule>
 		<Filter>[aeroway] = 'taxiway'</Filter>
 		&maxscale_zoom13;
-		&minscale_zoom14;
+		&maxscale_zoom14;
 		<LineSymbolizer stroke="#b4b4b4" stroke-width="2"/>
 	</Rule>
 	<Rule>
 		<Filter>[aeroway] = 'taxiway'</Filter>
 		&maxscale_zoom15;
-		&minscale_zoom16;
+		&maxscale_zoom16;
 		<LineSymbolizer stroke="#b4b4b4" stroke-width="5"/>
 	</Rule>
 	<Rule>
@@ -592,6 +592,7 @@
 		<LineSymbolizer stroke-linejoin="round" stroke="#d3dbeb" stroke-width="4"/>
 	</Rule>
 </Style>
+
 <Layer name="ferry-routes" status="on" srs="&osm2pgsql_projection;">
 	<StyleName>ferry-routes</StyleName>
 	<Datasource>

@@ -459,6 +459,7 @@
 		<TextSymbolizer name="[name]" fontset_name="book-fonts" size="9" fill="#918378" dy="0" halo_radius="1" halo_fill="rgba(255,255,255,0.35)" wrap_width="30" character_spacing="5" line_spacing="10" text_convert="toupper"/>
 	</Rule>
 </Style>
+
 <Layer name="placenames-large" status="on" srs="&osm2pgsql_projection;">
 	<StyleName>continent</StyleName>
 	<StyleName>country</StyleName>

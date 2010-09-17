@@ -92,7 +92,6 @@
 	<Rule>
 		<Filter>[highway] = 'motorway'</Filter>
 		&maxscale_zoom12;
-		<!--<TextSymbolizer name="name" fontset_name="book-fonts" size="12" fill="#2b2b2b" halo_fill="rgba(255,255,255,0.25)" halo_radius="2" placement="line" max_char_angle_delta="40"/>-->
 		<TextSymbolizer name="[name]" fontset_name="bold-fonts" size="12" fill="#2b2b2b" halo_fill="rgba(255,255,255,0.25)" halo_radius="2" dy="0" placement="line" max_char_angle_delta="40" text_convert="toupper"/>
 	</Rule>
 <!--trunk/primary text-->
@@ -125,7 +124,7 @@
 	<StyleName>shield-text</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,
+      (select way,highway,name,
       case when name ilike ref then null else name end as name,
       ref,char_length(regexp_replace(ref,E'^(US|I)\\s*([0-9]{1,3})',E'\\2')) as length,
       regexp_replace(ref,E'^(US|I)\\s*([0-9]{1,3})',E'\\2') as shield_name,

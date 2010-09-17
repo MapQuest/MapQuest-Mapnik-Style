@@ -16,12 +16,8 @@
 		<Filter>[landuse] = 'cemetery' or [landuse] = 'grave_yard' or [amenity]='grave_yard'</Filter>
 		<PolygonSymbolizer fill-opacity=".25" fill="#619e3a"/>
 	</Rule>
-<!--military fill--><Rule>
-		&maxscale_zoom7;
-		&minscale_zoom9;
-		<Filter>[landuse]='military'</Filter>
-		<PolygonSymbolizer fill-opacity="0.1" fill="#7a941e"/>
-	</Rule><Rule>
+<!--military fill-->
+	<Rule>
 		&maxscale_zoom10;
 		&minscale_zoom14;
 		<Filter>[landuse]='military'</Filter>

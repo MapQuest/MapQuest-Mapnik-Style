@@ -668,10 +668,7 @@
 		<Filter>[highway] = 'motorway'</Filter>
 		&maxscale_zoom18;
 		<LineSymbolizer stroke-linejoin="round" stroke="#d3dbeb" stroke-width="4"/>
-	</Rule>
-</Style>
-
-<Layer name="ferry-routes" status="on" srs="&osm2pgsql_projection;">
+	</Rule></Style><Layer name="ferry-routes" status="on" srs="&osm2pgsql_projection;">
 	<StyleName>ferry-routes</StyleName>
 	<Datasource>
 		<Parameter name="table">

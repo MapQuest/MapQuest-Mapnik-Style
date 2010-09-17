@@ -79,7 +79,6 @@
 		<PointSymbolizer file="&symbols;/mine.png"/>
 	</Rule>
 </Style>
-
 <Layer name="direction-arrows" status="on" srs="&osm2pgsql_projection;">
 	<StyleName>direction-arrows</StyleName>
 <!--StyleName>directions-mapnik2</StyleName-->

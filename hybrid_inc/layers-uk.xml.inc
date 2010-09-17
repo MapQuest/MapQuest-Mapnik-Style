@@ -1,6 +1,6 @@
 <!ENTITY layer-streetnames SYSTEM "layer-streetnames-uk.xml.inc">
 <!ENTITY layer-text SYSTEM "layer-text.xml.inc">
-<!ENTITY layer-symbols SYSTEM "layer-symbols.xml.inc">
+<!ENTITY layer-amenity-symbols SYSTEM "layer-symbols.xml.inc">
 <!ENTITY layer-border SYSTEM "layer-border-eu-uk.xml.inc">
 
 

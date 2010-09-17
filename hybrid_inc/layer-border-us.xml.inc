@@ -4,12 +4,24 @@
 		<Filter>[admin_level]='6'</Filter>
 		&maxscale_zoom9;
 		&minscale_zoom11;
-		<LineSymbolizer stroke-linejoin="round" stroke="#8c8c8c" stroke-width="1" stroke-dasharray="6,2,2,2" stroke-opacity=".25"/>
+		<LineSymbolizer>
+			<CssParameter name="stroke">#8c8c8c</CssParameter>
+			<CssParameter name="stroke-width">1</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-dasharray">6,2,2,2</CssParameter>
+			<CssParameter name="stroke-opacity">.25</CssParameter>
+		</LineSymbolizer>
 	</Rule>
 	<Rule>
 		<Filter>[admin_level]='6'</Filter>
 		&maxscale_zoom12;
-		<LineSymbolizer stroke-linejoin="round" stroke="#aaaaaa" stroke-width="1" stroke-dasharray="6,2,2,2" stroke-opacity=".25"/>
+		<LineSymbolizer>
+			<CssParameter name="stroke">#aaaaaa</CssParameter>
+			<CssParameter name="stroke-width">1</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-dasharray">6,2,2,2</CssParameter>
+			<CssParameter name="stroke-opacity">.25</CssParameter>
+		</LineSymbolizer>
 	</Rule>	
 </Style>
 <!--County boundary casing-->
@@ -18,18 +30,33 @@
 		<Filter>[admin_level]='6'</Filter>
 		&maxscale_zoom9;
 		&minscale_zoom11;
-		<LineSymbolizer stroke-linejoin="round" stroke="#bfbfbf" stroke-width="4" stroke-opacity=".05"/>
+		<LineSymbolizer>
+			<CssParameter name="stroke">#bfbfbf</CssParameter>
+			<CssParameter name="stroke-width">4</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-opacity">.05</CssParameter>
+		</LineSymbolizer>
 	</Rule>
 	<Rule>
 		<Filter>[admin_level]='6'</Filter>
 		&maxscale_zoom12;
 		&minscale_zoom14;
-		<LineSymbolizer stroke-linejoin="round" stroke="#bfbfbf" stroke-width="4" stroke-opacity=".2"/>
+		<LineSymbolizer>
+			<CssParameter name="stroke">#bfbfbf</CssParameter>
+			<CssParameter name="stroke-width">4</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-opacity">.2</CssParameter>
+		</LineSymbolizer>
 	</Rule>
 	<Rule>
 		<Filter>[admin_level]='6'</Filter>
 		&maxscale_zoom15;
-		<LineSymbolizer stroke-linejoin="round" stroke="#bfbfbf" stroke-width="8" stroke-opacity=".2"/>
+		<LineSymbolizer>
+			<CssParameter name="stroke">#bfbfbf</CssParameter>
+			<CssParameter name="stroke-width">8</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-opacity">.2</CssParameter>
+		</LineSymbolizer>
 	</Rule>
 </Style>
 
@@ -39,18 +66,35 @@
 		<Filter>[admin_level]='4'</Filter>
 		&maxscale_zoom4;
 		&minscale_zoom4;
-		<LineSymbolizer stroke-linejoin="round" stroke="#6d804c" stroke-width=".5" stroke-opacity=".1"/>
+		<LineSymbolizer>
+			<CssParameter name="stroke">#6d804c</CssParameter>
+			<CssParameter name="stroke-width">.5</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-opacity">.1</CssParameter>
+		</LineSymbolizer>
 	</Rule>
 	<Rule>
 		<Filter>[admin_level]='4'</Filter>
 		&maxscale_zoom5;
 		&minscale_zoom7;
-		<LineSymbolizer stroke-linejoin="round" stroke="#3c5030" stroke-width=".5" stroke-dasharray="6,1,1,1" stroke-opacity=".15"/>
+		<LineSymbolizer>
+			<CssParameter name="stroke">#3c5030</CssParameter>
+			<CssParameter name="stroke-width">.5</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-dasharray">6,1,1,1</CssParameter>
+			<CssParameter name="stroke-opacity">.15</CssParameter>
+		</LineSymbolizer>
 	</Rule>
 	<Rule>
 		<Filter>[admin_level]='4'</Filter>
 		&maxscale_zoom8;
-		<LineSymbolizer stroke-linejoin="round" stroke="#000" stroke-width="1" stroke-dasharray="12,2,2,2" stroke-opacity=".5"/>
+		<LineSymbolizer>
+			<CssParameter name="stroke">#000</CssParameter>
+			<CssParameter name="stroke-width">1</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-dasharray">12,2,2,2</CssParameter>
+			<CssParameter name="stroke-opacity">.5</CssParameter>
+		</LineSymbolizer>
 	</Rule>
 </Style>
 <!--State boundary casing-->
@@ -59,12 +103,22 @@
 		<Filter>[admin_level]='4'</Filter>
 		&maxscale_zoom5;
 		&minscale_zoom7;
-		<LineSymbolizer stroke-linejoin="round" stroke="#524f50" stroke-width="3" stroke-opacity=".01"/>
+		<LineSymbolizer>
+			<CssParameter name="stroke">#524f50</CssParameter>
+			<CssParameter name="stroke-width">3</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-opacity">.01</CssParameter>
+		</LineSymbolizer>
 	</Rule>
 	<Rule>
 		<Filter>[admin_level]='4'</Filter>
 		&maxscale_zoom8;
-		<LineSymbolizer stroke-linejoin="round" stroke="#ffffff" stroke-width="3" stroke-opacity=".5"/>
+		<LineSymbolizer>
+			<CssParameter name="stroke">#ffffff</CssParameter>
+			<CssParameter name="stroke-width">3</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-opacity">.5</CssParameter>
+		</LineSymbolizer>
 	</Rule>
 </Style>
 
@@ -74,18 +128,34 @@
 		<Filter>[admin_level]='2'</Filter>
 		&maxscale_zoom2;
 		&minscale_zoom2;
-		<LineSymbolizer stroke-linejoin="round" stroke="#6d804c" stroke-width=".5" stroke-opacity=".1"/>
+		<LineSymbolizer>
+			<CssParameter name="stroke">#6d804c</CssParameter>
+			<CssParameter name="stroke-width">.5</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-opacity">.1</CssParameter>
+		</LineSymbolizer>
 	</Rule>
 	<Rule>
 		<Filter>[admin_level]='2'</Filter>
 		&maxscale_zoom3;
 		&minscale_zoom4;
-		<LineSymbolizer stroke-linejoin="round" stroke="#6d804c" stroke-width=".5" stroke-opacity=".25"/>
+		<LineSymbolizer>
+			<CssParameter name="stroke">#6d804c</CssParameter>
+			<CssParameter name="stroke-width">.5</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-opacity">.25</CssParameter>
+		</LineSymbolizer>
 	</Rule>
 	<Rule>
 		<Filter>[admin_level]='2'</Filter>
 		&maxscale_zoom5;
-		<LineSymbolizer stroke-linejoin="round" stroke="#6d804c" stroke-width="1" stroke-dasharray="6,2,2,2" stroke-opacity=".35"/>
+		<LineSymbolizer>
+			<CssParameter name="stroke">#6d804c</CssParameter>
+			<CssParameter name="stroke-width">1</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-dasharray">6,2,2,2</CssParameter>
+			<CssParameter name="stroke-opacity">.35</CssParameter>
+		</LineSymbolizer>
 	</Rule>
 </Style>
 <!--Country boundary casing-->
@@ -93,7 +163,12 @@
 	<Rule>
 		<Filter>[admin_level]='2'</Filter>
 		&maxscale_zoom5;
-		<LineSymbolizer stroke-linejoin="round" stroke="#bfbf00" stroke-width="3" stroke-opacity=".1"/>
+		<LineSymbolizer>
+			<CssParameter name="stroke">#bfbf00</CssParameter>
+			<CssParameter name="stroke-width">3</CssParameter>
+			<CssParameter name="stroke-linejoin">round</CssParameter>
+			<CssParameter name="stroke-opacity">.1</CssParameter>
+		</LineSymbolizer>
 	</Rule>
 </Style>
 

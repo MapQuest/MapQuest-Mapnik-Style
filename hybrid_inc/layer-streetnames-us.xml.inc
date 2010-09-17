@@ -119,24 +119,39 @@
 		&maxscale_zoom18;
 		<TextSymbolizer name="name" fontset_name="book-fonts" size="12" fill="#2b2b2b" halo_fill="rgba(255,255,255,0.25)" halo_radius="2"  placement="line" max_char_angle_delta="40"/>
 	</Rule>
+<!--all other text
+	<Rule>
+		<ElseFilter/>
+		&maxscale_zoom16;
+		&minscale_zoom17;
+		<TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="#2b2b2b" halo_radius="2" placement="line" max_char_angle_delta="40"/>
+	</Rule>
+	<Rule>
+		<ElseFilter/>
+		&maxscale_zoom18;
+		<TextSymbolizer name="name" fontset_name="book-fonts" size="11" fill="#2b2b2b" halo_radius="2" placement="line" max_char_angle_delta="40"/>
+	</Rule>
+-->
 </Style>
 
 <Layer name="shield-text" status="on" srs="&osm2pgsql_projection;">
-	<StyleName>shield-text</StyleName>
-	<Datasource>
-		<Parameter name="table">
+  <StyleName>shield-text</StyleName>
+  <Datasource>
+    <Parameter name="table">
       (select way,highway,name,
       case when name ilike ref then null else name end as name,
       ref,char_length(regexp_replace(ref,E'^(US|I)\\s*([0-9]{1,3})',E'\\2')) as length,
       regexp_replace(ref,E'^(US|I)\\s*([0-9]{1,3})',E'\\2') as shield_name,
       case when bridge in ('yes','true','1') then 'yes'::text else bridge end as bridge
-      from &prefix;_roads
-      where highway in ('motorway', 'trunk', 'primary', 'secondary')
-        and (name is not null or ref is not null)
+      from &prefix;_line
+      where waterway IS NULL
+      and leisure IS NULL
+      and landuse IS NULL
+      and (name is not null or ref is not null)
       ) as roads
-		</Parameter>
+    </Parameter>
     &datasource-settings;
-	</Datasource>
+  </Datasource>
 </Layer>
 <Layer name="street-text" status="on" srs="&osm2pgsql_projection;">
 	<StyleName>street-text</StyleName>

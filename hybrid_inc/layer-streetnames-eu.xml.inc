@@ -1,24 +1,112 @@
-<Style name="shield-text">
-	<!--motorway shields-->
-	<Rule>
-		<Filter>[highway] = 'motorway' and [length] gt 0</Filter>
-		&maxscale_zoom7;
-		<ShieldSymbolizer name="[ref]" fontset_name="bold-fonts" size="10" fill="#fff" placement="line" file="&symbols;/shield_red_eu[length].png" min_distance="30" spacing="750"/>
-	</Rule>
-	<!--trunk shields-->
-	<Rule>
-		<Filter>[highway] = 'trunk' and [length] gt 0</Filter>
-		&maxscale_zoom10;
-		<ShieldSymbolizer name="[ref]" fontset_name="bold-fonts" size="10" fill="#404040" placement="line" file="&symbols;/shield_gold_eu[length].png" min_distance="30" spacing="750"/>
-	</Rule>
-	<!--primary/secondary shields-->
-	<Rule>
-		<Filter>([highway] = 'primary' or [highway] = 'secondary') and [length] gt 0</Filter>
-		&maxscale_zoom12;
-		<ShieldSymbolizer name="[ref]" fontset_name="bold-fonts" size="10" fill="#404040" placement="line" file="&symbols;/shield_white_eu[length].png" min_distance="30" spacing="750"/>
-	</Rule>
-</Style>
 <Style name="street-text">
+<!--motorway shields-->
+	<Rule>
+		<Filter>[highway] = 'motorway' and [length] &lt; 3</Filter>
+		&maxscale_zoom7;
+		<ShieldSymbolizer name="[ref]" fontset_name="bold-fonts" size="10" fill="#fff" placement="line" file="&symbols;/shield_red_eu2.png" type="png" width="21" height="17" min_distance="30" spacing="750"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'motorway' and [length] = 3</Filter>
+		&maxscale_zoom7;
+		<ShieldSymbolizer name="[ref]" fontset_name="bold-fonts" size="10" fill="#fff" placement="line" file="&symbols;/shield_red_eu3.png" type="png" width="27" height="17" min_distance="30" spacing="750"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'motorway' and [length] = 4</Filter>
+		&maxscale_zoom7;
+		<ShieldSymbolizer name="[ref]" fontset_name="bold-fonts" size="10" fill="#fff" placement="line" file="&symbols;/shield_red_eu4.png" type="png" width="31" height="17" min_distance="30" spacing="750"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'motorway' and [length] = 5</Filter>
+		&maxscale_zoom7;
+		<ShieldSymbolizer name="[ref]" fontset_name="bold-fonts" size="10" fill="#fff" placement="line" file="&symbols;/shield_red_eu5.png" type="png" width="37" height="17" min_distance="30" spacing="750"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'motorway' and [length] = 6</Filter>
+		&maxscale_zoom7;
+		<ShieldSymbolizer name="[ref]" fontset_name="bold-fonts" size="10" fill="#fff" placement="line" file="&symbols;/shield_red_eu6.png" type="png" width="45" height="17" min_distance="30" spacing="750"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'motorway' and [length] = 7</Filter>
+		&maxscale_zoom7;
+		<ShieldSymbolizer name="[ref]" fontset_name="bold-fonts" size="10" fill="#fff" placement="line" file="&symbols;/shield_red_eu7.png" type="png" width="53" height="17" min_distance="30" spacing="750"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'motorway' and [length] = 8</Filter>
+		&maxscale_zoom7;
+		<ShieldSymbolizer name="[ref]" fontset_name="bold-fonts" size="10" fill="#fff" placement="line" file="&symbols;/shield_red_eu8.png" type="png" width="61" height="17" min_distance="30" spacing="750"/>
+	</Rule>
+<!--trunk shields-->
+	<Rule>
+		<Filter>[highway] = 'trunk' and [length] &lt; 3</Filter>
+		&maxscale_zoom10;
+		<ShieldSymbolizer name="[ref]" fontset_name="bold-fonts" size="10" fill="#404040" placement="line" file="&symbols;/shield_gold_eu2.png" type="png" width="23" height="19" min_distance="30" spacing="750"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'trunk' and [length] = 3</Filter>
+		&maxscale_zoom10;
+		<ShieldSymbolizer name="[ref]" fontset_name="bold-fonts" size="10" fill="#404040" placement="line" file="&symbols;/shield_gold_eu3.png" type="png" width="29" height="19" min_distance="30" spacing="750"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'trunk' and [length] = 4</Filter>
+		&maxscale_zoom10;
+		<ShieldSymbolizer name="[ref]" fontset_name="bold-fonts" size="10" fill="#404040" placement="line" file="&symbols;/shield_gold_eu4.png" type="png" width="33" height="19" min_distance="30" spacing="750"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'trunk' and [length] = 5</Filter>
+		&maxscale_zoom10;
+		<ShieldSymbolizer name="[ref]" fontset_name="bold-fonts" size="10" fill="#404040" placement="line" file="&symbols;/shield_gold_eu5.png" type="png" width="39" height="19" min_distance="30" spacing="750"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'trunk' and [length] = 6</Filter>
+		&maxscale_zoom10;
+		<ShieldSymbolizer name="[ref]" fontset_name="bold-fonts" size="10" fill="#404040" placement="line" file="&symbols;/shield_gold_eu6.png" type="png" width="47" height="19" min_distance="30" spacing="750"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'trunk' and [length] = 7</Filter>
+		&maxscale_zoom10;
+		<ShieldSymbolizer name="[ref]" fontset_name="bold-fonts" size="10" fill="#404040" placement="line" file="&symbols;/shield_gold_eu7.png" type="png" width="55" height="19" min_distance="30" spacing="750"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'trunk' and [length] = 8</Filter>
+		&maxscale_zoom10;
+		<ShieldSymbolizer name="[ref]" fontset_name="bold-fonts" size="10" fill="#404040" placement="line" file="&symbols;/shield_gold_eu8.png" type="png" width="63" height="19" min_distance="30" spacing="750"/>
+	</Rule>
+<!--primary/secondary shields-->
+	<Rule>
+		<Filter>([highway] = 'primary' or [highway] = 'secondary') and [length] &lt; 3</Filter>
+		&maxscale_zoom12;
+		<ShieldSymbolizer name="[ref]" fontset_name="bold-fonts" size="10" fill="#404040" placement="line" file="&symbols;/shield_white_eu2.png" type="png" width="23" height="19" min_distance="30" spacing="750"/>
+	</Rule>
+	<Rule>
+		<Filter>([highway] = 'primary' or [highway] = 'secondary') and [length] = 3</Filter>
+		&maxscale_zoom12;
+		<ShieldSymbolizer name="[ref]" fontset_name="bold-fonts" size="10" fill="#404040" placement="line" file="&symbols;/shield_white_eu3.png" type="png" width="29" height="19" min_distance="30" spacing="750"/>
+	</Rule>
+	<Rule>
+		<Filter>([highway] = 'primary' or [highway] = 'secondary') and [length] = 4</Filter>
+		&maxscale_zoom12;
+		<ShieldSymbolizer name="[ref]" fontset_name="bold-fonts" size="10" fill="#404040" placement="line" file="&symbols;/shield_white_eu4.png" type="png" width="33" height="19" min_distance="30" spacing="750"/>
+	</Rule>
+	<Rule>
+		<Filter>([highway] = 'primary' or [highway] = 'secondary') and [length] = 5</Filter>
+		&maxscale_zoom12;
+		<ShieldSymbolizer name="[ref]" fontset_name="bold-fonts" size="10" fill="#404040" placement="line" file="&symbols;/shield_white_eu5.png" type="png" width="39" height="19" min_distance="30" spacing="750"/>
+	</Rule>
+	<Rule>
+		<Filter>([highway] = 'primary' or [highway] = 'secondary') and [length] = 6</Filter>
+		&maxscale_zoom12;
+		<ShieldSymbolizer name="[ref]" fontset_name="bold-fonts" size="10" fill="#404040" placement="line" file="&symbols;/shield_white_eu6.png" type="png" width="47" height="19" min_distance="30" spacing="750"/>
+	</Rule>
+	<Rule>
+		<Filter>([highway] = 'primary' or [highway] = 'secondary') and [length] = 7</Filter>
+		&maxscale_zoom12;
+		<ShieldSymbolizer name="[ref]" fontset_name="bold-fonts" size="10" fill="#404040" placement="line" file="&symbols;/shield_white_eu7.png" type="png" width="55" height="19" min_distance="30" spacing="750"/>
+	</Rule>
+	<Rule>
+		<Filter>([highway] = 'primary' or [highway] = 'secondary') and [length] = 8</Filter>
+		&maxscale_zoom12;
+		<ShieldSymbolizer name="[ref]" fontset_name="bold-fonts" size="10" fill="#404040" placement="line" file="&symbols;/shield_white_eu8.png" type="png" width="63" height="19" min_distance="30" spacing="750"/>
+	</Rule>
 <!--motorway text-->
 	<Rule>
 		<Filter>[highway] = 'motorway'</Filter>
@@ -50,22 +138,6 @@
 		<TextSymbolizer name="[name]" fontset_name="bold-fonts" size="12" fill="#2b2b2b" halo_fill="rgba(255,255,255,0.25)" halo_radius="1" placement="line" max_char_angle_delta="40" min_distance="100"/>
 	</Rule>
 </Style>
-
-<Layer name="shield-text" status="on" srs="&osm2pgsql_projection;">
-  <StyleName>shield-text</StyleName>
-  <Datasource>
-    <Parameter name="table">
-      (select way,highway,
-      case when name ilike ref then null else name end as name,
-      ref,char_length(ref) as length
-      from &prefix;_roads
-      where highway in ('motorway', 'trunk', 'primary', 'secondary')
-      and (name is not null or ref is not null)
-      ) as roads
-    </Parameter>
-    &datasource-settings;
-  </Datasource>
-</Layer>
 <Layer name="street-text" status="on" srs="&osm2pgsql_projection;">
 	<StyleName>street-text</StyleName>
 	<Datasource>

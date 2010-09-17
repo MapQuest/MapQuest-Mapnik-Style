@@ -620,7 +620,6 @@
 		<LineSymbolizer stroke-linejoin="round" stroke="#ffe14c" stroke-width="4"/>
 	</Rule>
 </Style>
-
 <Layer name="ferry-routes" status="on" srs="&osm2pgsql_projection;">
 	<StyleName>ferry-routes</StyleName>
 	<Datasource>

@@ -15,15 +15,15 @@
 <!--pedestrian walkways-->
 <Style name="pedestrian-walkways">
 	<Rule>
-		<Filter>[highway] = 'pedestrian' or [highway]='service' or [highway]='footway' or [highway]='path' or [highway]='track'</Filter>
+		<Filter>[highway] = 'pedestrian' or [highway]='footway' or [highway]='path' or [highway]='track'</Filter>
 		&maxscale_zoom16;
 		&minscale_zoom16;
-		<LineSymbolizer stroke="#808040" stroke-width="1" stroke-opacity=".3"/>
+		<LineSymbolizer stroke="#808040" stroke-width="1.5" stroke-opacity=".3" stroke-dasharray="1,3"/>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'pedestrian' or [highway]='service' or [highway]='footway' or [highway]='path'</Filter>
+		<Filter>[highway] = 'pedestrian' or [highway]='footway' or [highway]='path'</Filter>
 		&maxscale_zoom17;
-		<LineSymbolizer stroke="#808040" stroke-width="2" stroke-opacity=".3"/>
+		<LineSymbolizer stroke="#808040" stroke-width="2" stroke-opacity=".3" stroke-dasharray="2,4"/>
 	</Rule>
 </Style>
 <Style name="pedestrian-polygon">
@@ -39,12 +39,12 @@
 		<Filter>[highway] = 'cycleway' or ([highway] = 'path' and [bicycle] = 'designated')</Filter>
 		&maxscale_zoom16;
 		&minscale_zoom16;
-		<LineSymbolizer stroke="#808040" stroke-width="1" stroke-opacity=".3"/>
+		<LineSymbolizer stroke="#808040" stroke-width="1" stroke-opacity=".3" stroke-dasharray="4,4"/>
 	</Rule>
 	<Rule>
 		<Filter>[highway] = 'cycleway' or ([highway] = 'path' and [bicycle] = 'designated')</Filter>
 		&maxscale_zoom17;
-		<LineSymbolizer stroke="#808040" stroke-width="2" stroke-opacity=".3"/>
+		<LineSymbolizer stroke="#808040" stroke-width="2" stroke-opacity=".3" stroke-dasharray="6,4"/>
 	</Rule>
 </Style>
 <!--runway-->
@@ -113,6 +113,32 @@
 		<Filter>[railway] = 'rail' or [railway] = 'light_rail' or [railway] = 'subway' or [railway] = 'monorail'</Filter>
 		&maxscale_zoom14;
 		<LineSymbolizer stroke-linejoin="round" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="5,4"/>
+	</Rule>
+</Style>
+<!--alley casing-->
+<Style name="alley casing">
+	<Rule>
+		<Filter>[highway]='service'</Filter>
+		&maxscale_zoom14;
+		&minscale_zoom14;
+		<LineSymbolizer stroke-linejoin="round" stroke="#bfbfbf" stroke-width=".5" stroke-linecap="round"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway]='service'</Filter>
+		&maxscale_zoom15;
+		&minscale_zoom15;
+		<LineSymbolizer stroke-linejoin="round" stroke="#b3b1b2" stroke-width="2" stroke-linecap="round"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway]='service'</Filter>
+		&maxscale_zoom16;
+		&minscale_zoom17;
+		<LineSymbolizer stroke-linejoin="round" stroke="#b3b1b2" stroke-width="3" stroke-linecap="round"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway]='service'</Filter>
+		&maxscale_zoom18;
+		<LineSymbolizer stroke-linejoin="round" stroke="#b3b1b2" stroke-width="5" stroke-linecap="round"/>
 	</Rule>
 </Style>
 <!--tertiary casing-->
@@ -270,6 +296,32 @@
 		&maxscale_zoom18;
 		&minscale_zoom18;
 		<PointSymbolizer file="&symbols;/cul_de_sac.18.png"/>
+	</Rule>
+</Style>
+<!--alley-->
+<Style name="alley">
+	<Rule>
+		<Filter>[highway]='service'</Filter>
+		&maxscale_zoom14;
+		&minscale_zoom14;
+		<LineSymbolizer stroke-linejoin="round" stroke="#bfbfbf" stroke-width=".5" stroke-linecap="round"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway]='service'</Filter>
+		&maxscale_zoom15;
+		&minscale_zoom15;
+		<LineSymbolizer stroke-linejoin="round" stroke="#ffffff" stroke-width="1" stroke-linecap="round"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway]='service'</Filter>
+		&maxscale_zoom16;
+		&minscale_zoom17;
+		<LineSymbolizer stroke-linejoin="round" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway]='service'</Filter>
+		&maxscale_zoom18;
+		<LineSymbolizer stroke-linejoin="round" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
 	</Rule>
 </Style>
 <!--tertiary and residential-->
@@ -498,18 +550,18 @@
 		<Filter>[highway] = 'motorway_link'</Filter>
 		&maxscale_zoom14;
 		&minscale_zoom15;
-		<LineSymbolizer stroke-linejoin="round" stroke="#495f8c" stroke-width="5" stroke-linecap="round"/>
+		<LineSymbolizer stroke-linejoin="round" stroke="#495f8c" stroke-width="3" stroke-linecap="round"/>
 	</Rule>
 	<Rule>
 		<Filter>[highway] = 'motorway_link'</Filter>
 		&maxscale_zoom16;
 		&minscale_zoom17;
-		<LineSymbolizer stroke-linejoin="round" stroke="#495f8c" stroke-width="8" stroke-linecap="round"/>
+		<LineSymbolizer stroke-linejoin="round" stroke="#495f8c" stroke-width="6" stroke-linecap="round"/>
 	</Rule>
 	<Rule>
 		<Filter>[highway] = 'motorway_link'</Filter>
 		&maxscale_zoom18;
-		<LineSymbolizer stroke-linejoin="round" stroke="#495f8c" stroke-width="10" stroke-linecap="round"/>
+		<LineSymbolizer stroke-linejoin="round" stroke="#495f8c" stroke-width="7" stroke-linecap="round"/>
 	</Rule>
 </Style>
 <!--street 1 casing-->
@@ -568,18 +620,18 @@
 		<Filter>[highway] = 'motorway_link'</Filter>
 		&maxscale_zoom14;
 		&minscale_zoom15;
-		<LineSymbolizer stroke-linejoin="round" stroke="#6c91d9" stroke-width="3" stroke-linecap="round"/>
+		<LineSymbolizer stroke-linejoin="round" stroke="#6c91d9" stroke-width="2" stroke-linecap="round"/>
 	</Rule>
 	<Rule>
 		<Filter>[highway] = 'motorway_link'</Filter>
 		&maxscale_zoom16;
 		&minscale_zoom17;
-		<LineSymbolizer stroke-linejoin="round" stroke="#6c91d9" stroke-width="4" stroke-linecap="round"/>
+		<LineSymbolizer stroke-linejoin="round" stroke="#6c91d9" stroke-width="3" stroke-linecap="round"/>
 	</Rule>
 	<Rule>
 		<Filter>[highway] = 'motorway_link'</Filter>
 		&maxscale_zoom18;
-		<LineSymbolizer stroke-linejoin="round" stroke="#6c91d9" stroke-width="6" stroke-linecap="round"/>
+		<LineSymbolizer stroke-linejoin="round" stroke="#6c91d9" stroke-width="5" stroke-linecap="round"/>
 	</Rule>
 </Style>
 <!--motorway-->
@@ -706,7 +758,7 @@
 	<StyleName>cycleway</StyleName>
 	<Datasource>
 		<Parameter name="table">
-			(select way,highway,horse,foot,bicycle from &prefix;_line where highway in ('bridleway','footway','cycleway','path') and tunnel in ('yes','true','1') order by z_order) as roads
+			(select way,highway,horse,foot,bicycle from &prefix;_line where highway in ('bridleway','footway','cycleway','path')) as roads
 		</Parameter>
 		&datasource-settings;
 	</Datasource>
@@ -731,6 +783,20 @@
 	       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
 	       from &prefix;_line
 	       where railway is not null
+	       order by z_order
+	      ) as roads
+      </Parameter>
+      &datasource-settings;
+	</Datasource>
+</Layer>
+<Layer name="alley casing" status="on" srs="&osm2pgsql_projection;">
+	<StyleName>alley casing</StyleName>
+	<Datasource>
+		<Parameter name="table">
+	      (select way,highway,
+	       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
+	       from &prefix;_line
+	       where highway is not null
 	       order by z_order
 	      ) as roads
       </Parameter>
@@ -798,6 +864,20 @@
 	<Datasource>
 		<Parameter name="table">(select way from &prefix;_point where highway='turning_circle') as turning_circle</Parameter>
 		&datasource-settings;
+	</Datasource>
+</Layer>
+<Layer name="alley" status="on" srs="&osm2pgsql_projection;">
+	<StyleName>alley</StyleName>
+	<Datasource>
+		<Parameter name="table">
+	      (select way,highway,
+	       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
+	       from &prefix;_line
+	       where highway is not null
+	       order by z_order
+	      ) as roads
+      </Parameter>
+      &datasource-settings;
 	</Datasource>
 </Layer>
 <Layer name="tertiary" status="on" srs="&osm2pgsql_projection;">

@@ -6,12 +6,14 @@
 		&maxscale_zoom10;
 		<PolygonSymbolizer fill-opacity="0.8" fill="#e8d1ba"/>
 	</Rule>
-<!--cemetery fill--><Rule>
+<!--cemetery fill-->
+	<Rule>
 		&maxscale_zoom12;
 		&minscale_zoom14;
 		<Filter>[landuse] = 'cemetery' or [landuse] = 'grave_yard' or [amenity]='grave_yard'</Filter>
 		<PolygonSymbolizer fill-opacity=".15" fill="#619e3a"/>
-	</Rule><Rule>
+	</Rule>
+	<Rule>
 		&maxscale_zoom15;
 		<Filter>[landuse] = 'cemetery' or [landuse] = 'grave_yard' or [amenity]='grave_yard'</Filter>
 		<PolygonSymbolizer fill-opacity=".25" fill="#619e3a"/>
@@ -27,7 +29,8 @@
 		<Filter>[landuse]='military'</Filter>
 		<PolygonSymbolizer fill-opacity="0.25" fill="#7a941e"/>
 	</Rule>
-<!--barracks--><Rule>
+<!--barracks-->
+	<Rule>
 		&maxscale_zoom10;
 		<Filter>[military] = 'barracks'</Filter>
 		<PolygonSymbolizer fill="#d4d9c1"/>
@@ -104,6 +107,12 @@
 		&maxscale_zoom12;
 		<PolygonSymbolizer fill="#f5efd7"/>
 	</Rule>
+<!--parking lot fill-->
+	<Rule>
+		<Filter>[amenity] = 'parking'</Filter>
+		&maxscale_zoom10;
+		<PolygonSymbolizer fill="#fffef2"/>
+	</Rule>
 <!--stadium fill-->
 	<Rule>
 		<Filter>[leisure] = 'stadium' or [leisure] = 'sports_centre'</Filter>
@@ -132,9 +141,10 @@
 	<Rule>
 		<Filter>[aeroway] = 'apron' or [aeroway] = 'aerodrome'</Filter>
 		&maxscale_zoom10;
-		<PolygonSymbolizer fill="#d1d2e0"/>
+		<PolygonSymbolizer fill="#dddeed"/>
 	</Rule>
-<!--residential--><Rule>
+<!--residential-->
+	<Rule>
 		&maxscale_zoom10;
 		&minscale_zoom18;
 		<Filter>[landuse] = 'residential'</Filter>

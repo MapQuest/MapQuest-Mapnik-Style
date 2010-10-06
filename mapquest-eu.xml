@@ -48,7 +48,7 @@ THE SOFTWARE.
 &layer-transportation;
 &layer-overpass;
 <!--BUILDING layers-->
-&layer-building;
+&layer-buildings;
 <!--BORDER layers-->
 &layer-border;
 <!--SYMBOL layers-->

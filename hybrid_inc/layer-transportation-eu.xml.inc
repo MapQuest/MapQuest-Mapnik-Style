@@ -15,22 +15,15 @@
 <!--pedestrian walkways-->
 <Style name="pedestrian-walkways">
 	<Rule>
-		<Filter>[highway] = 'pedestrian' or [highway]='service' or [highway]='footway' or [highway]='path' or [highway]='track'</Filter>
+		<Filter>[highway] = 'pedestrian' or [highway]='footway' or [highway]='path' or [highway]='track'</Filter>
 		&maxscale_zoom16;
 		&minscale_zoom16;
 		<LineSymbolizer stroke="#808040" stroke-width="1" stroke-opacity=".3"/>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'pedestrian' or [highway]='service' or [highway]='footway' or [highway]='path'</Filter>
+		<Filter>[highway] = 'pedestrian' or [highway]='footway' or [highway]='path'</Filter>
 		&maxscale_zoom17;
 		<LineSymbolizer stroke="#808040" stroke-width="2" stroke-opacity=".3"/>
-	</Rule>
-</Style>
-<Style name="pedestrian-polygon">
-	<Rule>
-		<Filter>[highway] = 'living_street' or [highway] = 'pedestrian' or [highway]='service' or [highway]='footway' or [highway]='path' or [highway] = 'residential' or [highway]='unclassified' or [highway]='service' or [highway] = 'track'</Filter>
-		&maxscale_zoom14;
-		<PolygonSymbolizer fill="#c8c8c8"/>
 	</Rule>
 </Style>
 <!--cycleway-->
@@ -45,6 +38,32 @@
 		<Filter>[highway] = 'cycleway' or ([highway] = 'path' and [bicycle] = 'designated')</Filter>
 		&maxscale_zoom17;
 		<LineSymbolizer stroke="#808040" stroke-width="2" stroke-opacity=".3"/>
+	</Rule>
+</Style>
+<!--alley-->
+<Style name="alley">
+	<Rule>
+		<Filter>[highway]='service'</Filter>
+		&maxscale_zoom14;
+		&minscale_zoom14;
+		<LineSymbolizer stroke-linejoin="round" stroke="#b2b2b2" stroke-width=".5" stroke-linecap="round" stroke-opacity=".2"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway]='service'</Filter>
+		&maxscale_zoom15;
+		&minscale_zoom15;
+		<LineSymbolizer stroke-linejoin="round" stroke="#b2b2b2" stroke-width="1" stroke-linecap="round" stroke-opacity=".2"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway]='service'</Filter>
+		&maxscale_zoom16;
+		&minscale_zoom17;
+		<LineSymbolizer stroke-linejoin="round" stroke="#b2b2b2" stroke-width="2" stroke-linecap="round" stroke-opacity=".3"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway]='service'</Filter>
+		&maxscale_zoom18;
+		<LineSymbolizer stroke-linejoin="round" stroke="#b2b2b2" stroke-width="3" stroke-linecap="round" stroke-opacity=".2"/>
 	</Rule>
 </Style>
 <!--tertiary casing-->
@@ -269,7 +288,7 @@
 		<Filter>[highway] = 'primary' or [highway] = 'primary_link'</Filter>
 		&maxscale_zoom12;
 		&minscale_zoom13;
-		<LineSymbolizer stroke-linejoin="round" stroke="#fbe297" stroke-width="1" stroke-linecap="round" stroke-opacity=".5"/>
+		<LineSymbolizer stroke-linejoin="round" stroke="#fbe297" stroke-width="2" stroke-linecap="round" stroke-opacity="1"/>
 	</Rule>
 	<Rule>
 		<Filter>[highway] = 'primary' or [highway] = 'primary_link'</Filter>
@@ -389,12 +408,12 @@
 		<Filter>[highway] = 'motorway'</Filter>
 		&maxscale_zoom16;
 		&minscale_zoom17;
-		<LineSymbolizer stroke-linejoin="round" stroke="#000000" stroke-width="12" stroke-opacity=".3"/>
+		<LineSymbolizer stroke-linejoin="round" stroke="#000000" stroke-width="11" stroke-opacity=".3"/>
 	</Rule>
 	<Rule>
 		<Filter>[highway] = 'motorway'</Filter>
 		&maxscale_zoom18;
-		<LineSymbolizer stroke-linejoin="round" stroke="#000000" stroke-width="16" stroke-opacity=".3"/>
+		<LineSymbolizer stroke-linejoin="round" stroke="#000000" stroke-width="14" stroke-opacity=".3"/>
 	</Rule>
 </Style>
 <!--interchange-->
@@ -511,6 +530,7 @@
 		<LineSymbolizer stroke-linejoin="round" stroke="#ffe14c" stroke-width="4" stroke-opacity=".8"/>
 	</Rule>
 </Style>
+
 <Layer name="ferry-routes" status="on" srs="&osm2pgsql_projection;">
 	<StyleName>ferry-routes</StyleName>
 	<Datasource>
@@ -534,17 +554,6 @@
 		&datasource-settings;
 	</Datasource>
 </Layer>
-<Layer name="pedestrian-polygon" status="on" srs="&osm2pgsql_projection;">
-	<StyleName>pedestrian-polygon</StyleName>
-	<Datasource>
-		<Parameter name="table">
-      (select way,highway from &prefix;_polygon
-       where highway in ('residential','unclassified','pedestrian','service','footway','living_street','track','path')
-       order by z_order,way_area desc) as roads
-		</Parameter>
-      &datasource-settings;
-	</Datasource>
-</Layer>
 <Layer name="cycleway" status="on" srs="&osm2pgsql_projection;">
 	<StyleName>cycleway</StyleName>
 	<Datasource>
@@ -554,38 +563,18 @@
 		&datasource-settings;
 	</Datasource>
 </Layer>
-<Layer name="runway" status="on" srs="&osm2pgsql_projection;">
-	<StyleName>runway</StyleName>
+<Layer name="alley" status="on" srs="&osm2pgsql_projection;">
+	<StyleName>alley</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,horse,bicycle,foot,construction,aeroway,service,
-       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel,
-       case when bridge in ('yes','true','1') then 'yes'::text else bridge end as bridge,
-       case when railway in ('spur','siding')
-              or (railway='rail' and service in ('spur','siding','yard'))
-            then 'spur-siding-yard'::text else railway end as railway
-       from &prefix;_line
-       where highway is not null
-          or aeroway in ('runway','taxiway')
-          or railway in ('light_rail','narrow_gauge','funicular','rail','subway','tram','spur','siding','platform','disused','abandoned','construction')
-       order by z_order) as roads
-		</Parameter>
-      &datasource-settings;
-    </Datasource>
-</Layer>
-<Layer name="rail" status="on" srs="&osm2pgsql_projection;">
-	<StyleName>rail</StyleName>
-	<Datasource>
-		<Parameter name="table">
-	      (select way,highway,railway,
+	      (select way,highway,
 	       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
 	       from &prefix;_line
 	       where highway is not null
-	          or railway is not null
 	       order by z_order
 	      ) as roads
-		</Parameter>
-		&datasource-settings;
+      </Parameter>
+      &datasource-settings;
 	</Datasource>
 </Layer>
 <Layer name="tertiary casing" status="on" srs="&osm2pgsql_projection;">
@@ -646,13 +635,6 @@
       ) as roads
 		</Parameter>
 	&datasource-settings;
-	</Datasource>
-</Layer>
-<Layer name="cul-de-sac" status="on" srs="&osm2pgsql_projection;">
-	<StyleName>cul-de-sac</StyleName>
-	<Datasource>
-		<Parameter name="table">(select way from &prefix;_point where highway='turning_circle') as turning_circle</Parameter>
-		&datasource-settings;
 	</Datasource>
 </Layer>
 <Layer name="tertiary" status="on" srs="&osm2pgsql_projection;">

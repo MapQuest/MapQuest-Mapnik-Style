@@ -18,12 +18,12 @@
 		<Filter>[highway] = 'pedestrian' or [highway]='footway' or [highway]='path' or [highway]='track'</Filter>
 		&maxscale_zoom16;
 		&minscale_zoom16;
-		<LineSymbolizer stroke="#808040" stroke-width="1" stroke-opacity=".3"/>
+		<LineSymbolizer stroke="#808040" stroke-width="1.5" stroke-opacity=".3" stroke-dasharray="1,3"/>
 	</Rule>
 	<Rule>
 		<Filter>[highway] = 'pedestrian' or [highway]='footway' or [highway]='path'</Filter>
 		&maxscale_zoom17;
-		<LineSymbolizer stroke="#808040" stroke-width="2" stroke-opacity=".3"/>
+		<LineSymbolizer stroke="#808040" stroke-width="2" stroke-opacity=".3" stroke-dasharray="2,4"/>
 	</Rule>
 </Style>
 <Style name="pedestrian-polygon">
@@ -39,12 +39,12 @@
 		<Filter>[highway] = 'cycleway' or ([highway] = 'path' and [bicycle] = 'designated')</Filter>
 		&maxscale_zoom16;
 		&minscale_zoom16;
-		<LineSymbolizer stroke="#808040" stroke-width="1" stroke-opacity=".3"/>
+		<LineSymbolizer stroke="#808040" stroke-width="1" stroke-opacity=".3" stroke-dasharray="4,4"/>
 	</Rule>
 	<Rule>
 		<Filter>[highway] = 'cycleway' or ([highway] = 'path' and [bicycle] = 'designated')</Filter>
 		&maxscale_zoom17;
-		<LineSymbolizer stroke="#808040" stroke-width="2" stroke-opacity=".3"/>
+		<LineSymbolizer stroke="#808040" stroke-width="2" stroke-opacity=".3" stroke-dasharray="6,4"/>
 	</Rule>
 </Style>
 <!--runway-->
@@ -115,28 +115,54 @@
 		<LineSymbolizer stroke-linejoin="round" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="5,4"/>
 	</Rule>
 </Style>
+<!--alley casing-->
+<Style name="alley casing">
+	<Rule>
+		<Filter>[highway]='service'</Filter>
+		&maxscale_zoom14;
+		&minscale_zoom14;
+		<LineSymbolizer stroke-linejoin="round" stroke="#bfbfbf" stroke-width=".5" stroke-linecap="round"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway]='service'</Filter>
+		&maxscale_zoom15;
+		&minscale_zoom15;
+		<LineSymbolizer stroke-linejoin="round" stroke="#b3b1b2" stroke-width="2" stroke-linecap="round"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway]='service'</Filter>
+		&maxscale_zoom16;
+		&minscale_zoom17;
+		<LineSymbolizer stroke-linejoin="round" stroke="#b3b1b2" stroke-width="3" stroke-linecap="round"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway]='service'</Filter>
+		&maxscale_zoom18;
+		<LineSymbolizer stroke-linejoin="round" stroke="#b3b1b2" stroke-width="5" stroke-linecap="round"/>
+	</Rule>
+</Style>
 <!--street 4 casing-->
 <Style name="street 4 casing">
 	<Rule>
-		<Filter>[highway] = 'tertiary' or [highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' or [highway] = 'tertiary_link' or [highway] = 'residential_link' or [highway] = 'unclassified_link' or [highway]='service'</Filter>
+		<Filter>[highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' or [highway] = 'residential_link' or [highway] = 'unclassified_link'</Filter>
 		&maxscale_zoom14;
 		&minscale_zoom14;
 		<LineSymbolizer stroke-linejoin="round" stroke="#b3b1b2" stroke-width="4" stroke-linecap="round"/>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'tertiary' or [highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' or [highway] = 'tertiary_link' or [highway] = 'residential_link' or [highway] = 'unclassified_link' or [highway]='service'</Filter>
+		<Filter>[highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' or [highway] = 'residential_link' or [highway] = 'unclassified_link'</Filter>
 		&maxscale_zoom15;
 		&minscale_zoom15;
 		<LineSymbolizer stroke-linejoin="round" stroke="#b3b1b2" stroke-width="6" stroke-linecap="round"/>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'tertiary' or [highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' or [highway] = 'tertiary_link' or [highway] = 'residential_link' or [highway] = 'unclassified_link' or [highway]='service'</Filter>
+		<Filter>[highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' or [highway] = 'residential_link' or [highway] = 'unclassified_link'</Filter>
 		&maxscale_zoom16;
 		&minscale_zoom17;
 		<LineSymbolizer stroke-linejoin="round" stroke="#b3b1b2" stroke-width="8" stroke-linecap="round"/>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'tertiary' or [highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' or [highway] = 'tertiary_link' or [highway] = 'residential_link' or [highway] = 'unclassified_link' or [highway]='service'</Filter>
+		<Filter>[highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' or [highway] = 'residential_link' or [highway] = 'unclassified_link'</Filter>
 		&maxscale_zoom18;
 		<LineSymbolizer stroke-linejoin="round" stroke="#b3b1b2" stroke-width="10" stroke-linecap="round"/>
 	</Rule>
@@ -144,37 +170,37 @@
 <!--street 3 casing-->
 <Style name="street 3 casing">
 	<Rule>
-		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
+		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link' or [highway] = 'tertiary' or [highway] = 'tertiary_link'</Filter>
 		&maxscale_zoom10;
 		&minscale_zoom11;
 		<LineSymbolizer stroke-linejoin="round" stroke="#bfb38f" stroke-width="3" stroke-linecap="round"/>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
+		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link' or [highway] = 'tertiary' or [highway] = 'tertiary_link'</Filter>
 		&maxscale_zoom12;
 		&minscale_zoom13;
 		<LineSymbolizer stroke-linejoin="round" stroke="#ccad70" stroke-width="4" stroke-linecap="round"/>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
+		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link' or [highway] = 'tertiary' or [highway] = 'tertiary_link'</Filter>
 		&maxscale_zoom14;
 		&minscale_zoom14;
 		<LineSymbolizer stroke-linejoin="round" stroke="#ccad70" stroke-width="5" stroke-linecap="round"/>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
+		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link' or [highway] = 'tertiary' or [highway] = 'tertiary_link'</Filter>
 		&maxscale_zoom15;
 		&minscale_zoom15;
 		<LineSymbolizer stroke-linejoin="round" stroke="#ccad70" stroke-width="6" stroke-linecap="round"/>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
+		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link' or [highway] = 'tertiary' or [highway] = 'tertiary_link'</Filter>
 		&maxscale_zoom16;
 		&minscale_zoom17;
 		<LineSymbolizer stroke-linejoin="round" stroke="#ccad70" stroke-width="10" stroke-linecap="round"/>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
+		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link' or [highway] = 'tertiary' or [highway] = 'tertiary_link'</Filter>
 		&maxscale_zoom18;
 		<LineSymbolizer stroke-linejoin="round" stroke="#ccad70" stroke-width="12" stroke-linecap="round"/>
 	</Rule>
@@ -252,40 +278,66 @@
 		<PointSymbolizer file="&symbols;/cul_de_sac.18.png"/>
 	</Rule>
 </Style>
+<!--alley-->
+<Style name="alley">
+	<Rule>
+		<Filter>[highway]='service'</Filter>
+		&maxscale_zoom14;
+		&minscale_zoom14;
+		<LineSymbolizer stroke-linejoin="round" stroke="#bfbfbf" stroke-width=".5" stroke-linecap="round"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway]='service'</Filter>
+		&maxscale_zoom15;
+		&minscale_zoom15;
+		<LineSymbolizer stroke-linejoin="round" stroke="#ffffff" stroke-width="1" stroke-linecap="round"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway]='service'</Filter>
+		&maxscale_zoom16;
+		&minscale_zoom17;
+		<LineSymbolizer stroke-linejoin="round" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway]='service'</Filter>
+		&maxscale_zoom18;
+		<LineSymbolizer stroke-linejoin="round" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+	</Rule>
+</Style>
 <!--street 4-->
 <Style name="street 4">
 	<Rule>
-		<Filter>[highway] = 'tertiary' or [highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' or [highway] = 'tertiary_link' or [highway] = 'residential_link' or [highway] = 'unclassified_link' or [highway]='service'</Filter>
+		<Filter>[highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' or [highway] = 'residential_link' or [highway] = 'unclassified_link'</Filter>
 		&maxscale_zoom12;
 		&minscale_zoom12;
 		<LineSymbolizer stroke-linejoin="round" stroke="#b4b4b4" stroke-width=".3" stroke-linecap="round"/>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'tertiary' or [highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' or [highway] = 'tertiary_link' or [highway] = 'residential_link' or [highway] = 'unclassified_link' or [highway] = 'tertiary_link' or [highway] = 'residential_link' or [highway] = 'unclassified_link' or [highway]='service'</Filter>
+		<Filter>[highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' or [highway] = 'residential_link' or [highway] = 'unclassified_link' or [highway] = 'residential_link' or [highway] = 'unclassified_link'</Filter>
 		&maxscale_zoom13;
 		&minscale_zoom13;
 		<LineSymbolizer stroke-linejoin="round" stroke="#b4b4b4" stroke-width=".5" stroke-linecap="round"/>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'tertiary' or [highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' or [highway] = 'tertiary_link' or [highway] = 'residential_link' or [highway] = 'unclassified_link' or [highway]='service'</Filter>
+		<Filter>[highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' or [highway] = 'residential_link' or [highway] = 'unclassified_link'</Filter>
 		&maxscale_zoom14;
 		&minscale_zoom14;
 		<LineSymbolizer stroke-linejoin="round" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'tertiary' or [highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' or [highway] = 'tertiary_link' or [highway] = 'residential_link' or [highway] = 'unclassified_link' or [highway]='service'</Filter>
+		<Filter>[highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' or [highway] = 'residential_link' or [highway] = 'unclassified_link'</Filter>
 		&maxscale_zoom15;
 		&minscale_zoom15;
 		<LineSymbolizer stroke-linejoin="round" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'tertiary' or [highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' or [highway] = 'tertiary_link' or [highway] = 'residential_link' or [highway] = 'unclassified_link' or [highway]='service'</Filter>
+		<Filter>[highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' or [highway] = 'residential_link' or [highway] = 'unclassified_link'</Filter>
 		&maxscale_zoom16;
 		&minscale_zoom17;
 		<LineSymbolizer stroke-linejoin="round" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'tertiary' or [highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' or [highway] = 'tertiary_link' or [highway] = 'residential_link' or [highway] = 'unclassified_link' or [highway]='service'</Filter>
+		<Filter>[highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' or [highway] = 'residential_link' or [highway] = 'unclassified_link'</Filter>
 		&maxscale_zoom18;
 		<LineSymbolizer stroke-linejoin="round" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
 	</Rule>
@@ -293,49 +345,49 @@
 <!--street 3-->
 <Style name="street 3">
 	<Rule>
-		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
+		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link' or [highway] = 'tertiary' or [highway] = 'tertiary_link'</Filter>
 		&maxscale_zoom8;
 		&minscale_zoom8;
 		<LineSymbolizer stroke-linejoin="round" stroke="#bfbfbf" stroke-width=".5" stroke-linecap="round"/>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
+		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link' or [highway] = 'tertiary' or [highway] = 'tertiary_link'</Filter>
 		&maxscale_zoom9;
 		&minscale_zoom9;
 		<LineSymbolizer stroke-linejoin="round" stroke="#a99f85" stroke-width=".5" stroke-linecap="round"/>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
+		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link' or [highway] = 'tertiary' or [highway] = 'tertiary_link'</Filter>
 		&maxscale_zoom10;
 		&minscale_zoom11;
 		<LineSymbolizer stroke-linejoin="round" stroke="#f4faa0" stroke-width="1" stroke-linecap="round"/>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
+		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link' or [highway] = 'tertiary' or [highway] = 'tertiary_link'</Filter>
 		&maxscale_zoom12;
 		&minscale_zoom13;
 		<LineSymbolizer stroke-linejoin="round" stroke="#f2f291" stroke-width="2" stroke-linecap="round"/>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
+		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link' or [highway] = 'tertiary' or [highway] = 'tertiary_link'</Filter>
 		&maxscale_zoom14;
 		&minscale_zoom14;
 		<LineSymbolizer stroke-linejoin="round" stroke="#f6f0a3" stroke-width="3" stroke-linecap="round"/>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
+		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link' or [highway] = 'tertiary' or [highway] = 'tertiary_link'</Filter>
 		&maxscale_zoom15;
 		&minscale_zoom15;
 		<LineSymbolizer stroke-linejoin="round" stroke="#f6f0a3" stroke-width="4" stroke-linecap="round"/>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
+		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link' or [highway] = 'tertiary' or [highway] = 'tertiary_link'</Filter>
 		&maxscale_zoom16;
 		&minscale_zoom17;
 		<LineSymbolizer stroke-linejoin="round" stroke="#f6f0a3" stroke-width="6" stroke-linecap="round"/>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link'</Filter>
+		<Filter>[highway] = 'secondary' or [highway] = 'secondary_link' or [highway] = 'tertiary' or [highway] = 'tertiary_link'</Filter>
 		&maxscale_zoom18;
 		<LineSymbolizer stroke-linejoin="round" stroke="#f6f0a3" stroke-width="8" stroke-linecap="round"/>
 	</Rule>
@@ -630,7 +682,7 @@
 	<StyleName>cycleway</StyleName>
 	<Datasource>
 		<Parameter name="table">
-			(select way,highway,horse,foot,bicycle from &prefix;_line where highway in ('bridleway','footway','cycleway','path') and tunnel in ('yes','true','1') order by z_order) as roads
+			(select way,highway,horse,foot,bicycle from &prefix;_line where highway in ('bridleway','footway','cycleway','path')) as roads
 		</Parameter>
 		&datasource-settings;
 	</Datasource>
@@ -675,6 +727,20 @@
 	&datasource-settings;
 	</Datasource>
 </Layer>
+<Layer name="alley casing" status="on" srs="&osm2pgsql_projection;">
+	<StyleName>alley casing</StyleName>
+	<Datasource>
+		<Parameter name="table">
+	      (select way,highway,
+	       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
+	       from &prefix;_line
+	       where highway is not null
+	       order by z_order
+	      ) as roads
+      </Parameter>
+      &datasource-settings;
+	</Datasource>
+</Layer>
 <Layer name="street 4 casing" status="on" srs="&osm2pgsql_projection;">
 	<StyleName>street 4 casing</StyleName>
 	<Datasource>
@@ -696,8 +762,8 @@
 		<Parameter name="table">
       (select way,highway,
        case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
-       from &prefix;_roads
-       where highway in ('secondary', 'secondary_link')
+       from &prefix;_line
+       where highway in ('secondary', 'secondary_link','tertiary','tertiary_link')
        order by z_order
       ) as roads
 		</Parameter>
@@ -710,7 +776,7 @@
 		<Parameter name="table">
       (select way,highway,
        case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
-       from &prefix;_roads
+       from &prefix;_line
        where highway in ('trunk', 'trunk_link', 'primary', 'primary_link')
        order by z_order
       ) as roads
@@ -739,6 +805,20 @@
 	&datasource-settings;
 	</Datasource>
 </Layer>
+<Layer name="alley" status="on" srs="&osm2pgsql_projection;">
+	<StyleName>alley</StyleName>
+	<Datasource>
+		<Parameter name="table">
+	      (select way,highway,
+	       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
+	       from &prefix;_line
+	       where highway is not null
+	       order by z_order
+	      ) as roads
+      </Parameter>
+      &datasource-settings;
+	</Datasource>
+</Layer>
 <Layer name="street 4" status="on" srs="&osm2pgsql_projection;">
 	<StyleName>street 4</StyleName>
 	<Datasource>
@@ -759,8 +839,8 @@
 		<Parameter name="table">
       (select way,highway,
        case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
-       from &prefix;_roads
-       where highway in ('secondary', 'secondary_link')
+       from &prefix;_line
+       where highway in ('secondary', 'secondary_link','tertiary','tertiary_link')
        order by z_order
       ) as roads
 		</Parameter>

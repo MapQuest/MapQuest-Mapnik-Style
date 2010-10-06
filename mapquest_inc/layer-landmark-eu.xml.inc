@@ -102,6 +102,12 @@
 		&maxscale_zoom12;
 		<PolygonSymbolizer fill="#f5efd7"/>
 	</Rule>
+	<!--parking lot fill-->
+	<Rule>
+		<Filter>[amenity] = 'parking'</Filter>
+		&maxscale_zoom10;
+		<PolygonSymbolizer fill="#fffef2"/>
+	</Rule>
 	<!--stadium fill-->
 	<Rule>
 		<Filter>[leisure] = 'stadium' or [leisure] = 'sports_centre'</Filter>
@@ -130,7 +136,7 @@
 	<Rule>
 		<Filter>[aeroway] = 'apron' or [aeroway] = 'aerodrome'</Filter>
 		&maxscale_zoom10;
-		<PolygonSymbolizer fill="#d1d2e0"/>
+		<PolygonSymbolizer fill="#dddeed"/>
 	</Rule>
 	<!--airport runway-->
 	<Rule>

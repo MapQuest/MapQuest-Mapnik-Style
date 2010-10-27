@@ -61,6 +61,7 @@
 		<Filter>[amenity]='hospital'</Filter>
 		<PointSymbolizer file="&symbols;/hospital.svg"/>
 	</Rule>
+	<!--marina-->
 	<Rule>
 		&maxscale_zoom16;
 		<Filter>[leisure]='marina'</Filter>

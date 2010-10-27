@@ -389,6 +389,38 @@
 		<LineSymbolizer stroke="#000000" stroke-width="12" stroke-linejoin="round" stroke-opacity=".3"/>
 	</Rule>
 </Style>
+<!--street 1 casing-->
+<Style name="street 1 toll casing">
+	<Rule>
+		<Filter>[highway] = 'motorway'</Filter>
+		&maxscale_zoom10;
+		&minscale_zoom11;
+		<LineSymbolizer stroke="#000000" stroke-width="5" stroke-linejoin="round" stroke-opacity=".3"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'motorway'</Filter>
+		&maxscale_zoom12;
+		&minscale_zoom13;
+		<LineSymbolizer stroke="#000000" stroke-width="6" stroke-linejoin="round" stroke-opacity=".3"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'motorway'</Filter>
+		&maxscale_zoom14;
+		&minscale_zoom15;
+		<LineSymbolizer stroke="#000000" stroke-width="8" stroke-linejoin="round" stroke-opacity=".3"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'motorway'</Filter>
+		&maxscale_zoom16;
+		&minscale_zoom17;
+		<LineSymbolizer stroke="#000000" stroke-width="10" stroke-linejoin="round" stroke-opacity=".3"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'motorway'</Filter>
+		&maxscale_zoom18;
+		<LineSymbolizer stroke="#000000" stroke-width="12" stroke-linejoin="round" stroke-opacity=".3"/>
+	</Rule>
+</Style>
 <!--interchange-->
 <Style name="ramp">
 	<Rule>
@@ -515,6 +547,101 @@
 		<LineSymbolizer stroke="#d3dbeb" stroke-width="4" stroke-linejoin="round"/>
 	</Rule>
 </Style>
+<!--street 1 toll-->
+<Style name="street 1 toll">
+	<Rule>
+		<Filter>[highway] = 'motorway'</Filter>
+		&maxscale_zoom5;
+		&minscale_zoom5;
+		<LineSymbolizer stroke="#0040ff" stroke-width="1" stroke-opacity=".1" stroke-linejoin="round"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'motorway'</Filter>
+		&maxscale_zoom6;
+		&minscale_zoom6;
+		<LineSymbolizer stroke="#0040ff" stroke-width="1.5" stroke-opacity=".2" stroke-linejoin="round"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'motorway'</Filter>
+		&maxscale_zoom7;
+		&minscale_zoom7;
+		<LineSymbolizer stroke="#77b383" stroke-width="1.5" stroke-opacity=".5" stroke-linejoin="round"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'motorway'</Filter>
+		&maxscale_zoom8;
+		&minscale_zoom9;
+		<LineSymbolizer stroke="#4d994d" stroke-width="4" stroke-linejoin="round"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'motorway'</Filter>
+		&maxscale_zoom10;
+		&minscale_zoom11;
+		<LineSymbolizer stroke="#88cc66" stroke-width="3" stroke-linejoin="round"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'motorway'</Filter>
+		&maxscale_zoom12;
+		&minscale_zoom13;
+		<LineSymbolizer stroke="#88cc66" stroke-width="4" stroke-linejoin="round"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'motorway'</Filter>
+		&maxscale_zoom14;
+		&minscale_zoom15;
+		<LineSymbolizer stroke="#86c269" stroke-width="5" stroke-linejoin="round"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'motorway'</Filter>
+		&maxscale_zoom16;
+		&minscale_zoom17;
+		<LineSymbolizer stroke="#86c269" stroke-width="7" stroke-linejoin="round"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'motorway'</Filter>
+		&maxscale_zoom18;
+		<LineSymbolizer stroke="#86c269" stroke-width="10" stroke-linejoin="round"/>
+	</Rule>
+</Style>
+<!--street 1 toll centerline-->
+<Style name="centerline toll">
+	<Rule>
+		<Filter>[highway] = 'motorway'</Filter>
+		&maxscale_zoom8;
+		&minscale_zoom9;
+		<LineSymbolizer stroke="#9ccc85" stroke-width="1" stroke-linejoin="round"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'motorway'</Filter>
+		&maxscale_zoom10;
+		&minscale_zoom11;
+		<LineSymbolizer stroke="#d9e5d3" stroke-width="1" stroke-linejoin="round"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'motorway'</Filter>
+		&maxscale_zoom12;
+		&minscale_zoom13;
+		<LineSymbolizer stroke="#d9e5d3" stroke-width="1.5" stroke-linejoin="round"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'motorway'</Filter>
+		&maxscale_zoom14;
+		&minscale_zoom15;
+		<LineSymbolizer stroke="#d5e8d8" stroke-width="2" stroke-linejoin="round"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'motorway'</Filter>
+		&maxscale_zoom16;
+		&minscale_zoom17;
+		<LineSymbolizer stroke="#d5e8d8" stroke-width="3" stroke-linejoin="round"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'motorway'</Filter>
+		&maxscale_zoom18;
+		<LineSymbolizer stroke="#d5e8d8" stroke-width="4" stroke-linejoin="round"/>
+	</Rule>
+</Style>
+
 
 <Layer name="ferry-routes" status="on" srs="&osm2pgsql_projection;">
 	<StyleName>ferry-routes</StyleName>
@@ -686,11 +813,24 @@
 	<StyleName>street 1 casing</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,railway,
+      (select way,highway,toll,
        case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
        from &prefix;_roads
-       where highway is not null
-          or railway is not null
+       where highway in ('motorway') and (toll is null or toll = 'no')
+       order by z_order
+      ) as roads
+		</Parameter>
+	&datasource-settings;
+	</Datasource>
+</Layer>
+<Layer name="street 1 toll casing" status="on" srs="&osm2pgsql_projection;">
+	<StyleName>street 1 toll casing</StyleName>
+	<Datasource>
+		<Parameter name="table">
+      (select way,highway,toll,
+       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
+       from &prefix;_roads
+       where highway in ('motorway') and (toll = 'yes' or toll = 'true')
        order by z_order
       ) as roads
 		</Parameter>
@@ -701,11 +841,10 @@
 	<StyleName>street 1</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,railway,
+      (select way,highway,toll,
        case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
        from &prefix;_roads
-       where highway is not null
-          or railway is not null
+       where highway in ('motorway') and (toll is null or toll = 'no')
        order by z_order
       ) as roads
 		</Parameter>
@@ -716,11 +855,38 @@
 	<StyleName>centerline</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,railway,
+      (select way,highway,toll,
        case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
        from &prefix;_roads
-       where highway is not null
-          or railway is not null
+       where highway in ('motorway') and (toll is null or toll = 'no')
+       order by z_order
+      ) as roads
+		</Parameter>
+	&datasource-settings;
+	</Datasource>
+</Layer>
+<Layer name="street 1 toll" status="on" srs="&osm2pgsql_projection;">
+	<StyleName>street 1 toll</StyleName>
+	<Datasource>
+		<Parameter name="table">
+      (select way,highway,toll,
+       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
+       from &prefix;_roads
+       where highway in ('motorway') and (toll = 'yes' or toll = 'true')
+       order by z_order
+      ) as roads
+		</Parameter>
+	&datasource-settings;
+	</Datasource>
+</Layer>
+<Layer name="centerline toll" status="on" srs="&osm2pgsql_projection;">
+	<StyleName>centerline toll</StyleName>
+	<Datasource>
+		<Parameter name="table">
+      (select way,highway,toll,
+       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
+       from &prefix;_roads
+       where highway in ('motorway') and (toll = 'yes' or toll = 'true')
        order by z_order
       ) as roads
 		</Parameter>

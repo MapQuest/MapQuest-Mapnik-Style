@@ -250,7 +250,7 @@
 <!--motorway junction-->
 	<Rule>
 		&maxscale_zoom15;
-		<ShieldSymbolizer name="[shield_name]" fontset_name="bold-fonts" size="10" fill="#ffffff" placement="point" dx="-1" dy="-2.5" shield_dy="-15" shield_dx="10" file="&symbols;/exit.png" type="png" width="21" height="17"/> 
+		<ShieldSymbolizer name="[shield_name]" fontset_name="bold-fonts" size="10" fill="#ffffff" placement="point" dx="-1" dy="-2.5" shield_dy="-15" shield_dx="10" file="&symbols;/exit.svg" type="png" width="21" height="17"/> 
 	</Rule>
 </Style>
 <Style name="locality">

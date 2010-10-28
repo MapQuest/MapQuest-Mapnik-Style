@@ -863,7 +863,7 @@
 		<Parameter name="table">
       (select way,highway,
        case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
-       from &prefix;_line
+       from &prefix;_roads
        where highway in ('trunk', 'trunk_link', 'primary', 'primary_link')
        order by z_order
       ) as roads
@@ -940,7 +940,7 @@
 		<Parameter name="table">
       (select way,highway,
        case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
-       from &prefix;_line
+       from &prefix;_roads
        where highway in ('trunk', 'trunk_link', 'primary', 'primary_link')
        order by z_order
       ) as roads

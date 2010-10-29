@@ -21,7 +21,7 @@
 		<LineSymbolizer stroke="#808040" stroke-width="1" stroke-opacity=".3"/>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'pedestrian' or [highway]='footway' or [highway]='path'</Filter>
+		<Filter>[highway] = 'pedestrian' or [highway]='footway' or [highway]='path' or [highway]='track'</Filter>
 		&maxscale_zoom17;
 		<LineSymbolizer stroke="#808040" stroke-width="2" stroke-opacity=".3"/>
 	</Rule>

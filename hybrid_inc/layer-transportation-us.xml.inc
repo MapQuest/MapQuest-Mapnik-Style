@@ -16,7 +16,7 @@
 <Style name="pedestrian-walkways">
 	<Rule>
 		<Filter>[highway] = 'pedestrian' or [highway]='footway' or [highway]='path' or [highway]='track'</Filter>
-		&maxscale_zoom16;
+		&maxscale_zoom15;
 		&minscale_zoom16;
 		<LineSymbolizer stroke="#e52540" stroke-width="1" stroke-opacity=".4"/>
 	</Rule>
@@ -30,7 +30,7 @@
 <Style name="cycleway">
 	<Rule>
 		<Filter>[highway] = 'cycleway' or ([highway] = 'path' and [bicycle] = 'designated')</Filter>
-		&maxscale_zoom16;
+		&maxscale_zoom15;
 		&minscale_zoom16;
 		<LineSymbolizer stroke="#8080bd" stroke-width="1" stroke-opacity=".4"/>
 	</Rule>

@@ -428,12 +428,6 @@
 <Style name="country">
   <Rule>
     <Filter>[place] = 'country'</Filter>
-    &maxscale_zoom3;
-    &minscale_zoom3;
-    <TextSymbolizer name="[name]" fontset_name="book-fonts" size="9" fill="#918378" dy="0" halo_radius="2" halo_fill="rgba(255,255,255,0.25)" wrap_width="30" min_distance="20" line_spacing="4"/>
-  </Rule>
-  <Rule>
-    <Filter>[place] = 'country'</Filter>
     &maxscale_zoom4;
     &minscale_zoom5;
     <TextSymbolizer name="[name]" fontset_name="book-fonts" size="10" fill="#918378" dy="0" halo_radius="2" halo_fill="rgba(255,255,255,0.25)" wrap_width="30" line_spacing="4"/>
@@ -448,13 +442,7 @@
 <Style name="continent">
   <Rule>
     <Filter>[place] = 'continent'</Filter>
-    &maxscale_zoom1;
-    &minscale_zoom1;
-    <TextSymbolizer name="[name]" fontset_name="book-fonts" size="9" fill="#918378" dy="0" halo_radius="2" halo_fill="rgba(255,255,255,0.25)" wrap_width="30" line_spacing="4" text_transform="uppercase"/>
-  </Rule>
-  <Rule>
-    <Filter>[place] = 'continent'</Filter>
-    &maxscale_zoom2;
+    &maxscale_zoom4;
     &minscale_zoom5;
     <TextSymbolizer name="[name]" fontset_name="book-fonts" size="9" fill="#918378" dy="0" halo_radius="2" halo_fill="rgba(255,255,255,0.25)" wrap_width="30" character_spacing="5" line_spacing="10" text_transform="uppercase"/>
   </Rule>

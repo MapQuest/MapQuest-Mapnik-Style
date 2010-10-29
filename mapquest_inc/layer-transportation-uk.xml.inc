@@ -39,12 +39,12 @@
 		<Filter>[highway] = 'cycleway' or ([highway] = 'path' and [bicycle] = 'designated') or [highway]='bridleway'</Filter>
 		&maxscale_zoom16;
 		&minscale_zoom16;
-		<LineSymbolizer stroke="#808040" stroke-width="1" stroke-opacity=".3" stroke-dasharray="4,4"/>
+		<LineSymbolizer stroke="#8080bd" stroke-width="1" stroke-opacity=".4" stroke-dasharray="4,4"/>
 	</Rule>
 	<Rule>
 		<Filter>[highway] = 'cycleway' or ([highway] = 'path' and [bicycle] = 'designated') or [highway]='bridleway'</Filter>
 		&maxscale_zoom17;
-		<LineSymbolizer stroke="#808040" stroke-width="2" stroke-opacity=".3" stroke-dasharray="6,4"/>
+		<LineSymbolizer stroke="#8080bd" stroke-width="2" stroke-opacity=".4" stroke-dasharray="6,4"/>
 	</Rule>
 </Style>
 <!--runway-->

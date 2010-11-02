@@ -95,7 +95,9 @@
        case when oneway in ('yes','true','1') then 'yes'::text else oneway end as oneway
        from &prefix;_line
        where oneway is not null
-         and (highway is not null or railway is not null or waterway is not null)
+         and highway in ('motorway','motorway_link','trunk','trunk_link','primary','primary_link',
+                          'secondary','secondary_link','tertiary','unclassified', 'residential', 'living_street'
+                          'service','track')
       ) as directions
       </Parameter>
       &datasource-settings;

@@ -289,7 +289,7 @@
 	</Rule>
 	<Rule>
 		&maxscale_zoom16;
-		&minscale_zoom17;
+		&minscale_zoom16;
 		<MarkersSymbolizer fill="white" stroke="#999999" stroke-width="1.5" width="5" height="5" placement="point" marker_type="ellipse"/>
 	</Rule>
 	<Rule>

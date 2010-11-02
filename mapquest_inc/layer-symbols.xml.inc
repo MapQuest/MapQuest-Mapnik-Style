@@ -3,12 +3,12 @@
 	<Rule>
 		<Filter>[oneway] = 'yes'</Filter>
 		&maxscale_zoom16;
-		<MarkersSymbolizer fill="darkgray" stroke="black" stroke-width="0.3" spacing="150" transform="scale(0.7)"/>
-	</Rule>≈
+		<MarkersSymbolizer fill="#999999" stroke="#606060" stroke-width="0.3" spacing="100" transform="scale(0.8)"/>
+	</Rule>
 	<Rule>
 		<Filter>[oneway] = '-1'</Filter>
 		&maxscale_zoom16;
-		<MarkersSymbolizer fill="darkgray" stroke="black" stroke-width="0.3" spacing="150" transform="scale(0.7) rotate(180)"/>
+		<MarkersSymbolizer fill="#999999" stroke="#606060" stroke-width="0.3" spacing="100" transform="scale(0.8) rotate(180)"/>
 	</Rule>
 </Style>
 <!-- Other symbols -->

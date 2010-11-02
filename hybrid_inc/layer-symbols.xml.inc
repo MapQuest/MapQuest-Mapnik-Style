@@ -3,12 +3,12 @@
 	<Rule>
 		<Filter>[oneway] = 'yes'</Filter>
 		&maxscale_zoom16;
-		<LineSymbolizer stroke-linejoin="bevel" stroke="#aaaaaa" stroke-width="1" stroke-dasharray="0,12,10,152"/><LineSymbolizer stroke-linejoin="bevel" stroke="#aaaaaa" stroke-width="2" stroke-dasharray="0,12,9,153"/><LineSymbolizer stroke-linejoin="bevel" stroke="#aaaaaa" stroke-width="3" stroke-dasharray="0,18,2,154"/><LineSymbolizer stroke-linejoin="bevel" stroke="#aaaaaa" stroke-width="4" stroke-dasharray="0,18,1,155"/>
+		<MarkersSymbolizer fill="#999999" stroke="#606060" stroke-width="0.3" spacing="100" transform="scale(0.8)"/>
 	</Rule>
 	<Rule>
 		<Filter>[oneway] = '-1'</Filter>
 		&maxscale_zoom16;
-		<LineSymbolizer stroke-linejoin="bevel" stroke="#aaaaaa" stroke-width="1" stroke-dasharray="0,12,10,152"/><LineSymbolizer stroke-linejoin="bevel" stroke="#aaaaaa" stroke-width="2" stroke-dasharray="0,13,9,152"/><LineSymbolizer stroke-linejoin="bevel" stroke="#aaaaaa" stroke-width="3" stroke-dasharray="0,14,2,158"/><LineSymbolizer stroke-linejoin="bevel" stroke="#aaaaaa" stroke-width="4" stroke-dasharray="0,15,1,158"/>
+		<MarkersSymbolizer fill="#999999" stroke="#606060" stroke-width="0.3" spacing="100" transform="scale(0.8) rotate(180)"/>
 	</Rule>
 </Style>
 <!-- Other symbols -->

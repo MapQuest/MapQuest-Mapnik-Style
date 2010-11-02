@@ -15,13 +15,13 @@
 <!--pedestrian walkways-->
 <Style name="pedestrian-walkways">
 	<Rule>
-		<Filter>[highway] = 'pedestrian' or [highway]='footway' or [highway]='path' or [highway]='track'</Filter>
+		<Filter>[highway] = 'pedestrian' or [highway]='footway' or ([highway]='path' and [bicycle]!='designated') or [highway]='track'</Filter>
 		&maxscale_zoom15;
 		&minscale_zoom16;
 		<LineSymbolizer stroke="#e52540" stroke-width="1" stroke-opacity=".4"/>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'pedestrian' or [highway]='footway' or [highway]='path' or [highway]='track'</Filter>
+		<Filter>[highway] = 'pedestrian' or [highway]='footway' or ([highway]='path' and [bicycle]!='designated') or [highway]='track'</Filter>
 		&maxscale_zoom17;
 		<LineSymbolizer stroke="#e52540" stroke-width="2" stroke-opacity=".4"/>
 	</Rule>
@@ -659,7 +659,7 @@
 	<StyleName>pedestrian-walkways</StyleName>
 	<Datasource>
 		<Parameter name="table">
-			(select way,highway from &prefix;_line
+			(select way,highway,bicycle from &prefix;_line
 			where highway in ('residential','unclassified','pedestrian','service','footway','track','path')
 			order by z_order,way_area desc) as roads
 		</Parameter>

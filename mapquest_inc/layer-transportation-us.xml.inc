@@ -25,6 +25,17 @@
 		&maxscale_zoom17;
 		<LineSymbolizer stroke="#e52540" stroke-width="2" stroke-opacity=".4" stroke-dasharray="2,4"/>
 	</Rule>
+	<Rule>
+		<Filter>[highway] = 'steps'</Filter>
+		&maxscale_zoom15;
+		&minscale_zoom16;
+		<LineSymbolizer stroke="#e52540" stroke-width="3" stroke-opacity=".4" stroke-dasharray="1,2"/>
+	</Rule>
+	<Rule>
+		<Filter>[highway] = 'steps'</Filter>
+		&maxscale_zoom17;
+		<LineSymbolizer stroke="#e52540" stroke-width="4" stroke-opacity=".4" stroke-dasharray="1,2"/>
+	</Rule>
 </Style>
 <Style name="pedestrian-polygon">
 	<Rule>
@@ -748,7 +759,7 @@
 	<Datasource>
 		<Parameter name="table">
 			(select way,highway,bicycle from &prefix;_line
-			where highway in ('residential','unclassified','pedestrian','service','footway','track','path')
+			where highway in ('pedestrian','footway','track','path','steps')
 			order by z_order,way_area desc) as roads
 		</Parameter>
 		&datasource-settings;

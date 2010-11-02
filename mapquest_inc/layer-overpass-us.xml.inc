@@ -120,18 +120,6 @@
 		&maxscale_zoom15;
 		<LineSymbolizer stroke-linejoin="round" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="5,4"/>
 	</Rule>
-<!--pedestrian-->
-	<Rule>
-		<Filter>[highway] = 'pedestrian' or [highway]='service' or [highway]='footway' or [highway]='path'</Filter>
-		&maxscale_zoom16;
-		&minscale_zoom16;
-		<LineSymbolizer stroke="#808040" stroke-width="1" stroke-opacity=".3"/>
-	</Rule>
-	<Rule>
-		<Filter>[highway] = 'pedestrian' or [highway]='service' or [highway]='footway' or [highway]='path'</Filter>
-		&maxscale_zoom17;
-		<LineSymbolizer stroke="#808040" stroke-width="2" stroke-opacity=".3"/>
-	</Rule>
 <!--street 4-->
 	<Rule>
 		<Filter>[highway] = 'tertiary' or [highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' or [highway] = 'tertiary_link' or [highway] = 'residential_link' or [highway] = 'unclassified_link'</Filter>

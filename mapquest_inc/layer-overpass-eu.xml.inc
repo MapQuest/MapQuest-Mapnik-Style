@@ -217,18 +217,6 @@
 		&maxscale_zoom18;
 		<LineSymbolizer stroke-linejoin="round" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
 	</Rule>
-	<!--pedestrian-->
-	<Rule>
-		<Filter>[highway] = 'pedestrian' or [highway]='service' or [highway]='footway' or [highway]='path'</Filter>
-		&maxscale_zoom16;
-		&minscale_zoom16;
-		<LineSymbolizer stroke-linejoin="round" stroke="#808040" stroke-width="1" stroke-opacity=".3"/>
-	</Rule>
-	<Rule>
-		<Filter>[highway] = 'pedestrian' or [highway]='service' or [highway]='footway' or [highway]='path'</Filter>
-		&maxscale_zoom17;
-		<LineSymbolizer stroke-linejoin="round" stroke="#808040" stroke-width="2" stroke-opacity=".3"/>
-	</Rule>
 	<!--rail-->
 	<Rule>
 		<Filter>[railway] = 'rail' or [railway] = 'light_rail' or [railway] = 'subway' or [railway] = 'monorail'</Filter>

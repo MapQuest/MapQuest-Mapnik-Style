@@ -124,3 +124,26 @@
 	&datasource-settings;
 	</Datasource>
 </Layer>
+<!-- unusually, this is a polygon table that we actually want for the hybrid layers, since the
+     style rules are just drawing symbols, not fills -->
+<Layer name="amenity-symbols-poly" status="on" srs="&osm2pgsql_projection;">
+	<StyleName>symbols</StyleName>
+	<Datasource>
+		<Parameter name="table">
+      (select *
+      from &prefix;_polygon
+      where aeroway in ('airport','aerodrome')
+         or "natural" in ('peak')
+         or "leisure" in ('golf_course','water_park','marina','sports_centre')
+         or "amenity" in ('hospital','parking')
+		or "tourism" in ('museum','attraction')
+		or "man_made" in ('mineshaft')
+		or "sport" in ('skiing')
+		or "amenity" in ('ferry_terminal')
+		or "highway" in ('motorway_junction')
+		or "railway" in ('station')
+      ) as symbols
+		</Parameter>
+	&datasource-settings;
+	</Datasource>
+</Layer>

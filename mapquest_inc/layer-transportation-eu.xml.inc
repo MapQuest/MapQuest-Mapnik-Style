@@ -699,7 +699,7 @@
 	<StyleName>pedestrian-walkways</StyleName>
 	<Datasource>
 		<Parameter name="table">
-			(select way,highway,'bicycle' from &prefix;_line
+			(select way,highway,bicycle from &prefix;_line
 			where highway in ('pedestrian','footway','track','path','steps')
 			order by z_order,way_area desc) as roads
 		</Parameter>

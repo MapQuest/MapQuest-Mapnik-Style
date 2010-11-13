@@ -101,7 +101,7 @@
       &datasource-settings;
 	</Datasource>
 </Layer>
-<Layer name="amenity-symbols" status="on" srs="&osm2pgsql_projection;">
+<Layer name="symbols" status="on" srs="&osm2pgsql_projection;">
 	<StyleName>symbols</StyleName>
 	<Datasource>
 		<Parameter name="table">

@@ -102,7 +102,7 @@
       &datasource-settings;
 	</Datasource>
 </Layer>
-<Layer name="amenity-symbols" status="on" srs="&osm2pgsql_projection;">
+<Layer name="symbols" status="on" srs="&osm2pgsql_projection;">
 	<StyleName>symbols</StyleName>
 	<Datasource>
 		<Parameter name="table">
@@ -120,26 +120,6 @@
 		or "railway" in ('station')
       ) as symbols
 		</Parameter>
-	&datasource-settings;
-	</Datasource>
-</Layer>
-<Layer name="amenity-symbols-poly" status="on" srs="&osm2pgsql_projection;">
-	<StyleName>symbols</StyleName>
-	<Datasource>
-		<Parameter name="table">
-      (select *
-      from &prefix;_polygon
-      where aeroway in ('airport','aerodrome')
-         or "natural" in ('peak')
-		or "leisure" in ('golf_course','water_park','marina')
-		or "amenity" in ('hospital')
-		or "tourism" in ('museum')
-		or "man_made" in ('mineshaft')
-		or "sport" in ('skiing')
-		or "amenity" in ('ferry_terminal')
-		or "highway" in ('motorway_junction')
-		or "railway" in ('station')
-      ) as symbols</Parameter>
 	&datasource-settings;
 	</Datasource>
 </Layer>

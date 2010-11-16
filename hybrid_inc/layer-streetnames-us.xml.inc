@@ -90,9 +90,8 @@
 <Style name="street-text">
 <!--motorway text-->
 	<Rule>
-		<Filter>[highway] = 'motorway'</Filter>
+		<Filter>[highway] = 'motorway' and not [name].match('^Interstate.*') and not [name].match('^I-.*') and not [name].match('^State.*')</Filter>
 		&maxscale_zoom12;
-		<!--<TextSymbolizer name="name" fontset_name="book-fonts" size="12" fill="#2b2b2b" halo_fill="rgba(255,255,255,0.25)" halo_radius="2" placement="line" max_char_angle_delta="40"/>-->
 		<TextSymbolizer name="[name]" fontset_name="bold-fonts" size="12" fill="#2b2b2b" halo_fill="rgba(255,255,255,0.25)" halo_radius="2" dy="0" placement="line" max_char_angle_delta="40" text_transform="uppercase"/>
 	</Rule>
 <!--trunk/primary text-->

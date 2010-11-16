@@ -1,3 +1,4 @@
+<!ENTITY layer-addressing SYSTEM "layer-addressing.xml.inc">
 <!ENTITY layer-streetnames SYSTEM "layer-streetnames-eu.xml.inc">
 <!ENTITY layer-text SYSTEM "layer-text.xml.inc">
 <!ENTITY layer-amenity-symbols SYSTEM "layer-symbols.xml.inc">

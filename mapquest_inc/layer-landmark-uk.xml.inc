@@ -38,31 +38,31 @@
 	</Rule>
 	<!--park fill-->
 	<Rule>
-		<Filter>[leisure] = 'park' or [leisure] = 'playground' or [leisure] = 'recreation_ground' or [leisure] = 'nature_reserve' or [leisure] = 'common' or [leisure] = 'pitch'</Filter>
+		<Filter>[leisure] = 'park' or [leisure] = 'playground' or [leisure] = 'recreation_ground' or [leisure] = 'nature_reserve' or [leisure] = 'common' or [leisure] = 'pitch' or [landuse]='grass'</Filter>
 		&maxscale_zoom9;
 		&minscale_zoom9;
 		<PolygonSymbolizer fill-opacity="0.1" fill="#00ac42"/>
 	</Rule>
 	<Rule>
-		<Filter>[leisure] = 'park' or [leisure] = 'playground' or [leisure] = 'recreation_ground' or [leisure] = 'nature_reserve' or [leisure] = 'common' or [leisure] = 'pitch'</Filter>
+		<Filter>[leisure] = 'park' or [leisure] = 'playground' or [leisure] = 'recreation_ground' or [leisure] = 'nature_reserve' or [leisure] = 'common' or [leisure] = 'pitch' or [landuse]='grass'</Filter>
 		&maxscale_zoom10;
 		&minscale_zoom11;
 		<PolygonSymbolizer fill-opacity="0.15" fill="#00ac42"/>
 	</Rule>
 	<Rule>
-		<Filter>[leisure] = 'park' or [leisure] = 'playground' or [leisure] = 'recreation_ground' or [leisure] = 'nature_reserve' or [leisure] = 'common' or [leisure] = 'pitch'</Filter>
+		<Filter>[leisure] = 'park' or [leisure] = 'playground' or [leisure] = 'recreation_ground' or [leisure] = 'nature_reserve' or [leisure] = 'common' or [leisure] = 'pitch' or [landuse]='grass'</Filter>
 		&maxscale_zoom12;
 		&minscale_zoom14;
 		<PolygonSymbolizer fill-opacity="0.15" fill="#0e982b"/>
 	</Rule>
 	<Rule>
-		<Filter>[leisure] = 'park' or [leisure] = 'playground' or [leisure] = 'recreation_ground' or [leisure] = 'nature_reserve' or [leisure] = 'common' or [leisure] = 'pitch'</Filter>
+		<Filter>[leisure] = 'park' or [leisure] = 'playground' or [leisure] = 'recreation_ground' or [leisure] = 'nature_reserve' or [leisure] = 'common' or [leisure] = 'pitch' or [landuse]='grass'</Filter>
 		&maxscale_zoom15;
 		&minscale_zoom16;
 		<PolygonSymbolizer fill-opacity="0.3" fill="#009a2b"/>
 	</Rule>
 	<Rule>
-		<Filter>[leisure] = 'park' or [leisure] = 'playground' or [leisure] = 'recreation_ground' or [leisure] = 'nature_reserve' or [leisure] = 'common' or [leisure] = 'pitch'</Filter>
+		<Filter>[leisure] = 'park' or [leisure] = 'playground' or [leisure] = 'recreation_ground' or [leisure] = 'nature_reserve' or [leisure] = 'common' or [leisure] = 'pitch' or [landuse]='grass'</Filter>
 		&maxscale_zoom17;
 		<PolygonSymbolizer fill-opacity="0.3" fill="#00a635"/>
 	</Rule>
@@ -74,25 +74,25 @@
 	</Rule>
 	<!--forest fill-->
 	<Rule>
-		<Filter>[landuse] = 'forest' or [landuse] = 'recreation_ground' or [landuse] = 'conservation' or [natural] = 'wood' or [landuse] = 'wood'</Filter>
+		<Filter>[landuse] = 'forest' or [landuse] = 'recreation_ground' or [landuse] = 'conservation' or [natural] = 'wood' or [landuse] = 'wood' or [natural]='scrub'</Filter>
 		&maxscale_zoom9;
 		&minscale_zoom11;
 		<PolygonSymbolizer fill-opacity=".25" fill="#00b844"/>
 	</Rule>
 	<Rule>
-		<Filter>[landuse] = 'forest' or [landuse] = 'recreation_ground' or [landuse] = 'conservation' or [natural] = 'wood' or [landuse] = 'wood'</Filter>
+		<Filter>[landuse] = 'forest' or [landuse] = 'recreation_ground' or [landuse] = 'conservation' or [natural] = 'wood' or [landuse] = 'wood' or [natural]='scrub'</Filter>
 		&maxscale_zoom12;
 		&minscale_zoom14;
 		<PolygonSymbolizer fill-opacity=".25" fill="#59bf26"/>
 	</Rule>
 	<Rule>
-		<Filter>[landuse] = 'forest' or [landuse] = 'recreation_ground' or [landuse] = 'conservation' or [natural] = 'wood' or [landuse] = 'wood'</Filter>
+		<Filter>[landuse] = 'forest' or [landuse] = 'recreation_ground' or [landuse] = 'conservation' or [natural] = 'wood' or [landuse] = 'wood' or [natural]='scrub'</Filter>
 		&maxscale_zoom15;
 		&minscale_zoom16;
 		<PolygonSymbolizer fill-opacity=".2" fill="#009a2b"/>
 	</Rule>
 	<Rule>
-		<Filter>[landuse] = 'forest' or [landuse] = 'recreation_ground' or [landuse] = 'conservation' or [natural] = 'wood' or [landuse] = 'wood'</Filter>
+		<Filter>[landuse] = 'forest' or [landuse] = 'recreation_ground' or [landuse] = 'conservation' or [natural] = 'wood' or [landuse] = 'wood' or [natural]='scrub'</Filter>
 		&maxscale_zoom17;
 		<PolygonSymbolizer fill-opacity=".2" fill="#00a635"/>
 	</Rule>
@@ -179,7 +179,7 @@
           or aeroway in ('apron','aerodrome')
           or amenity in ('parking','university','college','school','hospital','kindergarten','grave_yard')
           or military in ('barracks','danger_area')
-          or "natural" in ('field','beach','heath','mud','wood')
+          or "natural" in ('field','beach','heath','mud','wood','scrub')
           or power in ('station','sub_station')
           or tourism in ('attraction','camp_site','caravan_site','picnic_site','zoo')
        order by z_order,way_area desc

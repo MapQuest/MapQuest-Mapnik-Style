@@ -137,20 +137,20 @@
 		&maxscale_zoom16;
 		<TextSymbolizer name="[name]" fontset_name="oblique-fonts" size="11" fill="#2b2b2b" halo_radius="1" halo_fill="rgba(255,255,255,0.35)" wrap_width="40" line_spacing="4"/>
 	</Rule>
+	<!--airport-->
+		<Rule>
+			<Filter>[aeroway] = 'apron' or [aeroway] = 'aerodrome'</Filter>
+			&maxscale_zoom11;
+			&minscale_zoom15;
+			<TextSymbolizer name="[name]" fontset_name="oblique-fonts" size="10" fill="#2b2b2b" halo_radius="1" halo_fill="rgba(255,255,255,0.35)" wrap_width="10" text_transform="uppercase" line_spacing="4"/>
+		</Rule>
+		<Rule>
+			<Filter>[aeroway] = 'apron' or [aeroway] = 'aerodrome'</Filter>
+			&maxscale_zoom16;
+			<TextSymbolizer name="[name]" fontset_name="oblique-fonts" size="11" fill="#2b2b2b" halo_radius="1" halo_fill="rgba(255,255,255,0.35)" wrap_width="10" text_transform="uppercase" line_spacing="4"/>
+		</Rule>
 </Style>
 <Style name="landmark-point-text">
-<!--airport-->
-	<Rule>
-		<Filter>[aeroway] = 'apron' or [aeroway] = 'aerodrome'</Filter>
-		&maxscale_zoom11;
-		&minscale_zoom15;
-		<TextSymbolizer name="[name]" fontset_name="oblique-fonts" size="10" fill="#2b2b2b" halo_radius="1" halo_fill="rgba(255,255,255,0.35)" wrap_width="10" text_transform="uppercase" line_spacing="4"/>
-	</Rule>
-	<Rule>
-		<Filter>[aeroway] = 'apron' or [aeroway] = 'aerodrome'</Filter>
-		&maxscale_zoom16;
-		<TextSymbolizer name="[name]" fontset_name="oblique-fonts" size="11" fill="#2b2b2b" halo_radius="1" halo_fill="rgba(255,255,255,0.35)" wrap_width="10" text_transform="uppercase" line_spacing="4"/>
-	</Rule>
 <!--island-->
 	<Rule>
 		<Filter>[place] = 'island'</Filter>

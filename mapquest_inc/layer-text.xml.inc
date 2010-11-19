@@ -137,8 +137,6 @@
     &maxscale_zoom16;
     <TextSymbolizer name="[name]" fontset_name="oblique-fonts" size="11" fill="#2b2b2b" halo_radius="2" halo_fill="rgba(255,255,255,0.25)" wrap_width="40" line_spacing="4"/>
   </Rule>
-</Style>
-<Style name="landmark-point-text">
   <!--airport-->
   <Rule>
     <Filter>[aeroway] = 'apron' or [aeroway] = 'aerodrome'</Filter>
@@ -151,6 +149,8 @@
     &maxscale_zoom16;
     <TextSymbolizer name="[name]" fontset_name="oblique-fonts" size="11" fill="#2b2b2b" halo_radius="2" halo_fill="rgba(255,255,255,0.25)" wrap_width="10" text_transform="uppercase" line_spacing="4"/>
   </Rule>
+</Style>
+<Style name="landmark-point-text">
   <!--island-->
   <Rule>
     <Filter>[place] = 'island'</Filter>

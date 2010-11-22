@@ -1,20 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 15.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px"
-	 height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
-<g id="Layer_1">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="16"
+   height="16"
+   viewBox="0 0 16 16"
+   id="svg2985"
+   xml:space="preserve"><metadata
+   id="metadata3001"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs2999">
+	
+
+		
+		
+		
+	</defs>
+<g
+   id="Layer_1">
 </g>
-<g id="POI">
-	<g>
-		<path d="M15.689,13.424c0,1.252-1.014,2.266-2.266,2.266H3.578c-1.252,0-2.268-1.014-2.268-2.266V3.58
-			c0-1.254,1.016-2.27,2.268-2.27h9.846c1.252,0,2.266,1.016,2.266,2.27V13.424z"/>
-		<path fill="#1884C3" d="M14.689,12.424c0,1.252-1.014,2.266-2.266,2.266H2.578c-1.252,0-2.268-1.014-2.268-2.266V2.58
-			c0-1.254,1.016-2.27,2.268-2.27h9.846c1.252,0,2.266,1.016,2.266,2.27V12.424z"/>
-		<path fill="#FFFFFF" d="M3.938,2.709C4.63,2.592,5.601,2.503,6.971,2.503c1.383,0,2.383,0.265,3.046,0.811
-			c0.633,0.485,1.045,1.31,1.045,2.28c0,0.986-0.31,1.811-0.897,2.354C9.398,8.655,8.25,8.993,6.926,8.993
-			c-0.295,0-0.56-0.015-0.766-0.059v3.562H3.938V2.709z M6.16,7.213c0.191,0.044,0.427,0.059,0.75,0.059
-			c1.192,0,1.929-0.604,1.929-1.604c0-0.912-0.619-1.456-1.751-1.456c-0.457,0-0.766,0.028-0.928,0.072V7.213z"/>
-	</g>
-</g>
+<path
+   d="m 15.238618,12.91255 c 0,1.252 -1.014,2.266 -2.266,2.266 H 3.1276183 c -1.252,0 -2.26799998,-1.014 -2.26799998,-2.266 V 3.0685496 c 0,-1.254 1.01599998,-2.26999998 2.26799998,-2.26999998 h 9.8459997 c 1.252,0 2.266,1.01599998 2.266,2.26999998 V 12.91255 z"
+   id="path2993"
+   style="fill:#1884c3" /><path
+   d="m 4.7929618,3.1364809 c 0.692,-0.117 1.663,-0.206 3.033,-0.206 1.383,0 2.3830002,0.265 3.0460002,0.811 0.633,0.485 1.045,1.31 1.045,2.28 0,0.986 -0.31,1.811 -0.897,2.354 -0.767,0.707 -1.9150002,1.045 -3.2390002,1.045 -0.295,0 -0.56,-0.015 -0.766,-0.059 v 3.5620001 h -2.222 V 3.1364809 z m 2.222,4.504 c 0.191,0.044 0.427,0.059 0.75,0.059 1.192,0 1.929,-0.604 1.929,-1.604 0,-0.912 -0.619,-1.456 -1.751,-1.456 -0.457,0 -0.766,0.028 -0.928,0.072 v 2.929 z"
+   id="path2995"
+   style="fill:#ffffff" />
 </svg>

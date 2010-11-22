@@ -92,31 +92,31 @@
 	<Rule>
 		<Filter>[highway] = 'motorway' and not [name].match('^Interstate.*') and not [name].match('^I-.*') and not [name].match('^State.*')</Filter>
 		&maxscale_zoom12;
-		<TextSymbolizer name="[name]" fontset_name="bold-fonts" size="12" fill="#2b2b2b" halo_fill="rgba(255,255,255,0.25)" halo_radius="2" dy="0" placement="line" max_char_angle_delta="40" text_transform="uppercase"/>
+		<TextSymbolizer name="[name]" fontset_name="bold-fonts" size="12" fill="#2b2b2b" halo_fill="rgba(255,255,255,0.25)" halo_radius="2" dy="0" placement="line" max_char_angle_delta="40" avoid_edges="true" text_transform="uppercase"/>
 	</Rule>
 <!--trunk/primary text-->
 	<Rule>
 		<Filter>[highway] = 'trunk' or [highway] = 'primary'</Filter>
 		&maxscale_zoom12;
-		<TextSymbolizer name="[name]" fontset_name="book-fonts" size="12" fill="#2b2b2b" halo_fill="rgba(255,255,255,0.25)" halo_radius="2" placement="line" max_char_angle_delta="40"/>
+		<TextSymbolizer name="[name]" fontset_name="book-fonts" size="12" fill="#2b2b2b" halo_fill="rgba(255,255,255,0.25)" halo_radius="2" placement="line" max_char_angle_delta="40" avoid_edges="true"/>
 	</Rule>
 <!--secondary text-->
 	<Rule>
 		<Filter>[highway] = 'secondary' or [highway] = 'proposed' or [highway]='construction'</Filter>
 		&maxscale_zoom12;
-		<TextSymbolizer name="[name]" fontset_name="book-fonts" size="12" fill="#2b2b2b" halo_fill="rgba(255,255,255,0.25)" halo_radius="2" placement="line" max_char_angle_delta="40"/>
+		<TextSymbolizer name="[name]" fontset_name="book-fonts" size="12" fill="#2b2b2b" halo_fill="rgba(255,255,255,0.25)" halo_radius="2" placement="line" max_char_angle_delta="40" avoid_edges="true"/>
 	</Rule>
 <!--tertiary text-->
 	<Rule>
 		<Filter>[highway] = 'tertiary' or [highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' or [highway] = 'tertiary_link' or [highway] = 'residential_link' or [highway] = 'unclassified_link'</Filter>
 		&maxscale_zoom16;
 		&minscale_zoom17;
-		<TextSymbolizer name="[name]" fontset_name="book-fonts" size="10" fill="#2b2b2b" halo_fill="rgba(255,255,255,0.25)" halo_radius="2" placement="line" max_char_angle_delta="40"/>
+		<TextSymbolizer name="[name]" fontset_name="book-fonts" size="10" fill="#2b2b2b" halo_fill="rgba(255,255,255,0.25)" halo_radius="2" placement="line" max_char_angle_delta="40"  avoid_edges="true"/>
 	</Rule>
 	<Rule>
 		<Filter>[highway] = 'tertiary' or [highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' or [highway] = 'tertiary_link' or [highway] = 'residential_link' or [highway] = 'unclassified_link'</Filter>
 		&maxscale_zoom18;
-		<TextSymbolizer name="[name]" fontset_name="book-fonts" size="12" fill="#2b2b2b" halo_fill="rgba(255,255,255,0.25)" halo_radius="2" placement="line" max_char_angle_delta="40"/>
+		<TextSymbolizer name="[name]" fontset_name="book-fonts" size="12" fill="#2b2b2b" halo_fill="rgba(255,255,255,0.25)" halo_radius="2" placement="line" max_char_angle_delta="40"  avoid_edges="true"/>
 	</Rule>
 </Style>
 

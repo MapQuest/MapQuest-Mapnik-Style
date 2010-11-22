@@ -58,18 +58,18 @@
 		<Filter>[highway] = 'motorway_link'</Filter>
 		&maxscale_zoom15;
 		&minscale_zoom16;
-		<LineSymbolizer stroke-linejoin="round" stroke="#b89e7d" stroke-width="5"/>
+		<LineSymbolizer stroke-linejoin="round" stroke="#495f8c" stroke-width="5"/>
 	</Rule>
 	<Rule>
 		<Filter>[highway] = 'motorway_link'</Filter>
 		&maxscale_zoom17;
 		&minscale_zoom17;
-		<LineSymbolizer stroke-linejoin="round" stroke="#b89e7d" stroke-width="6"/>
+		<LineSymbolizer stroke-linejoin="round" stroke="#495f8c" stroke-width="6"/>
 	</Rule>
 	<Rule>
 		<Filter>[highway] = 'motorway_link'</Filter>
 		&maxscale_zoom18;
-		<LineSymbolizer stroke-linejoin="round" stroke="#b89e7d" stroke-width="10"/>
+		<LineSymbolizer stroke-linejoin="round" stroke="#495f8c" stroke-width="10"/>
 	</Rule>
 	<!--street 1 casing-->
 	<Rule>
@@ -179,18 +179,18 @@
 		<Filter>[highway] = 'motorway_link'</Filter>
 		&maxscale_zoom15;
 		&minscale_zoom16;
-		<LineSymbolizer stroke-linejoin="round" stroke="#dcbf95" stroke-width="3" stroke-linecap="round"/>
+		<LineSymbolizer stroke-linejoin="round" stroke="#6c91d9" stroke-width="3" stroke-linecap="round"/>
 	</Rule>
 	<Rule>
 		<Filter>[highway] = 'motorway_link'</Filter>
 		&maxscale_zoom17;
 		&minscale_zoom17;
-		<LineSymbolizer stroke-linejoin="round" stroke="#dcbf95" stroke-width="4" stroke-linecap="round"/>
+		<LineSymbolizer stroke-linejoin="round" stroke="#6c91d9" stroke-width="4" stroke-linecap="round"/>
 	</Rule>
 	<Rule>
 		<Filter>[highway] = 'motorway_link'</Filter>
 		&maxscale_zoom18;
-		<LineSymbolizer stroke-linejoin="round" stroke="#dcbf95" stroke-width="6" stroke-linecap="round"/>
+		<LineSymbolizer stroke-linejoin="round" stroke="#6c91d9" stroke-width="6" stroke-linecap="round"/>
 	</Rule>
 <!--street 1-->
 	<Rule>

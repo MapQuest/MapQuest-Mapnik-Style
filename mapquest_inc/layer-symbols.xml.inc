@@ -47,7 +47,7 @@
 	<Rule>
 		&maxscale_zoom14;
 		<Filter>[amenity]='ferry_terminal'</Filter>
-		<PointSymbolizer file="&symbols;/ferry.svg"/>
+		<PointSymbolizer file="&symbols;/ferry.svg" transform="scale(0.8)"/>
 	</Rule>
 	<!--train station-->
 	<Rule>

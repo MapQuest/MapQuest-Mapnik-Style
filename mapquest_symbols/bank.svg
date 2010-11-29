@@ -19,11 +19,11 @@
    enable-background="new 0 0 28 28"
    xml:space="preserve"
    inkscape:version="0.48.0 r9654"
-   sodipodi:docname="parking.svg"><metadata
-   id="metadata3915"><rdf:RDF><cc:Work
+   sodipodi:docname="bank.svg"><metadata
+   id="metadata30"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
          rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
-   id="defs3913">
+   id="defs28">
 	<linearGradient
    y2="28"
    x2="14"
@@ -32,35 +32,35 @@
    gradientUnits="userSpaceOnUse"
    id="SVGID_1_">
 		<stop
-   id="stop3891"
+   id="stop6"
    style="stop-color:#91C7DA"
    offset="0" />
 		<stop
-   id="stop3893"
+   id="stop8"
    style="stop-color:#7ABBD3"
    offset="0.0475" />
 		<stop
-   id="stop3895"
+   id="stop10"
    style="stop-color:#5FADCA"
    offset="0.1158" />
 		<stop
-   id="stop3897"
+   id="stop12"
    style="stop-color:#49A2C2"
    offset="0.1943" />
 		<stop
-   id="stop3899"
+   id="stop14"
    style="stop-color:#3899BD"
    offset="0.2859" />
 		<stop
-   id="stop3901"
+   id="stop16"
    style="stop-color:#2D93B9"
    offset="0.3993" />
 		<stop
-   id="stop3903"
+   id="stop18"
    style="stop-color:#2690B7"
    offset="0.5584" />
 		<stop
-   id="stop3905"
+   id="stop20"
    style="stop-color:#248FB6"
    offset="1" />
 	</linearGradient>
@@ -76,7 +76,7 @@
    inkscape:pageshadow="2"
    inkscape:window-width="1280"
    inkscape:window-height="723"
-   id="namedview3911"
+   id="namedview26"
    showgrid="false"
    inkscape:zoom="9.1785714"
    inkscape:cx="-6.1011673"
@@ -88,10 +88,10 @@
 <path
    inkscape:connector-curvature="0"
    style="fill:#248fb6;fill-opacity:1"
-   id="path3907"
+   id="path22"
    d="m 28,25 c 0,1.65 -1.35,3 -3,3 H 3 C 1.35,28 0,26.65 0,25 V 3 C 0,1.35 1.35,0 3,0 h 22 c 1.65,0 3,1.35 3,3 v 22 z" />
 <path
-   d="M14.805,13.709c1.661,0,3.004-1.346,3.004-3.002c0-1.66-1.344-3.006-3.004-3.006l-4.426-0.006v6.014H14.805z   M14.748,4c3.743,0,6.78,3.039,6.78,6.779c0,3.754-3.037,6.788-6.78,6.788l-4.369-0.005V24H6.472V4H14.748z"
-   id="path3909"
+   d="M22.869,12.631H5.131v-1.083h17.737V12.631z M22.869,21.452H5.131v1.084h17.737V21.452z M23.838,22.916  H4.162V24h19.677V22.916z M23.838,11.016L14,4l-9.839,7.016H23.838z M9.437,13.053H6.585v7.979h2.852V13.053z M13.43,13.053h-2.853  v7.979h2.853V13.053z M17.422,13.053h-2.852v7.979h2.852V13.053z M21.416,13.053h-2.853v7.979h2.853V13.053z"
+   id="path24"
    style="fill:#ffffff;fill-opacity:1" />
 </svg>

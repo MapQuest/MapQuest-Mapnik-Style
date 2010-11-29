@@ -19,11 +19,11 @@
    enable-background="new 0 0 28 28"
    xml:space="preserve"
    inkscape:version="0.48.0 r9654"
-   sodipodi:docname="parking.svg"><metadata
-   id="metadata3915"><rdf:RDF><cc:Work
+   sodipodi:docname="grocery.svg"><metadata
+   id="metadata28"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
          rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
-   id="defs3913">
+   id="defs26">
 	<linearGradient
    y2="28"
    x2="14"
@@ -32,36 +32,32 @@
    gradientUnits="userSpaceOnUse"
    id="SVGID_1_">
 		<stop
-   id="stop3891"
-   style="stop-color:#91C7DA"
+   id="stop6"
+   style="stop-color:#CDACD9"
    offset="0" />
 		<stop
-   id="stop3893"
-   style="stop-color:#7ABBD3"
-   offset="0.0475" />
+   id="stop8"
+   style="stop-color:#BF95CE"
+   offset="0.065" />
 		<stop
-   id="stop3895"
-   style="stop-color:#5FADCA"
-   offset="0.1158" />
+   id="stop10"
+   style="stop-color:#B27FC4"
+   offset="0.1472" />
 		<stop
-   id="stop3897"
-   style="stop-color:#49A2C2"
-   offset="0.1943" />
+   id="stop12"
+   style="stop-color:#A86EBC"
+   offset="0.2442" />
 		<stop
-   id="stop3899"
-   style="stop-color:#3899BD"
-   offset="0.2859" />
+   id="stop14"
+   style="stop-color:#A163B7"
+   offset="0.3642" />
 		<stop
-   id="stop3901"
-   style="stop-color:#2D93B9"
-   offset="0.3993" />
+   id="stop16"
+   style="stop-color:#9D5CB4"
+   offset="0.5325" />
 		<stop
-   id="stop3903"
-   style="stop-color:#2690B7"
-   offset="0.5584" />
-		<stop
-   id="stop3905"
-   style="stop-color:#248FB6"
+   id="stop18"
+   style="stop-color:#9C5AB3"
    offset="1" />
 	</linearGradient>
 	
@@ -76,7 +72,7 @@
    inkscape:pageshadow="2"
    inkscape:window-width="1280"
    inkscape:window-height="723"
-   id="namedview3911"
+   id="namedview24"
    showgrid="false"
    inkscape:zoom="9.1785714"
    inkscape:cx="-6.1011673"
@@ -87,11 +83,11 @@
    inkscape:current-layer="Layer_1" />
 <path
    inkscape:connector-curvature="0"
-   style="fill:#248fb6;fill-opacity:1"
-   id="path3907"
+   style="fill:#9c5ab3;fill-opacity:1"
+   id="path20"
    d="m 28,25 c 0,1.65 -1.35,3 -3,3 H 3 C 1.35,28 0,26.65 0,25 V 3 C 0,1.35 1.35,0 3,0 h 22 c 1.65,0 3,1.35 3,3 v 22 z" />
 <path
-   d="M14.805,13.709c1.661,0,3.004-1.346,3.004-3.002c0-1.66-1.344-3.006-3.004-3.006l-4.426-0.006v6.014H14.805z   M14.748,4c3.743,0,6.78,3.039,6.78,6.779c0,3.754-3.037,6.788-6.78,6.788l-4.369-0.005V24H6.472V4H14.748z"
-   id="path3909"
+   d="M20.968,14.209C21.629,8.779,23.976,5.884,24,5.856l-0.912-0.759c-0.035,0.041-0.326,0.398-0.728,1.065H4  l2.264,8.597h13.518v1.84H6.233v1.186h14.735V14.209z M11.6,7.348h0.973c-0.462,1.119-1.351,3.54-1.66,6.226H9.844  C10.209,10.624,11.322,7.976,11.6,7.348z M8.65,13.574H7.582c0.365-2.949,1.476-5.597,1.754-6.226h0.973  C9.848,8.467,8.959,10.888,8.65,13.574z M13.863,7.348h0.972c-0.461,1.119-1.351,3.54-1.66,6.226h-1.068  C12.472,10.629,13.584,7.978,13.863,7.348z M16.126,7.348h0.972c-0.461,1.119-1.351,3.54-1.66,6.226H14.37  C14.734,10.624,15.848,7.976,16.126,7.348z M18.389,7.348h0.972c-0.461,1.119-1.351,3.54-1.659,6.226h-1.068  C16.997,10.624,18.11,7.976,18.389,7.348z M5.539,7.348h2.508c-0.352,0.854-0.952,2.469-1.354,4.38L5.539,7.348z M21.716,7.348  c-0.695,1.418-1.471,3.498-1.86,6.226h-0.96c0.364-2.944,1.477-5.596,1.755-6.226H21.716z M19.364,19.086  c1.054,0,1.907,0.854,1.907,1.908s-0.854,1.908-1.907,1.908s-1.907-0.854-1.907-1.908S18.311,19.086,19.364,19.086z M7.633,19.086  c1.054,0,1.909,0.854,1.909,1.908s-0.855,1.908-1.909,1.908s-1.907-0.854-1.907-1.908S6.58,19.086,7.633,19.086z"
+   id="path22"
    style="fill:#ffffff;fill-opacity:1" />
 </svg>

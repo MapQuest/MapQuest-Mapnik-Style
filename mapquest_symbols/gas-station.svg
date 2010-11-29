@@ -19,11 +19,11 @@
    enable-background="new 0 0 28 28"
    xml:space="preserve"
    inkscape:version="0.48.0 r9654"
-   sodipodi:docname="parking.svg"><metadata
-   id="metadata3915"><rdf:RDF><cc:Work
+   sodipodi:docname="gas-station.svg"><metadata
+   id="metadata30"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
          rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
-   id="defs3913">
+   id="defs28">
 	<linearGradient
    y2="28"
    x2="14"
@@ -32,35 +32,35 @@
    gradientUnits="userSpaceOnUse"
    id="SVGID_1_">
 		<stop
-   id="stop3891"
+   id="stop6"
    style="stop-color:#91C7DA"
    offset="0" />
 		<stop
-   id="stop3893"
+   id="stop8"
    style="stop-color:#7ABBD3"
    offset="0.0475" />
 		<stop
-   id="stop3895"
+   id="stop10"
    style="stop-color:#5FADCA"
    offset="0.1158" />
 		<stop
-   id="stop3897"
+   id="stop12"
    style="stop-color:#49A2C2"
    offset="0.1943" />
 		<stop
-   id="stop3899"
+   id="stop14"
    style="stop-color:#3899BD"
    offset="0.2859" />
 		<stop
-   id="stop3901"
+   id="stop16"
    style="stop-color:#2D93B9"
    offset="0.3993" />
 		<stop
-   id="stop3903"
+   id="stop18"
    style="stop-color:#2690B7"
    offset="0.5584" />
 		<stop
-   id="stop3905"
+   id="stop20"
    style="stop-color:#248FB6"
    offset="1" />
 	</linearGradient>
@@ -76,10 +76,10 @@
    inkscape:pageshadow="2"
    inkscape:window-width="1280"
    inkscape:window-height="723"
-   id="namedview3911"
+   id="namedview26"
    showgrid="false"
    inkscape:zoom="9.1785714"
-   inkscape:cx="-6.1011673"
+   inkscape:cx="14"
    inkscape:cy="14"
    inkscape:window-x="0"
    inkscape:window-y="24"
@@ -88,10 +88,10 @@
 <path
    inkscape:connector-curvature="0"
    style="fill:#248fb6;fill-opacity:1"
-   id="path3907"
+   id="path22"
    d="m 28,25 c 0,1.65 -1.35,3 -3,3 H 3 C 1.35,28 0,26.65 0,25 V 3 C 0,1.35 1.35,0 3,0 h 22 c 1.65,0 3,1.35 3,3 v 22 z" />
 <path
-   d="M14.805,13.709c1.661,0,3.004-1.346,3.004-3.002c0-1.66-1.344-3.006-3.004-3.006l-4.426-0.006v6.014H14.805z   M14.748,4c3.743,0,6.78,3.039,6.78,6.779c0,3.754-3.037,6.788-6.78,6.788l-4.369-0.005V24H6.472V4H14.748z"
-   id="path3909"
+   d="M20.647,16.973c0-0.009-0.175-1.323-0.175-1.323V9.578c0-0.651-0.211-1.178-0.651-1.62l-2.812-2.8  c-0.196,0-0.731,0.536-0.731,0.536c0,0.196,1.392,1.579,1.392,1.579l-0.037,2.356c0,0.837,0.679,1.514,1.516,1.514l0.377,0.007  l-0.133,4.501l0.188,1.542l0.842,4.554c0.032,0.746-0.644,1.185-1.176,1.185c-0.495,0-1.067-0.41-1.067-0.937l0.009-7.982  c0-0.971-0.787-1.758-1.758-1.758c0,0-1.687,0-1.696,0c0.117-0.007,0.122-5.23,0.122-6.337c0-0.129,0-0.207,0-0.207  C14.858,4.766,14.087,4,13.142,4H8.192C7.247,4,6.474,4.766,6.474,5.709v18.097l8.385,0.138l0.009-10.571h1.583  c0.363,0,0.66,0.294,0.66,0.661v7.959c0,1.07,0.997,2.006,2.138,2.006c1.075,0,2.278-0.858,2.278-2.006  C21.508,21.729,20.647,16.973,20.647,16.973z M19.387,10.42c-0.626-0.138-0.854-0.46-0.854-0.757V8.586c0,0,0.416,0.094,0.515,0.117  c0.205,0.053,0.333,0.366,0.338,0.637C19.394,9.612,19.387,10.42,19.387,10.42z M13.613,9.888c0,0.26-0.207,0.465-0.472,0.465H8.192  c-0.267,0-0.474-0.205-0.474-0.465V5.709c0-0.262,0.208-0.465,0.474-0.465h4.949c0.265,0,0.472,0.203,0.472,0.465V9.888z"
+   id="path24"
    style="fill:#ffffff;fill-opacity:1" />
 </svg>

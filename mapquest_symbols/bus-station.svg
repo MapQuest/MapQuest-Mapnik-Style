@@ -19,11 +19,11 @@
    enable-background="new 0 0 28 28"
    xml:space="preserve"
    inkscape:version="0.48.0 r9654"
-   sodipodi:docname="parking.svg"><metadata
-   id="metadata3915"><rdf:RDF><cc:Work
+   sodipodi:docname="bus station.svg"><metadata
+   id="metadata30"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
          rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
-   id="defs3913">
+   id="defs28">
 	<linearGradient
    y2="28"
    x2="14"
@@ -32,36 +32,36 @@
    gradientUnits="userSpaceOnUse"
    id="SVGID_1_">
 		<stop
-   id="stop3891"
-   style="stop-color:#91C7DA"
+   id="stop6"
+   style="stop-color:#EA9A9B"
    offset="0" />
 		<stop
-   id="stop3893"
-   style="stop-color:#7ABBD3"
-   offset="0.0475" />
+   id="stop8"
+   style="stop-color:#E78C8D"
+   offset="0.0309" />
 		<stop
-   id="stop3895"
-   style="stop-color:#5FADCA"
-   offset="0.1158" />
+   id="stop10"
+   style="stop-color:#E17173"
+   offset="0.1004" />
 		<stop
-   id="stop3897"
-   style="stop-color:#49A2C2"
-   offset="0.1943" />
+   id="stop12"
+   style="stop-color:#DD5B5D"
+   offset="0.1803" />
 		<stop
-   id="stop3899"
-   style="stop-color:#3899BD"
-   offset="0.2859" />
+   id="stop14"
+   style="stop-color:#D94A4C"
+   offset="0.2736" />
 		<stop
-   id="stop3901"
-   style="stop-color:#2D93B9"
-   offset="0.3993" />
+   id="stop16"
+   style="stop-color:#D73F41"
+   offset="0.3889" />
 		<stop
-   id="stop3903"
-   style="stop-color:#2690B7"
-   offset="0.5584" />
+   id="stop18"
+   style="stop-color:#D5383A"
+   offset="0.5507" />
 		<stop
-   id="stop3905"
-   style="stop-color:#248FB6"
+   id="stop20"
+   style="stop-color:#D53638"
    offset="1" />
 	</linearGradient>
 	
@@ -76,10 +76,10 @@
    inkscape:pageshadow="2"
    inkscape:window-width="1280"
    inkscape:window-height="723"
-   id="namedview3911"
+   id="namedview26"
    showgrid="false"
    inkscape:zoom="9.1785714"
-   inkscape:cx="-6.1011673"
+   inkscape:cx="14"
    inkscape:cy="14"
    inkscape:window-x="0"
    inkscape:window-y="24"
@@ -87,11 +87,11 @@
    inkscape:current-layer="Layer_1" />
 <path
    inkscape:connector-curvature="0"
-   style="fill:#248fb6;fill-opacity:1"
-   id="path3907"
+   style="fill:#d53638;fill-opacity:1"
+   id="path22"
    d="m 28,25 c 0,1.65 -1.35,3 -3,3 H 3 C 1.35,28 0,26.65 0,25 V 3 C 0,1.35 1.35,0 3,0 h 22 c 1.65,0 3,1.35 3,3 v 22 z" />
 <path
-   d="M14.805,13.709c1.661,0,3.004-1.346,3.004-3.002c0-1.66-1.344-3.006-3.004-3.006l-4.426-0.006v6.014H14.805z   M14.748,4c3.743,0,6.78,3.039,6.78,6.779c0,3.754-3.037,6.788-6.78,6.788l-4.369-0.005V24H6.472V4H14.748z"
-   id="path3909"
+   d="M21.368,6.952c-0.22-1.103-0.925-1.543-1.983-1.983C18.341,4.534,15.844,4.016,14,4  c-1.842,0.016-4.342,0.534-5.385,0.969c-1.058,0.44-1.762,0.88-1.983,1.983l-0.792,6.107v8.416h1.364v1.32  c0,1.608,2.357,1.608,2.357,0v-1.32h4.346h0.014h4.52v1.32c0,1.608,2.355,1.608,2.355,0v-1.32h1.365v-8.416L21.368,6.952z   M10.642,5.541h3.279h3.438c0.661,0,0.661,0.992,0,0.992h-3.446h-3.271C9.981,6.533,9.981,5.541,10.642,5.541z M8.383,18.836  c-0.624,0-1.13-0.505-1.13-1.13c0-0.623,0.506-1.13,1.13-1.13c0.624,0,1.13,0.507,1.13,1.13C9.513,18.331,9.007,18.836,8.383,18.836  z M13.921,13.703H7.929c-0.587,0-0.709-0.422-0.651-0.847l0.617-4.43C7.979,7.889,8.162,7.533,8.86,7.533h5.052h5.227  c0.698,0,0.881,0.355,0.966,0.894l0.618,4.43c0.057,0.424-0.066,0.847-0.653,0.847H13.921z M19.616,18.836  c-0.624,0-1.128-0.505-1.128-1.13c0-0.623,0.505-1.13,1.128-1.13c0.625,0,1.13,0.507,1.13,1.13  C20.746,18.331,20.241,18.836,19.616,18.836z"
+   id="path24"
    style="fill:#ffffff;fill-opacity:1" />
 </svg>

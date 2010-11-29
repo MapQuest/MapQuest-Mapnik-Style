@@ -1,12 +1,97 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Generator: Adobe Illustrator 15.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
-<g>
-	<path fill="#1884C3" d="M20,18.424C20,19.295,19.295,20,18.424,20h-6.847C10.707,20,10,19.295,10,18.424v-6.846
-		C10,10.706,10.707,10,11.577,10h6.847C19.295,10,20,10.706,20,11.578V18.424z"/>
-	<polygon fill="#FFFFFF" points="15.837,11.028 15.837,13.712 14.077,13.712 14.077,11.028 11.598,11.028 11.598,19.107 
-		14.077,19.107 14.077,15.933 15.837,15.933 15.837,19.107 18.316,19.107 18.316,11.028 	"/>
-</g>
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   width="28px"
+   height="28px"
+   viewBox="0 0 28 28"
+   enable-background="new 0 0 28 28"
+   xml:space="preserve"
+   inkscape:version="0.48.0 r9654"
+   sodipodi:docname="hospital.svg"><metadata
+   id="metadata30"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs28">
+	<linearGradient
+   y2="28"
+   x2="14"
+   y1="0"
+   x1="14"
+   gradientUnits="userSpaceOnUse"
+   id="SVGID_1_">
+		<stop
+   id="stop6"
+   style="stop-color:#91C7DA"
+   offset="0" />
+		<stop
+   id="stop8"
+   style="stop-color:#7ABBD3"
+   offset="0.0475" />
+		<stop
+   id="stop10"
+   style="stop-color:#5FADCA"
+   offset="0.1158" />
+		<stop
+   id="stop12"
+   style="stop-color:#49A2C2"
+   offset="0.1943" />
+		<stop
+   id="stop14"
+   style="stop-color:#3899BD"
+   offset="0.2859" />
+		<stop
+   id="stop16"
+   style="stop-color:#2D93B9"
+   offset="0.3993" />
+		<stop
+   id="stop18"
+   style="stop-color:#2690B7"
+   offset="0.5584" />
+		<stop
+   id="stop20"
+   style="stop-color:#248FB6"
+   offset="1" />
+	</linearGradient>
+	
+</defs><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1280"
+   inkscape:window-height="723"
+   id="namedview26"
+   showgrid="false"
+   inkscape:zoom="9.1785714"
+   inkscape:cx="18.755652"
+   inkscape:cy="13.102352"
+   inkscape:window-x="0"
+   inkscape:window-y="24"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Layer_1" />
+<path
+   inkscape:connector-curvature="0"
+   style="fill:#248fb6;fill-opacity:1"
+   id="path22"
+   d="m 28,25 c 0,1.65 -1.35,3 -3,3 H 3 C 1.35,28 0,26.65 0,25 V 3 C 0,1.35 1.35,0 3,0 h 22 c 1.65,0 3,1.35 3,3 v 22 z" />
+<path
+   d="M10.275,4v7.686h7.448V4h4.511v20h-4.511v-8.369h-7.448V24h-4.51V4H10.275z"
+   id="path24"
+   style="fill:#ffffff;fill-opacity:1" />
 </svg>

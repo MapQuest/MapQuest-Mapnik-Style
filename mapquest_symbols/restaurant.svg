@@ -1,17 +1,101 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
-<g>
-	<path fill="#646464" d="M22.883,7.479c0-1.305-1.059-2.363-2.363-2.363H9.477c-1.305,0-2.359,1.059-2.359,2.363v15.046
-		c0,1.304,1.055,2.359,2.359,2.359H20.52c1.306,0,2.363-1.057,2.363-2.359V7.479z"/>
-	<g>
-		<path fill="#FFFFFF" d="M14.289,12.195c0,0.522-0.477,1.078-1.09,1.078v8.807c0,1.25-1.707,1.25-1.707,0v-8.807
-			c-0.598,0-1.121-0.461-1.121-1.156V7.273c0-0.422,0.609-0.438,0.609,0.016v3.582h0.512h0.586h-0.043V7.262
-			c0-0.401,0.57-0.418,0.57,0.017v3.594h1.09v-3.61c0-0.397,0.594-0.414,0.594,0.017V12.195z"/>
-		<path fill="#FFFFFF" d="M19.629,8.402v13.674c0,1.223-1.707,1.203-1.707,0v-5.422h-0.91V8.402
-			C17.012,6.484,19.629,6.484,19.629,8.402z"/>
-	</g>
-</g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 15.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   width="28px"
+   height="28px"
+   viewBox="0 0 28 28"
+   enable-background="new 0 0 28 28"
+   xml:space="preserve"
+   inkscape:version="0.48.0 r9654"
+   sodipodi:docname="restaurant.svg"><metadata
+   id="metadata4565"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs4563">
+	<linearGradient
+   y2="28"
+   x2="14"
+   y1="0"
+   x1="14"
+   gradientUnits="userSpaceOnUse"
+   id="SVGID_1_">
+		<stop
+   id="stop4539"
+   style="stop-color:#FFD080"
+   offset="0" />
+		<stop
+   id="stop4541"
+   style="stop-color:#FFCD76"
+   offset="0.0155" />
+		<stop
+   id="stop4543"
+   style="stop-color:#FFC257"
+   offset="0.075" />
+		<stop
+   id="stop4545"
+   style="stop-color:#FFB83B"
+   offset="0.1424" />
+		<stop
+   id="stop4547"
+   style="stop-color:#FFB025"
+   offset="0.2185" />
+		<stop
+   id="stop4549"
+   style="stop-color:#FFA914"
+   offset="0.3074" />
+		<stop
+   id="stop4551"
+   style="stop-color:#FFA509"
+   offset="0.4174" />
+		<stop
+   id="stop4553"
+   style="stop-color:#FFA302"
+   offset="0.5717" />
+		<stop
+   id="stop4555"
+   style="stop-color:#FFA200"
+   offset="1" />
+	</linearGradient>
+	
+</defs><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1280"
+   inkscape:window-height="723"
+   id="namedview4561"
+   showgrid="false"
+   inkscape:zoom="9.1785714"
+   inkscape:cx="-6.1011673"
+   inkscape:cy="14"
+   inkscape:window-x="0"
+   inkscape:window-y="24"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Layer_1" />
+<path
+   inkscape:connector-curvature="0"
+   style="fill:#ffa200;fill-opacity:1"
+   id="path4557"
+   d="m 28,25 c 0,1.65 -1.35,3 -3,3 H 3 C 1.35,28 0,26.65 0,25 V 3 C 0,1.35 1.35,0 3,0 h 22 c 1.65,0 3,1.35 3,3 v 22 z" />
+<path
+   d="M13.442,10.528c0,0.653-0.587,1.342-1.356,1.342v10.963c0,1.557-2.12,1.557-2.12,0V11.87  c-0.749,0-1.395-0.572-1.395-1.438V4.397c0-0.523,0.757-0.542,0.757,0.021v4.461h0.633h0.734h-0.06V4.384  c0-0.502,0.711-0.521,0.711,0.019v4.477h1.355V4.384c0-0.496,0.739-0.517,0.739,0.019V10.528z M16.171,5.805v10.273h1.133v6.75  c0,1.497,2.125,1.522,2.125,0V5.805C19.429,3.417,16.171,3.417,16.171,5.805z"
+   id="path4559"
+   style="fill:#ffffff;fill-opacity:1" />
 </svg>

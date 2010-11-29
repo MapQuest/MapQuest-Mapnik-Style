@@ -85,6 +85,86 @@
 		<Filter>[man_made]='mineshaft'</Filter>
 		<PointSymbolizer file="&symbols;/mine.svg"/>
 	</Rule>
+	<Rule>
+		&maxscale_zoom17;
+		<Filter>[amenity]='restaurant'</Filter>
+		<PointSymbolizer file="&symbols;/restaurant.svg"/>
+	</Rule>
+	<Rule>
+		&maxscale_zoom17;
+		<Filter>[tourism]='hotel'</Filter>
+		<PointSymbolizer file="&symbols;/hotel.svg"/>
+	</Rule>
+	<Rule>
+		&maxscale_zoom17;
+		<Filter>[amenity]='atm'</Filter>
+		<PointSymbolizer file="&symbols;/atm.svg"/>
+	</Rule>
+	<Rule>
+		&maxscale_zoom16;
+		<Filter>[amenity]='bank'</Filter>
+		<PointSymbolizer file="&symbols;/bank.svg"/>
+	</Rule>
+	<Rule>
+		&maxscale_zoom17;
+		<Filter>[amenity]='fast_food'</Filter>
+		<PointSymbolizer file="&symbols;/fast-food.svg"/>
+	</Rule>
+	<Rule>
+		&maxscale_zoom17;
+		<Filter>[shop]='supermarket'</Filter>
+		<PointSymbolizer file="&symbols;/grocery.svg"/>
+	</Rule>
+	<Rule>
+		&maxscale_zoom17;
+		<Filter>[amenity]='post_office'</Filter>
+		<PointSymbolizer file="&symbols;/post-office.svg"/>
+	</Rule>
+	<Rule>
+		&maxscale_zoom17;
+		<Filter>[amenity]='cinema'</Filter>
+		<PointSymbolizer file="&symbols;/cinema.svg"/>
+	</Rule>
+	<Rule>
+		&maxscale_zoom16;
+		<Filter>[amenity]='bus_station'</Filter>
+		<PointSymbolizer file="&symbols;/bus-station.svg"/>
+	</Rule>
+	<Rule>
+		&maxscale_zoom16;
+		<Filter>[tourism]='camp_site'</Filter>
+		<PointSymbolizer file="&symbols;/campsite.svg"/>
+	</Rule>
+	<Rule>
+		&maxscale_zoom17;
+		<Filter>[amenity]='fuel'</Filter>
+		<PointSymbolizer file="&symbols;/gas-station.svg"/>
+	</Rule>
+	<Rule>
+		&maxscale_zoom17;
+		<Filter>[tourism]='information'</Filter>
+		<PointSymbolizer file="&symbols;/information.svg"/>
+	</Rule>
+	<Rule>
+		&maxscale_zoom17;
+		<Filter>[shop]='laundry' or [shop]='dry_cleaning'</Filter>
+		<PointSymbolizer file="&symbols;/laundry.svg"/>
+	</Rule>
+	<Rule>
+		&maxscale_zoom17;
+		<Filter>[amenity]='pharmacy'</Filter>
+		<PointSymbolizer file="&symbols;/pharmacy.svg"/>
+	</Rule>
+	<Rule>
+		&maxscale_zoom17;
+		<Filter>[amenity]='pub' or [amenity]='bar'</Filter>
+		<PointSymbolizer file="&symbols;/pub-bar.svg"/>
+	</Rule>
+	<Rule>
+		&maxscale_zoom17;
+		<Filter>[amenity]='wifi'</Filter>
+		<PointSymbolizer file="&symbols;/wifi.svg"/>
+	</Rule>
 </Style>
 
 <Layer name="direction-arrows" status="on" srs="&osm2pgsql_projection;">
@@ -111,13 +191,16 @@
       where aeroway in ('airport','aerodrome')
          or "natural" in ('peak')
          or "leisure" in ('golf_course','water_park','marina','sports_centre')
-         or "amenity" in ('hospital','parking')
-		or "tourism" in ('museum','attraction')
+         or "amenity" in ('hospital','parking','atm','bank','fast_food',
+						  'post_office','cinema','bus_station','fuel','pharmacy',
+						  'pub','bar')
+		or "tourism" in ('museum','attraction','hotel','camp_site','information')
 		or "man_made" in ('mineshaft')
 		or "sport" in ('skiing')
-		or "amenity" in ('ferry_terminal')
+		or "amenity" in ('ferry_terminal','restaurant')
 		or "highway" in ('motorway_junction')
 		or "railway" in ('station')
+		or "shop" in ('supermarket','laundry','dry_cleaning')
       ) as symbols
 		</Parameter>
 	&datasource-settings;
@@ -132,13 +215,16 @@
       where aeroway in ('airport','aerodrome')
          or "natural" in ('peak')
          or "leisure" in ('golf_course','water_park','marina','sports_centre')
-         or "amenity" in ('hospital','parking')
-		or "tourism" in ('museum','attraction')
+         or "amenity" in ('hospital','parking','atm','bank','fast_food',
+						  'post_office','cinema','bus_station','fuel','pharmacy',
+						  'pub','bar')
+		or "tourism" in ('museum','attraction','hotel','camp_site','information')
 		or "man_made" in ('mineshaft')
 		or "sport" in ('skiing')
-		or "amenity" in ('ferry_terminal')
+		or "amenity" in ('ferry_terminal','restaurant')
 		or "highway" in ('motorway_junction')
 		or "railway" in ('station')
+		or "shop" in ('supermarket','laundry','dry_cleaning')
       ) as symbols
 		</Parameter>
 	&datasource-settings;

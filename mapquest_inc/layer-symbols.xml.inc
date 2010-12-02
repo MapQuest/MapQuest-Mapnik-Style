@@ -132,7 +132,7 @@
       where aeroway in ('airport','aerodrome')
          or "natural" in ('peak')
          or "leisure" in ('golf_course','water_park','marina','sports_centre')
-         or "amenity" in ('hospital','parking')
+         or "amenity" in ('hospital')
 		or "tourism" in ('museum','attraction')
 		or "man_made" in ('mineshaft')
 		or "sport" in ('skiing')

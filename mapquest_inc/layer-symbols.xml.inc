@@ -215,7 +215,7 @@
       where aeroway in ('airport','aerodrome')
          or "natural" in ('peak')
          or "leisure" in ('golf_course','water_park','marina','sports_centre')
-         or "amenity" in ('hospital','parking','atm','bank','fast_food',
+         or "amenity" in ('hospital','atm','bank','fast_food',
 						  'post_office','cinema','bus_station','fuel','pharmacy',
 						  'pub','bar')
 		or "tourism" in ('museum','attraction','hotel','camp_site','information')

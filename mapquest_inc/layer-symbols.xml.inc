@@ -53,13 +53,13 @@
 	<Rule>
 		&maxscale_zoom16;
 		<Filter>[railway]='station'</Filter>
-		<PointSymbolizer file="&symbols;/station-train.svg"/>
+		<PointSymbolizer file="&symbols;/station-train.svg" transform="scale(0.6)"/>
 	</Rule>
 	<!--hospital-->
 	<Rule>
 		&maxscale_zoom15;
 		<Filter>[amenity]='hospital'</Filter>
-		<PointSymbolizer file="&symbols;/hospital.svg"/>
+		<PointSymbolizer file="&symbols;/hospital.svg" transform="scale(0.6)"/>
 	</Rule>
 	<!--marina-->
 	<Rule>
@@ -77,7 +77,7 @@
 	<Rule>
 		&maxscale_zoom16;
 		<Filter>[amenity]='parking' and ([access] = 'public' or not [access] &lt;&gt; '')</Filter>
-		<PointSymbolizer file="&symbols;/parking.svg" allow_overlap="true"/>
+		<PointSymbolizer file="&symbols;/parking.svg" allow_overlap="true" transform="scale(0.6)"/>
 	</Rule>
 	<!--mine-->
 	<Rule>
@@ -88,82 +88,82 @@
 	<Rule>
 		&maxscale_zoom17;
 		<Filter>[amenity]='restaurant'</Filter>
-		<PointSymbolizer file="&symbols;/restaurant.svg"/>
+		<PointSymbolizer file="&symbols;/restaurant.svg" transform="scale(0.6)"/>
 	</Rule>
 	<Rule>
 		&maxscale_zoom17;
 		<Filter>[tourism]='hotel'</Filter>
-		<PointSymbolizer file="&symbols;/hotel.svg"/>
+		<PointSymbolizer file="&symbols;/hotel.svg" transform="scale(0.6)"/>
 	</Rule>
 	<Rule>
 		&maxscale_zoom17;
 		<Filter>[amenity]='atm'</Filter>
-		<PointSymbolizer file="&symbols;/atm.svg"/>
+		<PointSymbolizer file="&symbols;/atm.svg" transform="scale(0.6)"/>
 	</Rule>
 	<Rule>
 		&maxscale_zoom16;
 		<Filter>[amenity]='bank'</Filter>
-		<PointSymbolizer file="&symbols;/bank.svg"/>
+		<PointSymbolizer file="&symbols;/bank.svg" transform="scale(0.6)"/>
 	</Rule>
 	<Rule>
 		&maxscale_zoom17;
 		<Filter>[amenity]='fast_food'</Filter>
-		<PointSymbolizer file="&symbols;/fast-food.svg"/>
+		<PointSymbolizer file="&symbols;/fast-food.svg" transform="scale(0.6)"/>
 	</Rule>
 	<Rule>
 		&maxscale_zoom17;
 		<Filter>[shop]='supermarket'</Filter>
-		<PointSymbolizer file="&symbols;/grocery.svg"/>
+		<PointSymbolizer file="&symbols;/grocery.svg" transform="scale(0.6)"/>
 	</Rule>
 	<Rule>
 		&maxscale_zoom17;
 		<Filter>[amenity]='post_office'</Filter>
-		<PointSymbolizer file="&symbols;/post-office.svg"/>
+		<PointSymbolizer file="&symbols;/post-office.svg" transform="scale(0.6)"/>
 	</Rule>
 	<Rule>
 		&maxscale_zoom17;
 		<Filter>[amenity]='cinema'</Filter>
-		<PointSymbolizer file="&symbols;/cinema.svg"/>
+		<PointSymbolizer file="&symbols;/cinema.svg" transform="scale(0.6)"/>
 	</Rule>
 	<Rule>
 		&maxscale_zoom16;
 		<Filter>[amenity]='bus_station'</Filter>
-		<PointSymbolizer file="&symbols;/bus-station.svg"/>
+		<PointSymbolizer file="&symbols;/bus-station.svg" transform="scale(0.6)"/>
 	</Rule>
 	<Rule>
 		&maxscale_zoom16;
 		<Filter>[tourism]='camp_site'</Filter>
-		<PointSymbolizer file="&symbols;/campsite.svg"/>
+		<PointSymbolizer file="&symbols;/campsite.svg" transform="scale(0.6)"/>
 	</Rule>
 	<Rule>
 		&maxscale_zoom17;
 		<Filter>[amenity]='fuel'</Filter>
-		<PointSymbolizer file="&symbols;/gas-station.svg"/>
+		<PointSymbolizer file="&symbols;/gas-station.svg" transform="scale(0.6)"/>
 	</Rule>
 	<Rule>
 		&maxscale_zoom17;
 		<Filter>[tourism]='information'</Filter>
-		<PointSymbolizer file="&symbols;/information.svg"/>
+		<PointSymbolizer file="&symbols;/information.svg" transform="scale(0.6)"/>
 	</Rule>
 	<Rule>
 		&maxscale_zoom17;
 		<Filter>[shop]='laundry' or [shop]='dry_cleaning'</Filter>
-		<PointSymbolizer file="&symbols;/laundry.svg"/>
+		<PointSymbolizer file="&symbols;/laundry.svg" transform="scale(0.6)"/>
 	</Rule>
 	<Rule>
 		&maxscale_zoom17;
 		<Filter>[amenity]='pharmacy'</Filter>
-		<PointSymbolizer file="&symbols;/pharmacy.svg"/>
+		<PointSymbolizer file="&symbols;/pharmacy.svg" transform="scale(0.6)"/>
 	</Rule>
 	<Rule>
 		&maxscale_zoom17;
 		<Filter>[amenity]='pub' or [amenity]='bar'</Filter>
-		<PointSymbolizer file="&symbols;/pub-bar.svg"/>
+		<PointSymbolizer file="&symbols;/pub-bar.svg" transform="scale(0.6)"/>
 	</Rule>
 	<Rule>
 		&maxscale_zoom17;
 		<Filter>[amenity]='wifi'</Filter>
-		<PointSymbolizer file="&symbols;/wifi.svg"/>
+		<PointSymbolizer file="&symbols;/wifi.svg" transform="scale(0.6)"/>
 	</Rule>
 </Style>
 

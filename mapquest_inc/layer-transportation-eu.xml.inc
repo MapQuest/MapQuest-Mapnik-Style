@@ -15,13 +15,13 @@
 <!--pedestrian walkways-->
 <Style name="pedestrian-walkways">
 	<Rule>
-		<Filter>[highway] = 'pedestrian' or [highway]='footway' or ([highway]='path' and [bicycle]!='designated') or [highway]='track'</Filter>
+		<Filter>[highway] = 'pedestrian' or [highway]='footway' or ([highway]='path' and !([bicycle]='designated')) or [highway]='track'</Filter>
 		&maxscale_zoom15;
 		&minscale_zoom16;
 		<LineSymbolizer stroke="#e52540" stroke-width="1.5" stroke-opacity=".4" stroke-dasharray="1,3"/>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'pedestrian' or [highway]='footway' or ([highway]='path' and [bicycle]!='designated') or [highway]='track'</Filter>
+		<Filter>[highway] = 'pedestrian' or [highway]='footway' or ([highway]='path' and !([bicycle]='designated')) or [highway]='track'</Filter>
 		&maxscale_zoom17;
 		<LineSymbolizer stroke="#e52540" stroke-width="2" stroke-opacity=".4" stroke-dasharray="2,4"/>
 	</Rule>

@@ -617,7 +617,7 @@
 	<Datasource>
 		<Parameter name="table">
 			(select way,highway,bicycle from &prefix;_line
-			wwhere highway in ('pedestrian','footway','track','path','steps')
+			where highway in ('pedestrian','footway','track','path','steps')
 			order by z_order,way_area desc) as roads
 		</Parameter>
 		&datasource-settings;

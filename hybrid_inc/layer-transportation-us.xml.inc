@@ -704,11 +704,10 @@
 	<StyleName>ramp casing</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,railway,
+      (select way,highway,
        case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
        from &prefix;_roads
-       where highway is not null
-          or railway is not null
+       where highway in ('motorway_link')
        order by z_order
       ) as roads
 		</Parameter>
@@ -734,11 +733,10 @@
 	<StyleName>street 3 casing</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,railway,
+      (select way,highway,
        case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
        from &prefix;_roads
-       where highway is not null
-          or railway is not null
+       where highway in ('secondary', 'secondary_link', 'tertiary', 'tertiary_link')
        order by z_order
       ) as roads
 		</Parameter>
@@ -749,11 +747,10 @@
 	<StyleName>street 2 casing</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,railway,
+      (select way,highway,
        case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
        from &prefix;_roads
-       where highway is not null
-          or railway is not null
+       where highway in ('trunk', 'trunk_link', 'primary', 'primary_link')
        order by z_order
       ) as roads
 		</Parameter>
@@ -764,11 +761,10 @@
 	<StyleName>ramp</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,railway,
+      (select way,highway,
        case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
        from &prefix;_roads
-       where highway is not null
-          or railway is not null
+       where highway in ('motorway_link')
        order by z_order
       ) as roads
 		</Parameter>
@@ -779,11 +775,10 @@
     <StyleName>street 4</StyleName>
     <Datasource>
       <Parameter name="table">
-	      (select way,highway,railway,
+	      (select way,highway,
 	       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
 	       from &prefix;_line
 	       where highway is not null
-	          or railway is not null
 	       order by z_order
 	      ) as roads
       </Parameter>
@@ -794,11 +789,10 @@
 	<StyleName>street 3</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,railway,
+      (select way,highway,
        case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
        from &prefix;_roads
-       where highway is not null
-          or railway is not null
+       where highway in ('secondary', 'secondary_link','tertiary','tertiary_link')
        order by z_order
       ) as roads
 		</Parameter>
@@ -809,11 +803,10 @@
 	<StyleName>street 2</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,railway,
+      (select way,highway,
        case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
        from &prefix;_roads
-       where highway is not null
-          or railway is not null
+       where highway in ('trunk', 'trunk_link', 'primary', 'primary_link')
        order by z_order
       ) as roads
 		</Parameter>

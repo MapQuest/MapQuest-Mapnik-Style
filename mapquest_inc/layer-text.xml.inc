@@ -179,7 +179,7 @@
   <Rule>
     <Filter>[natural] = 'peak'</Filter>
     &maxscale_zoom15;
-    <TextSymbolizer name="[name]" fontset_name="oblique-fonts" size="11" fill="#775d47" dy="-8" halo_radius="2" halo_fill="rgba(255,255,255,0.25)" wrap_width="10" min_distance="1" line_spacing="4"/>
+    <TextSymbolizer name="[name_with_ele]" fontset_name="oblique-fonts" size="11" fill="#775d47" dy="-8" halo_radius="2" halo_fill="rgba(255,255,255,0.25)" wrap_width="10" min_distance="1" line_spacing="4"/>
   </Rule>
   <!--ferry terminal-->
   <Rule>
@@ -562,7 +562,7 @@
 	<StyleName>landmark-point-text</StyleName>
 	<Datasource>
 		<Parameter name="table">
-	    (select way,amenity,access,highway,leisure,landuse,man_made,"natural",place,railway,tourism,ele,name,ref,military,aeroway,waterway,'yes'::text as point
+	    (select way,amenity,access,highway,leisure,landuse,man_made,"natural",place,railway,tourism,ele,name,ref,military,aeroway,waterway,'yes'::text as point, (name || COALESCE(' ' || ele, '')) as name_with_ele
 	    from &prefix;_point
 	    where amenity is not null
 	    or leisure is not null

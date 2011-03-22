@@ -35,7 +35,7 @@
   <StyleName>addressing</StyleName>
   <Datasource>
     <Parameter name="table">
-    (select way, "addr:housenumber" from &prefix;_polygon where "addr:housenumber" is not null and building='yes') as housenumbers
+    (select way, "addr:housenumber" from &prefix;_polygon where "addr:housenumber" is not null and building is not null) as housenumbers
     </Parameter>
     &datasource-settings;
   </Datasource>

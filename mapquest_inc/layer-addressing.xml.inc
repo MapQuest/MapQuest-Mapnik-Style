@@ -1,7 +1,7 @@
 <Style name="addressing">
   <Rule>
     &maxscale_zoom17;
-    <TextSymbolizer name="[addr:housenumber]" fontset_name="oblique-fonts" size="8" fill="#606060" halo_radius="1" halo_fill="rgba(255,255,255,0.25)" min_distance="2"/>
+    <TextSymbolizer name="[addr:housenumber]" fontset-name="oblique-fonts" size="8" fill="#606060" halo-radius="1" halo-fill="rgba(255,255,255,0.25)" minimum-distance="2"/>
   </Rule>
 </Style>
 

@@ -61,21 +61,21 @@
 		<Filter>[waterway] = 'dock' or [waterway] = 'mill_pond' or [waterway]='canal'</Filter>
 		&maxscale_zoom9;
 		&minscale_zoom9;
-		<PolygonPatternSymbolizer file="&symbols;/water.png" type="png" width="256" height="256"/>
+		<PolygonPatternSymbolizer file="&symbols;/water.png"/>
 	</Rule>
 	<!--basin-->
 	<Rule>
 		<Filter>[landuse] = 'basin'</Filter>
 		&maxscale_zoom7;
 		&minscale_zoom9;
-		<PolygonPatternSymbolizer file="&symbols;/water.png" type="png" width="256" height="256"/>
+		<PolygonPatternSymbolizer file="&symbols;/water.png"/>
 	</Rule>
 	<!--lake, reservoir, and riverbank -->
 	<Rule>
 		<Filter>[natural] = 'lake' or [natural] = 'water' or [landuse] = 'reservoir' or [waterway] = 'riverbank' or [landuse] = 'water'</Filter>
 		&maxscale_zoom6;
 		&minscale_zoom9;
-		<PolygonPatternSymbolizer file="&symbols;/water.png" type="png" width="256" height="256"/>
+		<PolygonPatternSymbolizer file="&symbols;/water.png"/>
 	</Rule>
 </Style>
 <Style name="water_areas">
@@ -89,19 +89,19 @@
 	<Rule>
 		<Filter>[waterway] = 'dock' or [waterway] = 'mill_pond' or [waterway]='canal'</Filter>
 		&maxscale_zoom10;
-		<PolygonPatternSymbolizer file="&symbols;/water.png" type="png" width="256" height="256"/>
+		<PolygonPatternSymbolizer file="&symbols;/water.png"/>
 	</Rule>
 	<!--basin-->
 	<Rule>
 		<Filter>[landuse] = 'basin'</Filter>
 		&maxscale_zoom10;
-		<PolygonPatternSymbolizer file="&symbols;/water.png" type="png" width="256" height="256"/>
+		<PolygonPatternSymbolizer file="&symbols;/water.png"/>
 	</Rule>
 	<!--lake, reservoir, and riverbank -->
 	<Rule>
 		<Filter>[natural] = 'lake' or [natural] = 'water' or [landuse] = 'reservoir' or [waterway] = 'riverbank' or [landuse] = 'water'</Filter>
 		&maxscale_zoom10;
-		<PolygonPatternSymbolizer file="&symbols;/water.png" type="png" width="256" height="256"/>
+		<PolygonPatternSymbolizer file="&symbols;/water.png"/>
 	</Rule>
 </Style>
 <Layer name="water_lines" status="on" srs="&osm2pgsql_projection;">

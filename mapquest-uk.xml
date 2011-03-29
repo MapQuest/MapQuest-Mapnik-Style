@@ -32,7 +32,7 @@ THE SOFTWARE.
 <!-- This stylesheet uses features only available in mapnik builds with
      libxml2 as the XML parser. Furthermore, there are other features
      that necessitate an upgrade to mapnik trunk (aka mapnik2) -->
-<Map background-image="&symbols;/water.png" srs="&srs900913;" minimum_version="0.8.0" buffer_size="256">
+<Map background-image="&symbols;/water.png" srs="&srs900913;" minimum-version="0.8.0" buffer-size="256">
 	<!--settings for Mapnik fonts-->
 &fontset-settings;
 

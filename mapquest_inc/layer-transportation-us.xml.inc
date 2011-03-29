@@ -271,22 +271,22 @@
 	<Rule>
 		&maxscale_zoom15;
 		&minscale_zoom15;
-		<MarkersSymbolizer fill="white" stroke="#999999" stroke-width="1.5" width="4" height="4" placement="point" marker_type="ellipse"/>
+		<MarkersSymbolizer fill="white" stroke="#999999" stroke-width="1.5" width="4" height="4" placement="point" marker-type="ellipse"/>
 	</Rule>
 	<Rule>
 		&maxscale_zoom16;
 		&minscale_zoom16;
-		<MarkersSymbolizer fill="white" stroke="#999999" stroke-width="1.5" width="5" height="5" placement="point" marker_type="ellipse"/>
+		<MarkersSymbolizer fill="white" stroke="#999999" stroke-width="1.5" width="5" height="5" placement="point" marker-type="ellipse"/>
 	</Rule>
 	<Rule>
 		&maxscale_zoom17;
 		&minscale_zoom17;
-		<MarkersSymbolizer fill="white" stroke="#999999" stroke-width="1.5" width="8" height="8" placement="point" marker_type="ellipse"/>
+		<MarkersSymbolizer fill="white" stroke="#999999" stroke-width="1.5" width="8" height="8" placement="point" marker-type="ellipse"/>
 	</Rule>
 	<Rule>
 		&maxscale_zoom18;
 		&minscale_zoom18;
-		<MarkersSymbolizer fill="white" stroke="#999999" stroke-width="2" width="10" height="10" placement="point" marker_type="ellipse"/>
+		<MarkersSymbolizer fill="white" stroke="#999999" stroke-width="2" width="10" height="10" placement="point" marker-type="ellipse"/>
 	</Rule>
 </Style>
 <!--alley-->

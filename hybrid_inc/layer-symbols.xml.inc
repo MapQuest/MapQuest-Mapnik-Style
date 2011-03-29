@@ -76,7 +76,7 @@
 	<Rule>
 		&maxscale_zoom16;
 		<Filter>[amenity]='parking' and ([access] = 'public' or not [access] &lt;&gt; '')</Filter>
-		<PointSymbolizer file="&symbols;/parking.svg" allow_overlap="true"/>
+		<PointSymbolizer file="&symbols;/parking.svg" allow-overlap="true"/>
 	</Rule>
 	<!--mine-->
 	<Rule>

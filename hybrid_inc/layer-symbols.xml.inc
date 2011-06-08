@@ -61,6 +61,7 @@
 		<Filter>[amenity]='hospital'</Filter>
 		<PointSymbolizer file="&symbols;/hospital.svg"/>
 	</Rule>
+	<!--marina-->
 	<Rule>
 		&maxscale_zoom16;
 		<Filter>[leisure]='marina'</Filter>
@@ -96,7 +97,7 @@
        from &prefix;_line
        where oneway is not null
          and highway in ('motorway','motorway_link','trunk','trunk_link','primary','primary_link',
-                          'secondary','secondary_link','tertiary','unclassified', 'residential', 'living_street'
+                          'secondary','secondary_link','tertiary','unclassified', 'residential', 'living_street',
                           'service','track')
       ) as directions
       </Parameter>
@@ -126,7 +127,7 @@
 </Layer>
 <!-- unusually, this is a polygon table that we actually want for the hybrid layers, since the
      style rules are just drawing symbols, not fills -->
-<Layer name="amenity-symbols-poly" status="on" srs="&osm2pgsql_projection;">
+<Layer name="symbols-poly" status="on" srs="&osm2pgsql_projection;">
 	<StyleName>symbols</StyleName>
 	<Datasource>
 		<Parameter name="table">
@@ -135,7 +136,7 @@
       where aeroway in ('airport','aerodrome')
          or "natural" in ('peak')
          or "leisure" in ('golf_course','water_park','marina','sports_centre')
-         or "amenity" in ('hospital','parking')
+         or "amenity" in ('hospital')
 		or "tourism" in ('museum','attraction')
 		or "man_made" in ('mineshaft')
 		or "sport" in ('skiing')

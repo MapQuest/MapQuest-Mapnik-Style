@@ -1,39 +1,39 @@
 <Style name="shield-text">
 	<!--motorway shields-->
 	<Rule>
-		<Filter>[highway] = 'motorway' and [length] gt 0</Filter>
+		<Filter>[highway] = 'motorway' and [length] gt 1 and [length] &lt; 9</Filter>
 		&maxscale_zoom7;
 		&minscale_zoom13;
 		<ShieldSymbolizer name="[ref]" fontset-name="bold-fonts" size="10" fill="#fff" placement="line" file="&symbols;/shield_red_eu[length].svg" minimum-distance="30" spacing="750"/>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'motorway' and [length] gt 0</Filter>
+		<Filter>[highway] = 'motorway' and [length] gt 1 and [length] &lt; 9</Filter>
 		&maxscale_zoom14;
 		&minscale_zoom18;
 		<ShieldSymbolizer name="[ref]" fontset-name="bold-fonts" size="10" fill="#fff" placement="line" file="&symbols;/shield_red_eu[length].svg" minimum-distance="50" spacing="750"/>
 	</Rule>	
 	<!--trunk shields-->
 	<Rule>
-		<Filter>[highway] = 'trunk' and [length] gt 0</Filter>
+		<Filter>[highway] = 'trunk' and [length] gt 1 and [length] &lt; 9</Filter>
 		&maxscale_zoom10;
 		&minscale_zoom13;
 		<ShieldSymbolizer name="[ref]" fontset-name="bold-fonts" size="10" fill="#404040" placement="line" file="&symbols;/shield_gold_eu[length].svg" minimum-distance="30" spacing="750"/>
 	</Rule>
 	<Rule>
-		<Filter>[highway] = 'trunk' and [length] gt 0</Filter>
+		<Filter>[highway] = 'trunk' and [length] gt 1 and [length] &lt; 9</Filter>
 		&maxscale_zoom14;
 		&minscale_zoom18;
 		<ShieldSymbolizer name="[ref]" fontset-name="bold-fonts" size="10" fill="#404040" placement="line" file="&symbols;/shield_gold_eu[length].svg" minimum-distance="50" spacing="750"/>
 	</Rule>
 	<!--primary/secondary shields-->
 	<Rule>
-		<Filter>([highway] = 'primary' or [highway] = 'secondary') and [length] gt 0</Filter>
+		<Filter>([highway] = 'primary' or [highway] = 'secondary') and [length] gt 1 and [length] &lt; 9</Filter>
 		&maxscale_zoom12;
 		&minscale_zoom13;
 		<ShieldSymbolizer name="[ref]" fontset-name="bold-fonts" size="10" fill="#404040" placement="line" file="&symbols;/shield_white_eu[length].svg" minimum-distance="30" spacing="750"/>
 	</Rule>
 	<Rule>
-		<Filter>([highway] = 'primary' or [highway] = 'secondary') and [length] gt 0</Filter>
+		<Filter>([highway] = 'primary' or [highway] = 'secondary') and [length] gt 1 and [length] &lt; 9</Filter>
 		&maxscale_zoom14;
 		&minscale_zoom18;
 		<ShieldSymbolizer name="[ref]" fontset-name="bold-fonts" size="10" fill="#404040" placement="line" file="&symbols;/shield_white_eu[length].svg" minimum-distance="50" spacing="750"/>

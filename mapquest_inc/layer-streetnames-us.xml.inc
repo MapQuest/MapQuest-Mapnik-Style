@@ -36,7 +36,7 @@
 	</Rule>
 <!--US Highway shield-->
 	<Rule>
-		<Filter>[ref].match('^US.*') and [length] &lt; 3</Filter>
+		<Filter>[ref].match('^US.*') and [length] &lt; 4</Filter>
 		&maxscale_zoom8;
 		<ShieldSymbolizer name="[shield_name]" fontset-name="book-fonts" size="10" fill="#000" placement="line" file="&symbols;/shield_hwy_us3.svg" minimum-distance="30" spacing="750"/>
 	</Rule>
@@ -62,7 +62,7 @@
 	</Rule>
 <!--State Highway shield-->
 	<Rule>
-		<Filter>not [ref].match('^US .*') and not [ref].match('^I .*') and [length] &lt; 3</Filter>
+		<Filter>not [ref].match('^US .*') and not [ref].match('^I .*') and [length] &lt; 4</Filter>
 		&maxscale_zoom10;
 		<ShieldSymbolizer name="[shield_name]" fontset-name="book-fonts" size="10" fill="#000" placement="line" file="&symbols;/shield_sr_us3.svg" minimum-distance="40" spacing="750"/>
 	</Rule>

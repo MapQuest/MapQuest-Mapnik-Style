@@ -754,7 +754,7 @@
 		<Parameter name="table">
       (select way,route
       from &prefix;_line
-      where route is not null
+      where route = 'ferry'
       ) as routes
 	</Parameter>
 	&datasource-settings;
@@ -838,7 +838,7 @@
 	      (select way,highway,
 	       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
 	       from &prefix;_line
-	       where highway is not null
+	       where highway = 'service'
 	       order by z_order
 	      ) as roads
       </Parameter>
@@ -852,8 +852,7 @@
 	      (select way,highway,railway,
 	       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
 	       from &prefix;_line
-	       where highway is not null
-	          or railway is not null
+	       where highway in ('residential', 'living_street', 'unclassified', 'road', 'residential_link', 'unclassified_link')
 	       order by z_order
 	      ) as roads
       </Parameter>
@@ -916,7 +915,7 @@
 	      (select way,highway,
 	       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
 	       from &prefix;_line
-	       where highway is not null
+	       where highway = 'service'
 	       order by z_order
 	      ) as roads
       </Parameter>
@@ -930,7 +929,7 @@
 	      (select way,highway,
 	       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
 	       from &prefix;_line
-	       where highway is not null
+	       where highway in ('residential', 'living_street', 'unclassified', 'road', 'residential_link', 'unclassified_link')
 	       order by z_order
 	      ) as roads
       </Parameter>

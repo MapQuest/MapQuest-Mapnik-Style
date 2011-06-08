@@ -7,5 +7,5 @@
 <!ENTITY layer-overpass SYSTEM "layer-overpass-us.xml.inc">
 <!ENTITY layer-transportation SYSTEM "layer-transportation-us.xml.inc">
 <!ENTITY layer-water SYSTEM "layer-water.xml.inc">
-<!ENTITY layer-landmark SYSTEM "layer-landmark-us.xml.inc">
+<!ENTITY layer-landmark SYSTEM "layer-landmark.xml.inc">
 <!ENTITY layer-base SYSTEM "layer-base.xml.inc">

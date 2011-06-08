@@ -1,4 +1,4 @@
-<Style name="landmark-poly-text">
+<Style name="landmark-poly-text-lowzoom">
   <!--park/wood/forest-->
   <Rule>
     <Filter>([leisure] = 'park' or [leisure] = 'playground' or [landuse] = 'recreation_ground' or [leisure] = 'nature_reserve' or [landuse] = 'forest') and [way_area] &gt;= 50000000</Filter>
@@ -19,6 +19,38 @@
     <TextSymbolizer name="[name]" fontset-name="oblique-fonts" size="10" fill="#305943" halo-radius="2" halo-fill="rgba(255,255,255,0.25)" wrap-width="25" minimum-distance="20" line-spacing="4"/>
   </Rule>
   <Rule>
+    <Filter>([amenity] = 'university' or [amenity] = 'college') and [way_area] &gt;= 500000</Filter>
+    &maxscale_zoom13;
+    &minscale_zoom14;
+    <TextSymbolizer name="[name]" fontset-name="oblique-fonts" size="10" fill="#2b2b2b" halo-radius="2" halo-fill="rgba(255,255,255,0.25)" wrap-width="25" line-spacing="4"/>
+  </Rule>
+   <Rule>
+    <Filter>[amenity] = 'school' and [way_area] &gt;= 500000</Filter>
+    &maxscale_zoom13;
+    &minscale_zoom14;
+    <TextSymbolizer name="[name]" fontset-name="oblique-fonts" size="10" fill="#2b2b2b" halo-radius="2" halo-fill="rgba(255,255,255,0.25)" wrap-width="25" line-spacing="4"/>
+  </Rule>
+  <Rule>
+    <Filter>([leisure] = 'stadium' or [leisure] = 'sports_centre' or [tourism] = 'attraction' or [tourism] = 'zoo') and [way_area] &gt;= 500000</Filter>
+    &maxscale_zoom13;
+    &minscale_zoom14;
+    <TextSymbolizer name="[name]" fontset-name="oblique-fonts" size="10" fill="#2b2b2b" halo-radius="2" halo-fill="rgba(255,255,255,0.25)" wrap-width="14" line-spacing="4"/>
+  </Rule>
+  <Rule>
+    <Filter>[landuse]='military' and [way_area] &gt;= 500000</Filter>
+    &maxscale_zoom13;
+    &minscale_zoom14;
+    <TextSymbolizer name="[name]" fontset-name="oblique-fonts" size="10" fill="#2b2b2b" halo-radius="2" halo-fill="rgba(255,255,255,0.25)" wrap-width="25" line-spacing="4"/>
+  </Rule>
+  <Rule>
+    <Filter>[aeroway] = 'apron' or [aeroway] = 'aerodrome'</Filter>
+    &maxscale_zoom11;
+    &minscale_zoom14;
+    <TextSymbolizer name="[name]" fontset-name="oblique-fonts" size="10" fill="#2b2b2b" halo-radius="2" halo-fill="rgba(255,255,255,0.25)" wrap-width="10" text-transform="uppercase" line-spacing="4"/>
+  </Rule>
+</Style>
+<Style name="landmark-poly-text">
+  <Rule>
     <Filter>([leisure] = 'park' or [leisure] = 'playground' or [landuse] = 'recreation_ground' or [leisure] = 'nature_reserve' or [landuse] = 'forest') and [way_area] &gt;= 20000</Filter>
     &maxscale_zoom15;
     &minscale_zoom16;
@@ -30,12 +62,6 @@
     <TextSymbolizer name="[name]" fontset-name="oblique-fonts" size="10" fill="#005842" halo-radius="2" halo-fill="rgba(255,255,255,0.25)" wrap-width="25" minimum-distance="20" line-spacing="4"/>
   </Rule>
   <!--military-->
-  <Rule>
-    <Filter>[landuse]='military' and [way_area] &gt;= 500000</Filter>
-    &maxscale_zoom13;
-    &minscale_zoom14;
-    <TextSymbolizer name="[name]" fontset-name="oblique-fonts" size="10" fill="#2b2b2b" halo-radius="2" halo-fill="rgba(255,255,255,0.25)" wrap-width="25" line-spacing="4"/>
-  </Rule>
   <Rule>
     <Filter>[landuse]='military' and [way_area] &gt;= 100000</Filter>
     &maxscale_zoom15;
@@ -50,7 +76,7 @@
   <!--golf course-->
   <Rule>
     <Filter>[leisure] = 'golf_course'</Filter>
-    &maxscale_zoom14;
+    &maxscale_zoom15;
     &minscale_zoom15;
     <TextSymbolizer name="[name]" fontset-name="oblique-fonts" size="10" fill="#006f53" dy="-10" dx="30" justify-alignment="left" halo-radius="2" halo-fill="rgba(255,255,255,0.25)" wrap-width="30" line-spacing="4"/>
   </Rule>
@@ -60,12 +86,6 @@
     <TextSymbolizer name="[name]" fontset-name="oblique-fonts" size="12" fill="#006f53" dy="-15" dx="35" justify-alignment="left" halo-radius="2" halo-fill="rgba(255,255,255,0.25)" wrap-width="30" line-spacing="4"/>
   </Rule>
   <!--college/university-->
-  <Rule>
-    <Filter>([amenity] = 'university' or [amenity] = 'college') and [way_area] &gt;= 500000</Filter>
-    &maxscale_zoom13;
-    &minscale_zoom14;
-    <TextSymbolizer name="[name]" fontset-name="oblique-fonts" size="10" fill="#2b2b2b" halo-radius="2" halo-fill="rgba(255,255,255,0.25)" wrap-width="25" line-spacing="4"/>
-  </Rule>
   <Rule>
     <Filter>([amenity] = 'university' or [amenity] = 'college') and [way_area] &gt;= 100000</Filter>
     &maxscale_zoom15;
@@ -79,12 +99,6 @@
   </Rule>
   <!--school-->
   <Rule>
-    <Filter>[amenity] = 'school' and [way_area] &gt;= 500000</Filter>
-    &maxscale_zoom13;
-    &minscale_zoom14;
-    <TextSymbolizer name="[name]" fontset-name="oblique-fonts" size="10" fill="#2b2b2b" halo-radius="2" halo-fill="rgba(255,255,255,0.25)" wrap-width="25" line-spacing="4"/>
-  </Rule>
-  <Rule>
     <Filter>[amenity] = 'school' and [way_area] &gt;= 100000</Filter>
     &maxscale_zoom15;
     &minscale_zoom16;
@@ -96,12 +110,6 @@
     <TextSymbolizer name="[name]" fontset-name="oblique-fonts" size="10" fill="#2b2b2b" halo-radius="2" halo-fill="rgba(255,255,255,0.25)" wrap-width="14" line-spacing="4"/>
   </Rule>
   <!--stadium or attraction-->
-  <Rule>
-    <Filter>([leisure] = 'stadium' or [leisure] = 'sports_centre' or [tourism] = 'attraction' or [tourism] = 'zoo') and [way_area] &gt;= 500000</Filter>
-    &maxscale_zoom13;
-    &minscale_zoom14;
-    <TextSymbolizer name="[name]" fontset-name="oblique-fonts" size="10" fill="#2b2b2b" halo-radius="2" halo-fill="rgba(255,255,255,0.25)" wrap-width="14" line-spacing="4"/>
-  </Rule>
   <Rule>
     <Filter>([leisure] = 'stadium' or [leisure] = 'sports_centre' or [tourism] = 'attraction' or [tourism] = 'zoo') and [way_area] &gt;= 10000</Filter>
     &maxscale_zoom15;
@@ -140,7 +148,7 @@
   <!--airport-->
   <Rule>
     <Filter>[aeroway] = 'apron' or [aeroway] = 'aerodrome'</Filter>
-    &maxscale_zoom11;
+    &maxscale_zoom15;
     &minscale_zoom15;
     <TextSymbolizer name="[name]" fontset-name="oblique-fonts" size="10" fill="#2b2b2b" halo-radius="2" halo-fill="rgba(255,255,255,0.25)" wrap-width="10" text-transform="uppercase" line-spacing="4"/>
   </Rule>
@@ -511,7 +519,7 @@
 		<Parameter name="table">
 	    (select way,route,name
 	    from &prefix;_line
-	    where route is not null
+	    where route = 'ferry'
 	    ) as routes
 		</Parameter>
 		&datasource-settings;
@@ -541,6 +549,19 @@
 	    from &prefix;_line
 	    where waterway is not null
 	    ) as water_lines
+		</Parameter>
+		&datasource-settings;
+	</Datasource>
+</Layer>
+<Layer name="landmark-poly-text-lowzoom" status="on" srs="&osm2pgsql_projection;">
+	<StyleName>landmark-poly-text-lowzoom</StyleName>
+	<Datasource>
+		<Parameter name="table">
+	    (select way,way_area,aeroway,amenity,building,landuse,leisure,man_made,military,name,"natural",power,shop,tourism
+	    from &prefix;_polygon
+	    where name is not null and way_area > 200000
+	    order by z_order,way_area desc
+	    ) as text
 		</Parameter>
 		&datasource-settings;
 	</Datasource>

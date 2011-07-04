@@ -8,3 +8,4 @@ hybrid_inc/settings.xml.inc
 
 # technically this can be anywhere, but it's common to have it (or a symlink) here
 world_boundaries
+symbols

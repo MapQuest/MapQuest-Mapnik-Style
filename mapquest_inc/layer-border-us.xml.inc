@@ -191,7 +191,7 @@
 
 <!-- lowzoom variants with simplified geometries to not cause incredible
      amounts of load at low zoom. -->
-<Layer name="state border" status="on" srs="&osm2pgsql_projection;">
+<Layer name="state border lowzoom" status="on" srs="&osm2pgsql_projection;">
 	<StyleName>state border lowzoom</StyleName>
 	<StyleName>state border casing lowzoom</StyleName>
 	<Datasource>

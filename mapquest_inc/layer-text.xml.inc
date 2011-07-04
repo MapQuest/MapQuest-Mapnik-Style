@@ -385,7 +385,21 @@
     <ShieldSymbolizer name="[name]" fontset-name="bold-fonts" size="16" fill="#2b2b2b" dy="-17" halo-radius="2" halo-fill="rgba(255,255,255,0.25)" wrap-width="0" line-spacing="2" character-spacing="5" text-transform="uppercase" file="&symbols;/large-city.svg" minimum-distance="20"/>
   </Rule>
 </Style>
+<Style name="city 1 lowzoom">
+  <Rule>
+    <Filter>[place] = 'city' or [place]='metropolis'</Filter>
+    &maxscale_zoom4;
+    &minscale_zoom5;
+    <ShieldSymbolizer name="[name]" fontset-name="bold-fonts" size="9" fill="#2b2b2b" dy="-10" halo-radius="2" halo-fill="rgba(255,255,255,0.25)" wrap-width="0" line-spacing="2" file="&symbols;/small-city.svg" minimum-distance="25"/>
+  </Rule>
+</Style>
 <Style name="capital">
+  <Rule>
+    <Filter>[place] = 'city' or [place]='metropolis'</Filter>
+    &maxscale_zoom4;
+    &minscale_zoom5;
+    <ShieldSymbolizer name="[name]" fontset-name="bold-fonts" size="11" fill="#2b2b2b" dy="-13" halo-radius="2" halo-fill="rgba(255,255,255,0.25)" wrap-width="0" line-spacing="2" file="&symbols;/large-city.svg" minimum-distance="5"/>
+  </Rule>
   <Rule>
     <Filter>[place] = 'city' or [place]='metropolis'</Filter>
     &maxscale_zoom6;
@@ -408,7 +422,13 @@
 <Style name="state">
   <Rule>
     <Filter>[place] = 'state'</Filter>
-    &maxscale_zoom5;
+    &maxscale_zoom4;
+    &minscale_zoom6;
+    <TextSymbolizer name="[name]" fontset-name="book-fonts" size="12" fill="#805433" dy="0" halo-radius="2" halo-fill="rgba(255,255,255,0.25)" wrap-width="20" text-transform="uppercase" minimum-distance="20"/>
+  </Rule>
+  <Rule>
+    <Filter>[place] = 'state'</Filter>
+    &maxscale_zoom7;
     &minscale_zoom10;
     <TextSymbolizer name="[name]" fontset-name="book-fonts" size="10" fill="#805433" dy="0" halo-radius="2" halo-fill="rgba(255,255,255,0.25)" wrap-width="20" text-transform="uppercase" minimum-distance="20"/>
   </Rule>
@@ -438,7 +458,7 @@
     <Filter>[place] = 'country'</Filter>
     &maxscale_zoom4;
     &minscale_zoom5;
-    <TextSymbolizer name="[name]" fontset-name="book-fonts" size="10" fill="#918378" dy="0" halo-radius="2" halo-fill="rgba(255,255,255,0.25)" wrap-width="30" line-spacing="4"/>
+    <TextSymbolizer name="[name]" fontset-name="book-fonts" size="16" fill="#918378" dy="0" halo-radius="2" halo-fill="rgba(255,255,255,0.25)" wrap-width="30" line-spacing="4" minimum-distance="20"/>
   </Rule>
   <Rule>
     <Filter>[place] = 'country'</Filter>
@@ -452,25 +472,39 @@
     <Filter>[place] = 'continent'</Filter>
     &maxscale_zoom4;
     &minscale_zoom5;
-    <TextSymbolizer name="[name]" fontset-name="book-fonts" size="9" fill="#918378" dy="0" halo-radius="2" halo-fill="rgba(255,255,255,0.25)" wrap-width="30" character-spacing="5" line-spacing="10" text-transform="uppercase"/>
+    <TextSymbolizer name="[name]" fontset-name="bold-fonts" size="16" fill="#918378" dy="0" halo-radius="2" halo-fill="rgba(255,255,255,0.25)" wrap-width="30" character-spacing="5" line-spacing="10" text-transform="uppercase"/>
   </Rule>
 </Style>
 <Layer name="placenames-large" status="on" srs="&osm2pgsql_projection;">
 	<StyleName>continent</StyleName>
 	<StyleName>country</StyleName>
+	<StyleName>capital</StyleName>
 	<StyleName>county</StyleName>
 	<StyleName>state</StyleName>
-	<StyleName>capital</StyleName>
 	<Datasource>
-		<Parameter name="table">
+	  <Parameter name="table">
       (select way,place,replace(replace(name,'(',''),')','') as name,ref
-      from &prefix;_point
-      where place in ('continent','country','county','state')
-      or (place in ('city','metropolis') and capital='yes')
-	) as placenames
-		</Parameter>
+       from &prefix;_point
+       where place in ('continent','country','county','state')
+       or (place in ('city','metropolis') and capital='yes' 
+           and (admin_level is null or admin_level::integer &lt; 4))
+       ) as placenames
+	  </Parameter>
 	&datasource-settings;
 	</Datasource>
+</Layer>
+<Layer name="placenames-medium-lowzoom" status="on" srs="&osm2pgsql_projection;">
+  <StyleName>city 1 lowzoom</StyleName>
+  <Datasource>
+    <Parameter name="table">
+      (select way,place,name
+       from &prefix;_point
+       where place in ('city','metropolis')
+       and (capital is null or capital&lt;&gt;'yes')
+      ) as placenames
+    </Parameter>
+    &datasource-settings;
+  </Datasource>
 </Layer>
 <Layer name="placenames-medium" status="on" srs="&osm2pgsql_projection;">
 	<StyleName>city 1</StyleName>
@@ -598,4 +632,31 @@
 		</Parameter>
 		&datasource-settings;
 	</Datasource>
+</Layer>
+
+<Style name="barrier-text">
+<!-- toll booths and gates share this symbolizer -->
+  <Rule>
+    &maxscale_zoom17;
+    <TextSymbolizer name="[label]" fontset-name="bold-fonts" size="9" fill="#5a5a5a" dy="-7"/>
+  </Rule>    
+</Style>
+<Layer name="barrier-text" status="on" srs="&osm2pgsql_projection;">
+  <StyleName>barrier-text</StyleName>
+  <Datasource>
+    <Parameter name="table">
+      (select 
+        way, (case 
+	  when name is not null then name
+	  when barrier='toll_booth' then 'Toll Booth'
+	  when access='permissive' then 'Gate (Permission)'
+	  when access='private' then 'Gate (Private)'
+	  else 'Gate'
+	end) as label
+       from &prefix;_point
+       where barrier in ('gate','toll_booth')
+       ) as symbols
+    </Parameter>
+    &datasource-settings;
+  </Datasource>
 </Layer>

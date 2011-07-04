@@ -44,20 +44,6 @@
 		<PolygonSymbolizer fill="#c8c8c8"/>
 	</Rule>
 </Style>
-<!--cycleway-->
-<Style name="cycleway">
-	<Rule>
-		<Filter>[highway] = 'cycleway' or ([highway] = 'path' and [bicycle] = 'designated') or [highway]='bridleway'</Filter>
-		&maxscale_zoom15;
-		&minscale_zoom16;
-		<LineSymbolizer stroke="#8080bd" stroke-width="1" stroke-opacity=".4" stroke-dasharray="4,4"/>
-	</Rule>
-	<Rule>
-		<Filter>[highway] = 'cycleway' or ([highway] = 'path' and [bicycle] = 'designated') or [highway]='bridleway'</Filter>
-		&maxscale_zoom17;
-		<LineSymbolizer stroke="#8080bd" stroke-width="2" stroke-opacity=".4" stroke-dasharray="6,4"/>
-	</Rule>
-</Style>
 <!--runway-->
 <Style name="runway">
 	<Rule>
@@ -717,15 +703,7 @@
       &datasource-settings;
 	</Datasource>
 </Layer>
-<Layer name="cycleway" status="on" srs="&osm2pgsql_projection;">
-	<StyleName>cycleway</StyleName>
-	<Datasource>
-		<Parameter name="table">
-			(select way,highway,horse,foot,bicycle from &prefix;_line where highway in ('bridleway','footway','cycleway','path')) as roads
-		</Parameter>
-		&datasource-settings;
-	</Datasource>
-</Layer>
+&layer-transportation-common-cycleway;
 <Layer name="runway" status="on" srs="&osm2pgsql_projection;">
 	<StyleName>runway</StyleName>
 	<Datasource>

@@ -44,6 +44,8 @@ THE SOFTWARE.
 &layer-landmark;
 <!--WATER layers;-->
 &layer-water;
+<!-- border casing layer -->
+&layer-border-casing;
 <!--TRANSPORTATION layers;-->
 &layer-transportation;
 &layer-overpass;

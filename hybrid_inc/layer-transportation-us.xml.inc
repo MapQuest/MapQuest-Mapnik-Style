@@ -37,20 +37,6 @@
 		<LineSymbolizer stroke="#e52540" stroke-width="4" stroke-dasharray="1,2"/>
 	</Rule>
 </Style>
-<!--cycleway-->
-<Style name="cycleway">
-	<Rule>
-		<Filter>[highway] = 'cycleway' or ([highway] = 'path' and [bicycle] = 'designated')</Filter>
-		&maxscale_zoom15;
-		&minscale_zoom16;
-		<LineSymbolizer stroke="#8080bd" stroke-width="1"/>
-	</Rule>
-	<Rule>
-		<Filter>[highway] = 'cycleway' or ([highway] = 'path' and [bicycle] = 'designated')</Filter>
-		&maxscale_zoom17;
-		<LineSymbolizer stroke="#8080bd" stroke-width="2"/>
-	</Rule>
-</Style>
 <!--alley-->
 <Style name="alley">
 	<Rule>
@@ -677,17 +663,7 @@
 		&datasource-settings;
 	</Datasource>
 </Layer>
-<Layer name="cycleway" status="on" srs="&osm2pgsql_projection;">
-	<StyleName>cycleway</StyleName>
-	<Datasource>
-		<Parameter name="table">
-			(select way,highway,horse,foot,bicycle from &prefix;_line 
-			where highway in ('bridleway','footway','cycleway','path') 
-			order by z_order) as roads
-		</Parameter>
-		&datasource-settings;
-	</Datasource>
-</Layer>
+&layer-transportation-common-cycleway;
 <Layer name="alley" status="on" srs="&osm2pgsql_projection;">
 	<StyleName>alley</StyleName>
 	<Datasource>
@@ -720,7 +696,7 @@
     <StyleName>street 4 casing</StyleName>
     <Datasource>
       <Parameter name="table">
-	      (select way,highway
+	      (select way,highway,
 	       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
 	       from &prefix;_line
 	       where highway in ('residential', 'living_street', 'unclassified', 'road', 'residential_link', 'unclassified_link')

@@ -43,6 +43,8 @@ THE SOFTWARE.
 
 <!--BASE layers-->
 <!--&layer-base;-->
+<!--border casing layer-->
+&layer-border-casing;
 <!--TRANSPORTATION layers;-->
 &layer-transportation;
 <!--BORDER layers-->

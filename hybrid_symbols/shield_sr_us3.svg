@@ -1,9 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="30px" height="30px" viewBox="-291 381 30 30" enable-background="new -291 381 30 30" xml:space="preserve">
-<path fill="#FFFFFF" stroke="#37332F" stroke-width="0.75" stroke-miterlimit="3.8637" d="M-286.695,393.134
-	c0-2.916,2.387-5.277,5.334-5.277h10.725c2.947,0,5.332,2.361,5.332,5.277v5.734c0,2.912-2.385,5.275-5.332,5.275h-10.725
-	c-2.947,0-5.334-2.363-5.334-5.275V393.134L-286.695,393.134z"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   x="0px"
+   y="0px"
+   width="31px"
+   height="30px"
+   viewBox="-3 0 31 30"
+   enable-background="new -3 0 36 30"
+   xml:space="preserve"
+   id="svg3139">
+	
+<g id="Layer_1">
+</g>
+<g id="Shields">
+<path
+   fill="#ffffff" stroke="#282324" stroke-width="0.75" stroke-miterlimit="3.86369991"
+   d="m 4.0815005,6.8189335 16.8369985,0 c 2.991601,0 5.400001,2.4084 5.400001,5.4000005 l 0,5.5318 c 0,2.9916 -2.4084,5.4 -5.400001,5.4 l -16.8369985,0 c -2.9916,0 -5.4000001,-2.4084 -5.4000001,-5.4 l 0,-5.5318 c 0,-2.9916005 2.4084001,-5.4000005 5.4000001,-5.4000005 z"
+   id="rect3248" />
+</g>
 </svg>

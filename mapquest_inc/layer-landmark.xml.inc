@@ -183,6 +183,18 @@
 <Style name="barriers">
 	<Rule>
 		&maxscale_zoom16;
+		&minscale_zoom16;
+		<Filter>[barrier] = 'hedge'</Filter>
+		<LineSymbolizer stroke="#90c290" stroke-width="1.3"/>
+	</Rule>
+	<Rule>
+		&maxscale_zoom17;
+		<Filter>[barrier] = 'hedge'</Filter>
+		<LineSymbolizer stroke="#90c290" stroke-width="2.3"/>
+	</Rule>
+	<Rule>
+		&maxscale_zoom16;
+		<ElseFilter/>
 		<LineSymbolizer stroke="#b4b4b4" stroke-width="0.5"/>
 	</Rule>
 </Style>

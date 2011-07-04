@@ -63,7 +63,7 @@
 		<Filter>[highway] = 'tertiary' or [highway] = 'unclassified' or [highway] = 'residential'</Filter>
 		&maxscale_zoom16;
 		&minscale_zoom17;
-		<TextSymbolizer name="[name]" fontset-name="book-fonts" size="10" fill="#2b2b2b" halo-fill="rgb(255,255,255)" halo-radius="2" placement="line" max-char-angle-delta="40" text-transform="uppercase"/>
+		<TextSymbolizer name="[name]" fontset-name="book-fonts" size="11" fill="#2b2b2b" halo-fill="rgb(255,255,255)" halo-radius="2" placement="line" max-char-angle-delta="40" text-transform="uppercase"/>
 	</Rule>
 	<Rule>
 		<Filter>[highway] = 'tertiary' or [highway] = 'unclassified' or [highway] = 'residential'</Filter>
@@ -78,7 +78,8 @@
     <Parameter name="table">
       (select way,highway,
       case when name ilike ref then null else name end as name,
-      ref,char_length(ref) as length
+      regexp_replace(regexp_replace(ref,E'\\s*[;,]\\s*',E'/'),E'\\s*[;,].*',E'') as ref,
+      char_length(regexp_replace(regexp_replace(ref,E'\\s*[;,]\\s*',E'/'),E'\\s*[;,].*',E'')) as length
       from &prefix;_roads
       where highway in ('motorway', 'trunk', 'primary', 'secondary')
       and (name is not null or ref is not null)
@@ -96,9 +97,7 @@
       ref,char_length(ref) as length,
       case when bridge in ('yes','true','1') then 'yes'::text else bridge end as bridge
       from &prefix;_line
-      where waterway IS NULL
-      and leisure IS NULL
-      and landuse IS NULL
+      where highway in ('motorway','trunk','primary','secondary','tertiary','unclassified','residential')
       and (name is not null or ref is not null)
       ) as roads
     </Parameter>

@@ -73,12 +73,6 @@
 		<Filter>[tourism]='museum' or [tourism] = 'attraction' or [tourism] = 'theme_park' or [tourism] = 'zoo'</Filter>
 		<PointSymbolizer file="&symbols;/POI.svg"/>
 	</Rule>
-	<!--parking-->
-	<Rule>
-		&maxscale_zoom16;
-		<Filter>[amenity]='parking' and ([access] = 'public' or not [access] &lt;&gt; '')</Filter>
-		<PointSymbolizer file="&symbols;/parking.svg" allow-overlap="true"/>
-	</Rule>
 	<!--mine-->
 	<Rule>
 		&maxscale_zoom17;
@@ -87,6 +81,33 @@
 	</Rule>
 </Style>
 
+<Style name="barrier-symbols">
+<!-- note - no text rendered here, that's in the text layer -->
+<!-- toll booths -->
+  <Rule>
+    &maxscale_zoom16;
+    <Filter>[barrier]='toll_booth'</Filter>
+    <PointSymbolizer file="&symbols;/tollbooth.svg"/>
+  </Rule>
+<!-- gates -->
+  <Rule>
+    &maxscale_zoom16;
+    <Filter>[barrier]='gate'</Filter>
+    <PointSymbolizer file="&symbols;/small-city.svg"/>
+  </Rule>    
+</Style>
+
+<Layer name="barrier-symbols" status="on" srs="&osm2pgsql_projection;">
+  <StyleName>barrier-symbols</StyleName>
+  <Datasource>
+    <Parameter name="table">
+      (select way, barrier from &prefix;_point
+       where barrier in ('gate','toll_booth')
+       ) as symbols
+    </Parameter>
+    &datasource-settings;
+  </Datasource>
+</Layer>
 <Layer name="direction-arrows" status="on" srs="&osm2pgsql_projection;">
 	<StyleName>direction-arrows</StyleName>
 <!--StyleName>directions-mapnik2</StyleName-->
@@ -113,11 +134,10 @@
       where aeroway in ('airport','aerodrome')
          or "natural" in ('peak')
          or "leisure" in ('golf_course','water_park','marina','sports_centre')
-         or "amenity" in ('hospital','parking')
+         or "amenity" in ('hospital','ferry_terminal')
 		or "tourism" in ('museum','attraction')
 		or "man_made" in ('mineshaft')
 		or "sport" in ('skiing')
-		or "amenity" in ('ferry_terminal')
 		or "highway" in ('motorway_junction')
 		or "railway" in ('station')
       ) as symbols

@@ -37,7 +37,7 @@
 	<StyleName>cycleway</StyleName>
 	<Datasource>
 		<Parameter name="table">
-			(select way,highway,horse,foot,bicycle from &prefix;_line where highway in ('bridleway','footway','cycleway','path')) as roads
+			(&sql-cycleway;) as data
 		</Parameter>
 		&datasource-settings;
 	</Datasource>

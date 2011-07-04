@@ -129,9 +129,15 @@
 	<Rule>
 		<Filter>[highway] = 'secondary' or [highway] = 'proposed' or [highway]='construction'</Filter>
 		&maxscale_zoom12;
-		<TextSymbolizer name="[name]" fontset-name="book-fonts" size="12" fill="#2b2b2b" halo-fill="rgba(255,255,255,0.25)" halo-radius="2" placement="line" max-char-angle-delta="40" avoid-edges="true"/>
+		<TextSymbolizer name="[name]" fontset-name="book-fonts" size="11" fill="#2b2b2b" halo-fill="rgba(255,255,255,0.25)" halo-radius="2" placement="line" max-char-angle-delta="40"  avoid-edges="true"/>
 	</Rule>
 <!--tertiary text-->
+	<Rule>
+		<Filter>[highway] = 'tertiary' or [highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' or [highway] = 'tertiary_link' or [highway] = 'residential_link' or [highway] = 'unclassified_link'</Filter>
+		&maxscale_zoom15;
+		&minscale_zoom15;
+		<TextSymbolizer name="[name]" fontset-name="book-fonts" size="11" fill="#2b2b2b" halo-fill="rgba(255,255,255,0.25)" halo-radius="2" placement="line" max-char-angle-delta="40"  avoid-edges="true"/>
+	</Rule>
 	<Rule>
 		<Filter>[highway] = 'tertiary' or [highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' or [highway] = 'tertiary_link' or [highway] = 'residential_link' or [highway] = 'unclassified_link'</Filter>
 		&maxscale_zoom16;
@@ -162,6 +168,8 @@
     &datasource-settings;
 	</Datasource>
 </Layer>
+
+<!--
 <Layer name="street-text" status="on" srs="&osm2pgsql_projection;">
 	<StyleName>street-text</StyleName>
 	<Datasource>
@@ -180,3 +188,55 @@
 	&datasource-settings;
 	</Datasource>
 </Layer>
+-->
+
+<Layer name="street 4 text" status="on" srs="&osm2pgsql_projection;">
+	<StyleName>street-text</StyleName>
+	<Datasource>
+		<Parameter name="table">
+			(&sql-street4;) as data
+		</Parameter>
+	&datasource-settings;
+	</Datasource>
+</Layer>
+
+<Layer name="street 3 text" status="on" srs="&osm2pgsql_projection;">
+	<StyleName>street-text</StyleName>
+	<Datasource>
+		<Parameter name="table">
+			(&sql-street3;) as data
+		</Parameter>
+	&datasource-settings;
+	</Datasource>
+</Layer>
+
+<Layer name="street 2 text" status="on" srs="&osm2pgsql_projection;">
+	<StyleName>street-text</StyleName>
+	<Datasource>
+		<Parameter name="table">
+			(&sql-street2;) as data
+		</Parameter>
+	&datasource-settings;
+	</Datasource>
+</Layer>
+
+<Layer name="street 1 text" status="on" srs="&osm2pgsql_projection;">
+	<StyleName>street-text</StyleName>
+	<Datasource>
+		<Parameter name="table">
+			(&sql-street1;) as data
+		</Parameter>
+	&datasource-settings;
+	</Datasource>
+</Layer>
+
+<Layer name="street 1 toll text" status="on" srs="&osm2pgsql_projection;">
+	<StyleName>street-text</StyleName>
+	<Datasource>
+		<Parameter name="table">
+			(&sql-street1-toll;) as data
+		</Parameter>
+	&datasource-settings;
+	</Datasource>
+</Layer>
+

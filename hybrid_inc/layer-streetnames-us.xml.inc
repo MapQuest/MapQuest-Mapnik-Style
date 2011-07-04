@@ -162,6 +162,7 @@
     &datasource-settings;
 	</Datasource>
 </Layer>
+<!--
 <Layer name="street-text" status="on" srs="&osm2pgsql_projection;">
 	<StyleName>street-text</StyleName>
 	<Datasource>
@@ -180,3 +181,55 @@
 	&datasource-settings;
 	</Datasource>
 </Layer>
+-->
+
+<Layer name="street 4 text" status="on" srs="&osm2pgsql_projection;">
+	<StyleName>street-text</StyleName>
+	<Datasource>
+		<Parameter name="table">
+			(&sql-street4;) as data
+		</Parameter>
+	&datasource-settings;
+	</Datasource>
+</Layer>
+
+<Layer name="street 3 text" status="on" srs="&osm2pgsql_projection;">
+	<StyleName>street-text</StyleName>
+	<Datasource>
+		<Parameter name="table">
+			(&sql-street3;) as data
+		</Parameter>
+	&datasource-settings;
+	</Datasource>
+</Layer>
+
+<Layer name="street 2 text" status="on" srs="&osm2pgsql_projection;">
+	<StyleName>street-text</StyleName>
+	<Datasource>
+		<Parameter name="table">
+			(&sql-street2;) as data
+		</Parameter>
+	&datasource-settings;
+	</Datasource>
+</Layer>
+
+<Layer name="street 1 text" status="on" srs="&osm2pgsql_projection;">
+	<StyleName>street-text</StyleName>
+	<Datasource>
+		<Parameter name="table">
+			(&sql-street1;) as data
+		</Parameter>
+	&datasource-settings;
+	</Datasource>
+</Layer>
+
+<Layer name="street 1 toll text" status="on" srs="&osm2pgsql_projection;">
+	<StyleName>street-text</StyleName>
+	<Datasource>
+		<Parameter name="table">
+			(&sql-street1-toll;) as data
+		</Parameter>
+	&datasource-settings;
+	</Datasource>
+</Layer>
+

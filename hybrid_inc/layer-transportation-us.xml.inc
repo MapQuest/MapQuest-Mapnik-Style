@@ -644,11 +644,8 @@
 	<StyleName>ferry-routes</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,route
-      from &prefix;_line
-      where route = 'ferry'
-      ) as routes
-	</Parameter>
+			(&sql-ferry-routes;) as data
+		</Parameter>
 	&datasource-settings;
 	</Datasource>
 </Layer>
@@ -656,9 +653,7 @@
 	<StyleName>pedestrian-walkways</StyleName>
 	<Datasource>
 		<Parameter name="table">
-			(select way,highway,bicycle from &prefix;_line
-			where highway in ('pedestrian','footway','track','path','steps')
-			order by z_order,way_area desc) as roads
+			(&sql-pedestrian-walkways;) as data
 		</Parameter>
 		&datasource-settings;
 	</Datasource>
@@ -668,12 +663,7 @@
 	<StyleName>alley</StyleName>
 	<Datasource>
 		<Parameter name="table">
-	      (select way,highway,
-	       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
-	       from &prefix;_line
-	       where highway = 'service'
-	       order by z_order
-	      ) as roads
+	      (&sql-alley;) as data
       </Parameter>
       &datasource-settings;
 	</Datasource>
@@ -682,12 +672,7 @@
 	<StyleName>ramp casing</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,
-       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
-       from &prefix;_roads
-       where highway in ('motorway_link')
-       order by z_order
-      ) as roads
+			(&sql-ramp;) as data
 		</Parameter>
 	&datasource-settings;
 	</Datasource>
@@ -696,12 +681,7 @@
     <StyleName>street 4 casing</StyleName>
     <Datasource>
       <Parameter name="table">
-	      (select way,highway,
-	       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
-	       from &prefix;_line
-	       where highway in ('residential', 'living_street', 'unclassified', 'road', 'residential_link', 'unclassified_link')
-	       order by z_order
-	      ) as roads
+	      (&sql-street4;) as data
       </Parameter>
       &datasource-settings;
     </Datasource>
@@ -710,12 +690,7 @@
 	<StyleName>street 3 casing</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,
-       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
-       from &prefix;_line
-       where highway in ('secondary', 'secondary_link', 'tertiary', 'tertiary_link')
-       order by z_order
-      ) as roads
+			(&sql-street3;) as data
 		</Parameter>
 	&datasource-settings;
 	</Datasource>
@@ -724,12 +699,7 @@
 	<StyleName>street 2 casing</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,
-       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
-       from &prefix;_roads
-       where highway in ('trunk', 'trunk_link', 'primary', 'primary_link')
-       order by z_order
-      ) as roads
+			(&sql-street2;) as data
 		</Parameter>
 	&datasource-settings;
 	</Datasource>
@@ -738,12 +708,7 @@
 	<StyleName>ramp</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,
-       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
-       from &prefix;_roads
-       where highway in ('motorway_link')
-       order by z_order
-      ) as roads
+			(&sql-ramp;) as data
 		</Parameter>
 	&datasource-settings;
 	</Datasource>
@@ -752,12 +717,7 @@
     <StyleName>street 4</StyleName>
     <Datasource>
       <Parameter name="table">
-	      (select way,highway,
-	       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
-	       from &prefix;_line
-	       where highway in ('residential', 'living_street', 'unclassified', 'road', 'residential_link', 'unclassified_link')
-	       order by z_order
-	      ) as roads
+	      (&sql-street4;) as data
       </Parameter>
       &datasource-settings;
     </Datasource>
@@ -766,12 +726,7 @@
 	<StyleName>street 3</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,
-       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
-       from &prefix;_line
-       where highway in ('secondary', 'secondary_link','tertiary','tertiary_link')
-       order by z_order
-      ) as roads
+			(&sql-street3;) as data
 		</Parameter>
 	&datasource-settings;
 	</Datasource>
@@ -780,12 +735,7 @@
 	<StyleName>street 2</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,
-       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
-       from &prefix;_roads
-       where highway in ('trunk', 'trunk_link', 'primary', 'primary_link')
-       order by z_order
-      ) as roads
+			(&sql-street2;) as data
 		</Parameter>
 	&datasource-settings;
 	</Datasource>
@@ -794,12 +744,7 @@
 	<StyleName>street 1 casing</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,toll,
-       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
-       from &prefix;_roads
-       where highway in ('motorway') and (toll is null or toll = 'no')
-       order by z_order
-      ) as roads
+			(&sql-street1;) as data
 		</Parameter>
 	&datasource-settings;
 	</Datasource>
@@ -808,12 +753,7 @@
 	<StyleName>street 1 toll casing</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,toll,
-       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
-       from &prefix;_roads
-       where highway in ('motorway') and (toll = 'yes' or toll = 'true')
-       order by z_order
-      ) as roads
+			(&sql-street1-toll;) as data
 		</Parameter>
 	&datasource-settings;
 	</Datasource>
@@ -822,12 +762,7 @@
 	<StyleName>street 1</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,toll,
-       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
-       from &prefix;_roads
-       where highway in ('motorway') and (toll is null or toll = 'no')
-       order by z_order
-      ) as roads
+			(&sql-street1;) as data
 		</Parameter>
 	&datasource-settings;
 	</Datasource>
@@ -836,12 +771,7 @@
 	<StyleName>centerline</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,toll,
-       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
-       from &prefix;_roads
-       where highway in ('motorway') and (toll is null or toll = 'no')
-       order by z_order
-      ) as roads
+			(&sql-street1;) as data
 		</Parameter>
 	&datasource-settings;
 	</Datasource>
@@ -850,12 +780,7 @@
 	<StyleName>street 1 toll</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,toll,
-       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
-       from &prefix;_roads
-       where highway in ('motorway') and (toll = 'yes' or toll = 'true')
-       order by z_order
-      ) as roads
+			(&sql-street1-toll;) as data
 		</Parameter>
 	&datasource-settings;
 	</Datasource>
@@ -864,12 +789,7 @@
 	<StyleName>centerline toll</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,toll,
-       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
-       from &prefix;_roads
-       where highway in ('motorway') and (toll = 'yes' or toll = 'true')
-       order by z_order
-      ) as roads
+			(&sql-street1-toll;) as data
 		</Parameter>
 	&datasource-settings;
 	</Datasource>

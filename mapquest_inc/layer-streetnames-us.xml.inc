@@ -155,68 +155,9 @@
 	<StyleName>shield-text</StyleName>
 	<Datasource>
 		<Parameter name="table">
-      (select way,highway,
-      case when name ilike ref then null else name end as name,
-      ref,char_length(regexp_replace(replace(ref,';','/'),E'^([A-Z]{1,2})\\s*([0-9]{1,3})((/)([A-Z]{1,2})\\s*([0-9]{1,3}))*',E'\\2\\4\\6')) as length,
-      regexp_replace(replace(ref,';','/'),E'^([A-Z]{1,2})\\s*([0-9]{1,3})((/)([A-Z]{1,2})\\s*([0-9]{1,3}))*',E'\\2\\4\\6') as shield_name,
-      case when bridge in ('yes','true','1') then 'yes'::text else bridge end as bridge
-      from &prefix;_roads
-      where highway in ('motorway', 'trunk', 'primary', 'secondary')
-        and (name is not null or ref is not null)
-      ) as roads
+      (&sql-shield-us;) as roads
 		</Parameter>
     &datasource-settings;
-	</Datasource>
-</Layer>
-
-<!--
-<Layer name="street-text" status="on" srs="&osm2pgsql_projection;">
-	<StyleName>street-text</StyleName>
-	<Datasource>
-		<Parameter name="table">
-      (select way,highway,aeroway,
-      case when name ilike ref then null else name end as name,
-      ref,char_length(ref) as length,
-       case when bridge in ('yes','true','1') then 'yes'::text else bridge end as bridge
-       from &prefix;_line
-       where waterway IS NULL
-         and leisure IS NULL
-         and landuse IS NULL
-         and (name is not null or ref is not null)
-      ) as roads
-		</Parameter>
-	&datasource-settings;
-	</Datasource>
-</Layer>
--->
-
-<Layer name="street 4 text" status="on" srs="&osm2pgsql_projection;">
-	<StyleName>street-text</StyleName>
-	<Datasource>
-		<Parameter name="table">
-			(&sql-street4;) as data
-		</Parameter>
-	&datasource-settings;
-	</Datasource>
-</Layer>
-
-<Layer name="street 3 text" status="on" srs="&osm2pgsql_projection;">
-	<StyleName>street-text</StyleName>
-	<Datasource>
-		<Parameter name="table">
-			(&sql-street3;) as data
-		</Parameter>
-	&datasource-settings;
-	</Datasource>
-</Layer>
-
-<Layer name="street 2 text" status="on" srs="&osm2pgsql_projection;">
-	<StyleName>street-text</StyleName>
-	<Datasource>
-		<Parameter name="table">
-			(&sql-street2;) as data
-		</Parameter>
-	&datasource-settings;
 	</Datasource>
 </Layer>
 
@@ -240,3 +181,32 @@
 	</Datasource>
 </Layer>
 
+<Layer name="street 2 text" status="on" srs="&osm2pgsql_projection;">
+	<StyleName>street-text</StyleName>
+	<Datasource>
+		<Parameter name="table">
+			(&sql-street2;) as data
+		</Parameter>
+	&datasource-settings;
+	</Datasource>
+</Layer>
+
+<Layer name="street 3 text" status="on" srs="&osm2pgsql_projection;">
+	<StyleName>street-text</StyleName>
+	<Datasource>
+		<Parameter name="table">
+			(&sql-street3;) as data
+		</Parameter>
+	&datasource-settings;
+	</Datasource>
+</Layer>
+
+<Layer name="street 4 text" status="on" srs="&osm2pgsql_projection;">
+	<StyleName>street-text</StyleName>
+	<Datasource>
+		<Parameter name="table">
+			(&sql-street4;) as data
+		</Parameter>
+	&datasource-settings;
+	</Datasource>
+</Layer>

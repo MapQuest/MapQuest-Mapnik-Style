@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE Map [
 <!ENTITY % entities SYSTEM "hybrid_inc/entities.xml.inc">
+<!ENTITY % sql SYSTEM "common_inc/sql-uk.xml.inc">
+%sql;
 <!ENTITY % layers SYSTEM "hybrid_inc/layers-uk.xml.inc">
 %entities;
 ]>

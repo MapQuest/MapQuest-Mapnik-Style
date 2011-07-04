@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE Map [
 <!ENTITY % entities SYSTEM "mapquest_inc/entities.xml.inc">
+<!ENTITY % sql SYSTEM "common_inc/sql-eu.xml.inc">
+%sql;
 <!ENTITY % layers SYSTEM "mapquest_inc/layers-eu.xml.inc">
 %entities;
 ]>

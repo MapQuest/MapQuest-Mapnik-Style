@@ -6,6 +6,7 @@
 <!ENTITY layer-border-casing SYSTEM "layer-border-casing-eu-uk.xml.inc">
 <!ENTITY layer-buildings SYSTEM "layer-buildings.xml.inc">
 <!ENTITY layer-overpass SYSTEM "layer-overpass-uk.xml.inc">
+<!ENTITY layer-transportation SYSTEM "layer-transportation-uk.xml.inc">
 <!ENTITY layer-transportation-common-cycleway SYSTEM "layer-transportation-common-cycleway.xml.inc">
 <!ENTITY layer-water SYSTEM "layer-water.xml.inc">
 <!ENTITY layer-landmark SYSTEM "layer-landmark.xml.inc">

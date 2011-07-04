@@ -827,7 +827,7 @@
 	<StyleName>street 4 casing</StyleName>
 	<Datasource>
 		<Parameter name="table">
-	      (select way,highway,railway,
+	      (select way,highway,
 	       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
 	       from &prefix;_line
 	       where highway in ('residential', 'living_street', 'unclassified', 'road', 'residential_link', 'unclassified_link')
@@ -904,7 +904,7 @@
 	<StyleName>street 4</StyleName>
 	<Datasource>
 		<Parameter name="table">
-	      (select way,highway,railway,
+	      (select way,highway,
 	       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
 	       from &prefix;_line
 	       where highway in ('residential', 'living_street', 'unclassified', 'road', 'residential_link', 'unclassified_link')

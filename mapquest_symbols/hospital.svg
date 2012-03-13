@@ -1,25 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   version="1.1"
-   width="16"
-   height="16"
-   viewBox="0 0 16 16"
-   id="Layer_1"
-   xml:space="preserve">
-  <defs id="defs3063"></defs>
-<path
-   d="M 13,11.424 C 13,12.295 12.295,13 11.424,13 H 4.577 C 3.707,13 3,12.295 3,11.424 V 4.578 C 3,3.706 3.707,3 4.577,3 h 6.847 C 12.295,3 13,3.706 13,4.578 v 6.846 z"
-   id="path3057"
-   style="fill:#1884c3" /><path
-   d="m 18.447195,18.713414 0,-7.423022 -1.910487,0 0,2.684 -3.071952,0 0,-2.684 -1.866755,0 0,7.423022 1.866755,0 0,-2.955342 3.071952,0 0,2.955342 z"
-   transform="translate(-7,-7)"
-   id="polygon3059"
-   style="fill:#ffffff" />
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="30px" height="30px" viewBox="-291 381 30 30" enable-background="new -291 381 30 30" xml:space="preserve">
+<path fill="#1884C3" d="M-268.811,400.924c0,1.252-1.014,2.266-2.266,2.266h-9.846c-1.252,0-2.268-1.014-2.268-2.266v-9.844
+	c0-1.254,1.016-2.27,2.268-2.27h9.846c1.252,0,2.266,1.016,2.266,2.27V400.924z"/>
+<polygon fill="#FFFFFF" points="-274.078,396.623 -274.078,401.188 -271.951,401.188 -271.951,391.008 -274.078,391.008 
+	-274.078,394.867 -278.047,394.867 -278.047,391.008 -280.174,391.008 -280.174,401.188 -278.047,401.188 -278.047,396.623 "/>
 </svg>

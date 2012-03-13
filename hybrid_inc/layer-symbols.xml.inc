@@ -1,29 +1,34 @@
-<!-- Direction arrows -->
-<Style name="direction-arrows">
-	<Rule>
-		<Filter>[oneway] = 'yes'</Filter>
-		&maxscale_zoom16;
-		<MarkersSymbolizer fill="#999999" stroke="#606060" stroke-width="0.3" spacing="100" transform="scale(0.8)"/>
-	</Rule>
-	<Rule>
-		<Filter>[oneway] = '-1'</Filter>
-		&maxscale_zoom16;
-		<MarkersSymbolizer fill="#999999" stroke="#606060" stroke-width="0.3" spacing="100" transform="scale(0.8) rotate(180)"/>
-	</Rule>
+<Style name="poly_only_symbols">
+        <Rule>
+                <Filter>[amenity] = 'parking' and [way_area] &gt; 10000</Filter>
+                &maxscale_zoom16;
+                &minscale_zoom16;
+                <PointSymbolizer file="&symbols;/parking.svg"/>
+        </Rule>
 </Style>
-<!-- Other symbols -->
+
+<Style name="unnamed_symbols">
+        <!-- golf -->
+        <Rule>
+		<Filter>[leisure] = 'golf_course'</Filter>
+                &maxscale_zoom13;
+                <PointSymbolizer file="&symbols;/golf_small.svg"/>
+        </Rule>
+        <!-- parking -->
+        <Rule>
+                <Filter>[amenity] = 'parking'</Filter>
+                &maxscale_zoom17;
+                <PointSymbolizer file="&symbols;/parking.svg"/>
+        </Rule>
+
+</Style>
+
 <Style name="symbols">
 	<!--summit-->
 	<Rule>
 		&maxscale_zoom12;
 		<Filter>[natural]='peak'</Filter>
 		<PointSymbolizer file="&symbols;/peak.svg"/>
-	</Rule>
-	<!--freeway exits-->
-	<Rule>
-		&maxscale_zoom12;
-		<Filter>[highway]='motorway_junction'</Filter>
-		<PointSymbolizer file="&symbols;/exit-freeway.svg"/>
 	</Rule>
 	<!--golf-->
 	<Rule>
@@ -35,7 +40,7 @@
 	<Rule>
 		&maxscale_zoom14;
 		<Filter>[leisure]='golf_course'</Filter>
-		<PointSymbolizer file="&symbols;/golf.svg"/>
+		<PointSymbolizer file="&symbols;/golf_small.svg"/>
 	</Rule>
 	<!--skiing-->
 	<Rule>
@@ -54,12 +59,6 @@
 		&maxscale_zoom16;
 		<Filter>[railway]='station'</Filter>
 		<PointSymbolizer file="&symbols;/station-train.svg"/>
-	</Rule>
-	<!--hospital-->
-	<Rule>
-		&maxscale_zoom15;
-		<Filter>[amenity]='hospital'</Filter>
-		<PointSymbolizer file="&symbols;/hospital.svg"/>
 	</Rule>
 	<!--marina-->
 	<Rule>
@@ -108,23 +107,6 @@
     &datasource-settings;
   </Datasource>
 </Layer>
-<Layer name="direction-arrows" status="on" srs="&osm2pgsql_projection;">
-	<StyleName>direction-arrows</StyleName>
-<!--StyleName>directions-mapnik2</StyleName-->
-	<Datasource>
-		<Parameter name="table">
-      (select way,
-       case when oneway in ('yes','true','1') then 'yes'::text else oneway end as oneway
-       from &prefix;_line
-       where oneway is not null
-         and highway in ('motorway','motorway_link','trunk','trunk_link','primary','primary_link',
-                          'secondary','secondary_link','tertiary','unclassified', 'residential', 'living_street',
-                          'service','track')
-      ) as directions
-      </Parameter>
-      &datasource-settings;
-	</Datasource>
-</Layer>
 <Layer name="symbols" status="on" srs="&osm2pgsql_projection;">
 	<StyleName>symbols</StyleName>
 	<Datasource>
@@ -149,6 +131,7 @@
      style rules are just drawing symbols, not fills -->
 <Layer name="symbols-poly" status="on" srs="&osm2pgsql_projection;">
 	<StyleName>symbols</StyleName>
+        <StyleName>poly_only_symbols</StyleName>
 	<Datasource>
 		<Parameter name="table">
       (select *
@@ -156,7 +139,7 @@
       where aeroway in ('airport','aerodrome')
          or "natural" in ('peak')
          or "leisure" in ('golf_course','water_park','marina','sports_centre')
-         or "amenity" in ('hospital')
+         or "amenity" in ('hospital', 'parking')
 		or "tourism" in ('museum','attraction')
 		or "man_made" in ('mineshaft')
 		or "sport" in ('skiing')
@@ -167,4 +150,17 @@
 		</Parameter>
 	&datasource-settings;
 	</Datasource>
+</Layer>
+<Layer name="unnamed-symbols" status="on" srs="&osm2pgsql_projection;">
+        <StyleName>unnamed_symbols</StyleName>
+        <Datasource>
+                <Parameter name="table">
+            (select way,leisure,amenity
+            from &prefix;_polygon
+            where name is null
+            and (leisure = 'golf_course' or amenity = 'parking')
+            ) as golf
+                </Parameter>
+                &datasource-settings;
+        </Datasource>
 </Layer>

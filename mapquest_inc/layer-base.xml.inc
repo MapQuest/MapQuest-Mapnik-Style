@@ -33,13 +33,13 @@
 	<Rule>
 		&maxscale_zoom6;
 		&minscale_zoom9;
-		<PolygonSymbolizer fill="#faf8ed"/>
+		<PolygonSymbolizer fill="#f7f4ee"/>
 	</Rule>
 </Style>
 <Style name="coast-poly">
 	<Rule>
 		&maxscale_zoom10;
-		<PolygonSymbolizer fill="#f6f3e9"/>
+		<PolygonSymbolizer fill="#f7f4ee"/>
 	</Rule>
 </Style>
 

@@ -1,20 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 15.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px"
-	 height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
-<g id="Layer_1">
-</g>
-<g id="POI">
-	<g>
-		<path d="M15.689,13.424c0,1.252-1.014,2.266-2.266,2.266H3.578c-1.252,0-2.268-1.014-2.268-2.266V3.58
-			c0-1.254,1.016-2.27,2.268-2.27h9.846c1.252,0,2.266,1.016,2.266,2.27V13.424z"/>
-		<path fill="#1884C3" d="M14.689,12.424c0,1.252-1.014,2.266-2.266,2.266H2.578c-1.252,0-2.268-1.014-2.268-2.266V2.58
-			c0-1.254,1.016-2.27,2.268-2.27h9.846c1.252,0,2.266,1.016,2.266,2.27V12.424z"/>
-		<path fill="#FFFFFF" d="M3.938,2.709C4.63,2.592,5.601,2.503,6.971,2.503c1.383,0,2.383,0.265,3.046,0.811
-			c0.633,0.485,1.045,1.31,1.045,2.28c0,0.986-0.31,1.811-0.897,2.354C9.398,8.655,8.25,8.993,6.926,8.993
-			c-0.295,0-0.56-0.015-0.766-0.059v3.562H3.938V2.709z M6.16,7.213c0.191,0.044,0.427,0.059,0.75,0.059
-			c1.192,0,1.929-0.604,1.929-1.604c0-0.912-0.619-1.456-1.751-1.456c-0.457,0-0.766,0.028-0.928,0.072V7.213z"/>
-	</g>
-</g>
-</svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="16"
+   height="16"
+   viewBox="0 0 16 16"
+   id="svg2985"
+   xml:space="preserve"><metadata
+   id="metadata3001"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs2999">
+	
+
+		
+		
+		
+	</defs>
+
+
+<g
+   transform="matrix(0.8,0,0,0.8,1.6221374,1.5854962)"
+   id="Layer_1">
+</g><path
+   d="m 13.861887,11.866681 c 0,1.0016 -0.8112,1.8128 -1.8128,1.8128 h -7.876 c -1.0016,0 -1.8144,-0.8112 -1.8144,-1.8128 V 3.9914809 c 0,-1.0032 0.8128,-1.816 1.8144,-1.816 h 7.8768 c 1.0016,0 1.8128,0.8128 1.8128,1.816 v 7.8752001 z"
+   id="path2993"
+   style="fill:#1884c3" /><g
+   transform="matrix(0.74131337,0,0,0.78838177,2.3310435,1.5854962)"
+   id="text3012"
+   style="font-size:14.28003883px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans Bold"><path
+     d="m 3.9316229,2.9192904 c 1.7223387,0.015316 3.4462906,-0.032854 5.1675842,0.028496 1.1589749,0.09287 2.4078349,0.5747433 2.9943249,1.6422444 0.578029,1.0977945 0.551994,2.5050243 -0.06604,3.5801928 C 11.356234,9.2230992 10.059475,9.668212 8.861203,9.699698 8.1134429,9.742365 7.3644035,9.704358 6.6161009,9.71765 c 0,1.203949 0,2.407897 0,3.611846 -0.8948267,0 -1.7896533,0 -2.68448,0 0,-3.4700685 0,-6.9401367 0,-10.4102049 z m 2.68448,1.9453764 c 0,0.9692018 0,1.9384037 0,2.9076055 C 7.3822372,7.7366315 8.1764699,7.8686665 8.9205212,7.639931 9.4999348,7.412212 9.8043263,6.7653123 9.7354319,6.1659841 9.7091881,5.5349084 9.2013958,4.9559258 8.5593426,4.9101603 7.9162424,4.8168911 7.2633987,4.8865465 6.6161029,4.8646668 z"
+     id="path3051" /></g></svg>

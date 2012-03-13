@@ -1,14 +1,13 @@
+<!--building layer styles-->
 <Style name="building">
-	<Rule>
-		&maxscale_zoom13;
-		<PolygonSymbolizer fill-opacity=".25" fill="#999999"/>
-	</Rule>
-	<Rule>
-	        &maxscale_zoom17;
- 		<LineSymbolizer stroke="#808080" stroke-width="0.7" stroke-opacity="0.25"/>
-	</Rule>
+        <Rule>
+                <PolygonSymbolizer fill-opacity=".25" fill="#999999"/>
+                <LineSymbolizer stroke="#808080" stroke-width="0.7" stroke-opacity="0.25"/>
+        </Rule>
 </Style>
-<Layer name="building" status="on" srs="&osm2pgsql_projection;">
+
+
+<Layer name="building" status="on" maxzoom="&max_zoom15;" srs="&osm2pgsql_projection;">
 	<StyleName>building</StyleName>
 	<Datasource>
 		<Parameter name="table">

@@ -1,128 +1,174 @@
-<!--County boundary-->
+<!-- county border -->
 <Style name="county border">
-	<Rule>
-		<Filter>[admin_level]='6'</Filter>
+        <Rule>
 		&maxscale_zoom9;
-		&minscale_zoom11;
-		<LineSymbolizer stroke-linejoin="round" stroke="#8c8c8c" stroke-width="1" stroke-dasharray="6,2,2,2" stroke-opacity=".25"/>
-	</Rule>
-	<Rule>
-		<Filter>[admin_level]='6'</Filter>
-		&maxscale_zoom12;
-		<LineSymbolizer stroke-linejoin="round" stroke="#aaaaaa" stroke-width="1" stroke-dasharray="6,2,2,2" stroke-opacity=".25"/>
-	</Rule>
+                &minscale_zoom11;
+                <LineSymbolizer stroke-linejoin="round" stroke="#d2d2d2" stroke-width="0.5" stroke-opacity="1"/>
+                <LineSymbolizer stroke-linejoin="round" stroke="#a0a0a0" stroke-width="0.5" stroke-opacity="1.0"/>
+        </Rule>
+        <Rule>
+                &maxscale_zoom12;
+                <LineSymbolizer stroke-linejoin="round" stroke="#d2d2d2" stroke-width="1" stroke-opacity="1"/>
+                <LineSymbolizer stroke-linejoin="round" stroke="#a0a0a0" stroke-width="1" stroke-opacity="1.0"/>
+        </Rule>
 </Style>
-<!--State boundary-->
-<Style name="state border lowzoom">
-	<Rule>
-		<Filter>[admin_level]='4'</Filter>
-		&maxscale_zoom4;
-		&minscale_zoom4;
-		<LineSymbolizer stroke-linejoin="round" stroke="#6d804c" stroke-width=".6" stroke-opacity=".3"/>
-	</Rule>
-	<Rule>
-		<Filter>[admin_level]='4'</Filter>
-		&maxscale_zoom5;
-		&minscale_zoom7;
-		<LineSymbolizer stroke-linejoin="round" stroke="#3c5030" stroke-width=".8" stroke-dasharray="6,1,1,1" stroke-opacity=".5"/>
-	</Rule>
-</Style>
+
+<!-- state border -->
 <Style name="state border">
 	<Rule>
-		<Filter>[admin_level]='4'</Filter>
-		&maxscale_zoom8;
-		<LineSymbolizer stroke-linejoin="round" stroke="#000" stroke-width="1" stroke-dasharray="12,2,2,2" stroke-opacity=".5"/>
-	</Rule>
-</Style>
-<!--Country boundary-->
-<Style name="country border lowzoom">
-	<Rule>
-		<Filter>[admin_level]='2'</Filter>
-		&maxscale_zoom2;
-		&minscale_zoom2;
-		<LineSymbolizer stroke-linejoin="round" stroke="#6d804c" stroke-width=".5" stroke-opacity=".1"/>
-	</Rule>
-	<Rule>
-		<Filter>[admin_level]='2'</Filter>
-		&maxscale_zoom3;
+		&maxscale_zoom4;
 		&minscale_zoom4;
-		<LineSymbolizer stroke-linejoin="round" stroke="#6d804c" stroke-width=".5" stroke-opacity=".25"/>
+		<LineSymbolizer stroke-linejoin="round" stroke="#829682" stroke-width=".5" stroke-opacity="1"/>
 	</Rule>
+        <Rule>
+                &maxscale_zoom5;
+                &minscale_zoom5;
+		<LineSymbolizer stroke-linejoin="round" stroke="#646464" stroke-width=".5" stroke-opacity="1"/>
+        </Rule>
 	<Rule>
-		<Filter>[admin_level]='2'</Filter>
-		&maxscale_zoom5;
+		&maxscale_zoom6;
 		&minscale_zoom7;
-		<LineSymbolizer stroke-linejoin="round" stroke="#6d804c" stroke-width="1" stroke-dasharray="6,2,2,2" stroke-opacity=".35"/>
+                <LineSymbolizer stroke-linejoin="round" stroke="#c8c8c8" stroke-width="2" stroke-opacity="1"/>
+                <LineSymbolizer stroke-linejoin="round" stroke="#a0a0a0" stroke-width="1" stroke-opacity="1.0"/>
 	</Rule>
+        <Rule>
+                &maxscale_zoom8;
+                &minscale_zoom9;
+                <LineSymbolizer stroke-linejoin="round" stroke="#ffffff" stroke-width="1" stroke-opacity="1"/>
+                <LineSymbolizer stroke-linejoin="round" stroke="#323232" stroke-width=".5" stroke-opacity="1.0"/>
+        </Rule>
+        <Rule>
+                &maxscale_zoom10;
+                <LineSymbolizer stroke-linejoin="round" stroke="#ffffff" stroke-width="1" stroke-opacity="1"/>
+                <LineSymbolizer stroke-linejoin="round" stroke="#323232" stroke-width="1" stroke-opacity="1.0"/>
+        </Rule>
 </Style>
+
+<!--country border-->
 <Style name="country border">
-	<Rule>
-		<Filter>[admin_level]='2'</Filter>
-		&maxscale_zoom8;
-		<LineSymbolizer stroke-linejoin="round" stroke="#6d804c" stroke-width="1" stroke-dasharray="6,2,2,2" stroke-opacity=".35"/>
-	</Rule>
+        <Rule>
+                &maxscale_zoom4;
+                &minscale_zoom5;
+                <LineSymbolizer stroke-linejoin="round" stroke="rgb(190,222,140)" stroke-width="2" stroke-opacity="1.0"/>
+                <LineSymbolizer stroke-linejoin="round" stroke="rgb(76,100,76)" stroke-width="1"  stroke-opacity="1.0"/>
+        </Rule>
+        <Rule>
+                &maxscale_zoom6;
+                <LineSymbolizer stroke-linejoin="round" stroke="rgb(190,222,140)" stroke-width="1" stroke-opacity="1.0"/>
+                <LineSymbolizer stroke-linejoin="round" stroke="rgb(76,100,76)" stroke-width="1" stroke-opacity="1.0"/>
+        </Rule>
 </Style>
-<Layer name="county border" status="on" srs="&osm2pgsql_projection;">
-	<StyleName>county border</StyleName>
-	<Datasource>
-		<Parameter name="table">
-   (select way,admin_level
+
+<!-- county border 13- -->
+<Layer name="county border 13" status="on" minzoom="&min_zoom13;" srs="&osm2pgsql_projection;">
+        <StyleName>county border</StyleName>
+        <Datasource>
+                <Parameter name="table">
+   (select way
     from &prefix;_roads
     where "boundary"='administrative' and not "boundary"='maritime'
      and admin_level in ('6')
-    ) as admin
-		</Parameter>
-	&datasource-settings;
-	</Datasource>
+    ) as admin</Parameter>
+        &datasource-settings;
+        </Datasource>
 </Layer>
-<Layer name="state border" status="on" srs="&osm2pgsql_projection;">
-	<StyleName>state border</StyleName>
-	<Datasource>
-		<Parameter name="table">
-   (select way,admin_level
+
+<!-- county border 14+ -->
+<Layer name="county border 14" status="on" maxzoom="&max_zoom14;" srs="&osm2pgsql_projection;">
+        <StyleName>county border</StyleName>
+        <Datasource>
+                <Parameter name="table">
+   (select way
+    from &prefix;_roads
+    where "boundary"='administrative' and not "boundary"='maritime'
+     and admin_level in ('6')
+    ) as admin</Parameter>
+        &datasource-settings;
+        </Datasource>
+</Layer>
+
+<!-- state layer 5- -->
+<Layer name="state border 5" status="on" minzoom="&min_zoom5;" srs="&osm2pgsql_projection;">
+        <StyleName>state border</StyleName>
+        <Datasource>
+                <Parameter name="table">
+   (select st_simplify(way, 300) as way
+    from &prefix;_roads
+    where
+     &prefix;_roads.way &amp;&amp; !bbox! and
+     "boundary"='administrative'
+     and admin_level = '4'
+    ) as admin</Parameter>
+        &datasource-settings;
+        </Datasource>
+</Layer>
+
+<!-- state layer 6-13 -->
+<Layer name="state border 6-13" status="on" maxzoom="&max_zoom6;" minzoom="&min_zoom13;" srs="&osm2pgsql_projection;">
+        <StyleName>state border</StyleName>
+        <Datasource>
+                <Parameter name="table">
+   (select way
+    from &prefix;_roads
+    where
+     &prefix;_roads.way &amp;&amp; !bbox! and
+     "boundary"='administrative'
+     and admin_level = '4'
+    ) as admin</Parameter>
+        &datasource-settings;
+        </Datasource>
+</Layer>
+
+<!-- state layer 14+ -->
+<Layer name="state border 14" status="on" maxzoom="&max_zoom14;" srs="&osm2pgsql_projection;">
+        <StyleName>state border</StyleName>
+        <Datasource>
+                <Parameter name="table">
+   (select way
     from &prefix;_roads
     where "boundary"='administrative' and not "boundary"='maritime'
      and admin_level in ('4')
     ) as admin</Parameter>
-	&datasource-settings;
-	</Datasource>
+        &datasource-settings;
+        </Datasource>
 </Layer>
-<Layer name="country border" status="on" srs="&osm2pgsql_projection;">
-	<StyleName>country border</StyleName>
-	<Datasource>
-		<Parameter name="table">
-   (select way,admin_level
+
+<!-- country layer 5- -->
+<Layer name="country border 5" status="on" minzoom="&min_zoom5;" srs="&osm2pgsql_projection;">
+        <StyleName>country border</StyleName>
+        <Datasource>
+                <Parameter name="table">
+   (select st_simplify(way,300) as way
     from &prefix;_roads
     where "boundary"='administrative' and not "boundary"='maritime'
      and admin_level in ('2')
-    ) as admin</Parameter>
-	&datasource-settings;
-	</Datasource>
+     ) as admin</Parameter>
+        &datasource-settings;
+        </Datasource>
 </Layer>
 
-<!-- lowzoom variants with simplified geometries to not cause incredible
-     amounts of load at low zoom. -->
-<Layer name="state border lowzoom" status="on" srs="&osm2pgsql_projection;">
-	<StyleName>state border lowzoom</StyleName>
-	<Datasource>
-		<Parameter name="table">
-   (select st_simplify(way,300) as way,admin_level
+<!-- country layer 6-13 -->
+<Layer name="country border 13" status="on" maxzoom="&max_zoom6;" minzoom="&min_zoom13;" srs="&osm2pgsql_projection;">
+        <StyleName>country border</StyleName>
+        <Datasource>
+                <Parameter name="table">
+   (select way,admin_level
     from &prefix;_roads
-    where "boundary"='administrative'
-     and admin_level = '4'
-    ) as admin</Parameter>
-	&datasource-settings;
-	</Datasource>
+    where "boundary"='administrative' and not "boundary"='maritime'
+     and admin_level in ('2')) as admin</Parameter>
+        &datasource-settings;
+        </Datasource>
 </Layer>
-<Layer name="country border lowzoom" status="on" srs="&osm2pgsql_projection;">
-	<StyleName>country border lowzoom</StyleName>
-	<Datasource>
-		<Parameter name="table">
-   (select st_simplify(way,300) as way,admin_level
+
+<!-- country layer 14+ -->
+<Layer name="country border 14" status="on" maxzoom="&max_zoom14;" srs="&osm2pgsql_projection;">
+        <StyleName>country border</StyleName>
+        <Datasource>
+                <Parameter name="table">
+   (select way,admin_level
     from &prefix;_roads
-    where "boundary"='administrative'
-     and admin_level = '2'
-    ) as admin</Parameter>
-	&datasource-settings;
-	</Datasource>
+    where "boundary"='administrative' and not "boundary"='maritime'
+     and admin_level in ('2')) as admin</Parameter>
+        &datasource-settings;
+        </Datasource>
 </Layer>

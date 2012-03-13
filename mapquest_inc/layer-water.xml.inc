@@ -1,22 +1,36 @@
 <Style name="water_lines">
 	<!--river and canal-->
 	<Rule>
-		<Filter>[waterway]='river' or [waterway]='weir' or ([waterway]='canal' and not [disused]='yes')</Filter>
+		<Filter>[waterway]='river' or [waterway]='weir'</Filter>
 		&maxscale_zoom11;
 		&minscale_zoom15;
 		<LineSymbolizer stroke-linejoin="round" stroke="#cce7ff" stroke-width="1" stroke-linecap="round"/>
 	</Rule>
 	<Rule>
-		<Filter>[waterway]='river' or ([waterway]='canal' and not [disused]='yes')</Filter>
+                <Filter>[waterway]='river' or [waterway]='weir'</Filter>
 		&maxscale_zoom16;
 		&minscale_zoom17;
 		<LineSymbolizer stroke-linejoin="round" stroke="#cce7ff" stroke-width="2" stroke-linecap="round"/>
 	</Rule>
 	<Rule>
-		<Filter>[waterway]='river' or ([waterway]='canal' and not [disused]='yes')</Filter>
+                <Filter>[waterway]='river' or [waterway]='weir'</Filter>
 		&maxscale_zoom18;
 		<LineSymbolizer stroke-linejoin="round" stroke="#cce7ff" stroke-width="3" stroke-linecap="round"/>
 	</Rule>
+
+        <!--canal-->
+        <Rule>
+                <Filter> [waterway]='canal' and not [disused]='yes' </Filter>
+                &maxscale_zoom13;
+                &minscale_zoom15;
+                <LineSymbolizer stroke-linejoin="round" stroke="#98c4eb" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2,3"/>
+	</Rule>
+        <Rule>
+                <Filter> [waterway]='canal' and not [disused]='yes' </Filter>
+                &maxscale_zoom16;
+                <LineSymbolizer stroke-linejoin="round" stroke="#98c4eb" stroke-width="2" stroke-linecap="round" stroke-dasharray="2,4"/>
+        </Rule>
+
 	<!--Intermittent river or canal-->
 	<Rule>
 		<Filter>[waterway]='derelict_canal' or ([waterway]='canal' and [disused]='yes')</Filter>
@@ -35,6 +49,7 @@
 		&maxscale_zoom18;
 		<LineSymbolizer stroke-linejoin="round" stroke="#98c4eb" stroke-width="3" stroke-dasharray="2,2" stroke-linecap="round"/>
 	</Rule>
+
 	<!--stream-->
 	<Rule>
 		<Filter>[waterway]='stream' or [waterway]='drain' or [waterway]='ditch'</Filter>
@@ -127,7 +142,7 @@
       where (waterway in ('dock','mill_pond','riverbank','canal')
          or landuse in ('reservoir','water','basin')
          or "natural" in ('lake','water','land','marsh','scrub','wetland','glacier'))
-	and way_area &gt; 200000
+	and way_area &gt; 2000000
       order by z_order,way_area desc
       ) as water_areas</Parameter>
       &datasource-settings;

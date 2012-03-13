@@ -52,8 +52,8 @@ THE SOFTWARE.
 <!--SYMBOL layers-->
 &layer-symbols;
 <!--TEXT layers-->
-&layer-streetnames;
 &layer-text;
-
+&layer-streetnames;
+&layer-arrows;
 
 </Map>

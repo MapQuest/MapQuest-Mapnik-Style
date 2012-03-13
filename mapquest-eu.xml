@@ -58,6 +58,7 @@ THE SOFTWARE.
 <!--TEXT layers-->
 &layer-text;
 &layer-streetnames;
+&layer-arrows;
 &layer-addressing;
 
 </Map>

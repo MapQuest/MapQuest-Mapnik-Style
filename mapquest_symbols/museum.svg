@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="16"
+   height="16"
+   id="svg2">
+  <defs
+     id="defs10517" />
+  <rect
+     width="16"
+     height="16"
+     rx="1.6"
+     ry="1.6"
+     x="0"
+     y="0"
+     id="rect5571"
+     style="fill:#ffffff;fill-opacity:1;stroke:none" />
+  <rect
+     width="15"
+     height="15"
+     rx="1.5"
+     ry="1.5"
+     x="0.5"
+     y="0.5"
+     id="rect5573"
+     style="fill:#646464;fill-opacity:1;stroke:none" />
+  <path
+     d="m 1.411116,12.954353 13.061899,-0.02273 -0.710788,-1.23108 H 2.1691199 l -0.7587208,1.253808 z"
+     id="path828"
+     style="fill:#ffffff;fill-rule:evenodd" />
+  <path
+     d="M 3.6075221,11.709397 V 5.6776749"
+     id="path829"
+     style="fill:none;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
+  <path
+     d="M 6.4333863,11.709397 V 5.6776749"
+     id="path830"
+     style="fill:none;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
+  <path
+     d="M 9.488103,11.709397 V 5.6776749"
+     id="path832"
+     style="fill:none;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
+  <path
+     d="M 12.44923,11.748171 V 5.7164492"
+     id="path833"
+     style="fill:none;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+  <path
+     d="M 1.5128416,4.3444656 H 14.493749 L 8.0641321,2.1639197 1.5125983,4.3444656 z"
+     id="path837"
+     style="fill:#ffffff;fill-rule:evenodd" />
+  <rect
+     width="12.079715"
+     height="1.0723464"
+     rx="0"
+     x="1.9589846"
+     y="4.3525791"
+     id="rect3475"
+     style="fill:#ffffff;stroke:#ffffff;stroke-width:0.71843153;stroke-linecap:square" />
+</svg>

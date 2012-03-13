@@ -1,6 +1,6 @@
 This software is distributed under the following MIT License
 
-Copyright (c) 2010  MapQuest
+Copyright (c) 2010-12  MapQuest
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,18 +19,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-
-This stylesheet uses features only available in mapnik builds with libxml2 as the XML parser. 
-Furthermore, there are other features that necessitate an upgrade to at least mapnik 0.8.0
-
-TIFF files used for low-zoom levels can be downloaded from :
-http://developer.mapquest.com/content/static/geotiffs/mercator_tiffs.tar
-
-World boundary shapefiles:
-http://tile.openstreetmap.org/world_boundaries-spherical.tgz 
-http://tile.openstreetmap.org/processed_p.tar.bz2 
-http://tile.openstreetmap.org/shoreline_300.tar.bz2  
-
-
-
 

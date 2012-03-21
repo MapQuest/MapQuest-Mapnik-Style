@@ -1,0 +1,80 @@
+# this osm2pgsql style is much like the default one which ships 
+# with the osm2pgsql source code, but with a few extra additions
+# for columns used in the MapQuest styles. you should use this
+# style file with your import and any subsequent updates if you
+# want to use the MapQuest styles.
+
+# OsmType  Tag          DataType     Flags
+node,way   note         text         delete   # These tags can be long but are useless for rendering
+node,way   source       text         delete   # This indicates that we shouldn't store them
+
+node,way   access       text         linear
+node,way   addr:flats   text         polygon
+node,way   addr:housenumber    text  linear
+node,way   addr:interpolation  text  linear 
+node,way   admin_level  text         linear
+node,way   aerialway    text         linear
+node,way   aeroway      text         polygon
+node,way   amenity      text         nocache,polygon
+node,way   area         text         # hard coded support for area=1/yes => polygon is in osm2pgsql
+node,way   barrier      text         linear
+node,way   bicycle      text         nocache
+node,way   bridge       text         linear
+node,way   boundary     text         linear
+node,way   building     text         polygon
+node	     capital      text         linear
+node,way   construction text         linear
+node,way   cutting      text         linear
+node,way   disused      text         linear
+node       ele          text         linear
+node,way   embankment   text         linear
+node,way   foot         text         linear
+node,way   highway      text         linear
+node,way   historic     text         polygon
+node,way   horse        text         linear
+node,way   junction     text         linear
+node,way   landuse      text         polygon
+node,way   layer        text         linear
+node,way   learning     text         linear
+node,way   leisure      text         polygon
+node,way   lock         text         linear
+node,way   man_made     text         polygon
+node,way   military     text         polygon
+node,way   motorcar     text         linear
+node,way   name         text         linear
+node,way   name:en	text	     linear
+node,way   natural      text         polygon  # natural=coastline tags are discarded by a hard coded rule in osm2pgsql
+node,way   oneway       text         linear
+node,way   operator     text         linear
+node       poi          text
+node       population   int4
+node,way   power        text         polygon
+node,way   power_source text         linear
+node,way   place        text         linear
+node,way   railway      text         linear
+node,way   ref          text         linear
+node,way   religion     text         nocache
+node,way   residence    text         linear
+node,way   route        text         linear
+node,way   service      text         linear
+node,way   shop		text	     polygon
+node,way   sport        text         polygon
+node       state_capital text        
+node,way   tourism      text         polygon
+way        tracktype    text         linear
+way        toll         text         linear
+node,way   tunnel       text         linear
+node,way   waterway     text         polygon
+node,way   width        text         linear
+node,way   wood         text         linear
+node,way   z_order      int4         linear # This is calculated during import
+way        way_area     real                # This is calculated during import
+
+# by default, we include the following extended attributes in our
+# database (-x option to osm2pgsql), but these are (at present) 
+# not used in our styles, so feel free to omit them if they bloat
+# your database too much.
+way  osm_user       text
+way  osm_uid        text
+way  osm_version    text
+way  osm_timestamp  text
